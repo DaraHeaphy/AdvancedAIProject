@@ -1,0 +1,3 @@
+- We're going to keep this file as a documentation of the thought/research
+process we go through while designing our small transformer model. 
+
