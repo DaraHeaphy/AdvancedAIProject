@@ -1,3 +1,20 @@
 - We're going to keep this file as a documentation of the thought/research
 process we go through while designing our small transformer model. 
 
+- After discussing the proposal further with Eoin, we decided that instead of changing several parts of the transformer at once,
+ it would make more sense to focus on one specific part of the model and 
+ study how different ways of building that part affect the prediction results.
+
+- At the moment, we are leaning towards focusing on positional information. 
+Since our model will be given the previous 10 matches for each team, the order 
+of those matches could be important. For example, the most recent match may be more 
+useful than a match from 10 games ago.
+
+- One idea is to compare a transformer with no positional information against 
+versions that do include positional information. 
+We could then compare a few different approaches, such as fixed positional encoding, 
+learned positional embeddings, or possibly a relative positional method.
+
+- We are not deciding exactly which methods to use yet. 
+The next step will be to research the different options properly and 
+decide which ones make the most sense for a small transformer trained from scratch.
