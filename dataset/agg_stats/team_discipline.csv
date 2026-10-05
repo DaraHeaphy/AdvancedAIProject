@@ -1,0 +1,401 @@
+RK,Team,P,yc,rc,PTS,YEAR
+1,Birmingham City,38,72,4,84,2002
+2,West Ham United,38,66,5,81,2002
+3,Bolton Wanderers,38,69,3,78,2002
+4,Leeds United,38,71,2,77,2002
+5,Aston Villa,38,64,4,76,2002
+6,Fulham,38,57,6,75,2002
+6,Tottenham Hotspur,38,60,5,75,2002
+6,Blackburn Rovers,38,63,4,75,2002
+9,Everton,38,53,7,74,2002
+10,Manchester City,38,54,5,69,2002
+11,Chelsea,38,64,1,67,2002
+12,West Bromwich Albion,38,53,4,65,2002
+12,Middlesbrough,38,50,5,65,2002
+14,Arsenal,38,55,3,64,2002
+15,Sunderland,38,60,1,63,2002
+16,Charlton Athletic,38,56,2,62,2002
+17,Newcastle United,38,48,3,57,2002
+18,Southampton,38,47,3,56,2002
+18,Liverpool,38,47,3,56,2002
+20,Manchester United,38,46,1,49,2002
+1,Leeds United,38,70,5,85,2003
+2,Leicester City,38,57,7,78,2003
+3,Wolverhampton Wanderers,38,66,2,72,2003
+4,Portsmouth,38,62,3,71,2003
+5,Fulham,38,61,3,70,2003
+5,Blackburn Rovers,38,61,3,70,2003
+7,Bolton Wanderers,38,69,0,69,2003
+8,Southampton,38,53,3,62,2003
+8,Everton,38,53,3,62,2003
+8,Chelsea,38,50,4,62,2003
+11,Aston Villa,38,52,3,61,2003
+11,Arsenal,38,52,3,61,2003
+13,Birmingham City,38,45,5,60,2003
+13,Tottenham Hotspur,38,57,1,60,2003
+15,Middlesbrough,38,56,1,59,2003
+16,Newcastle United,38,48,3,57,2003
+17,Manchester City,38,47,3,56,2003
+18,Manchester United,38,44,3,53,2003
+19,Liverpool,38,46,1,49,2003
+20,Charlton Athletic,38,35,2,41,2003
+1,Blackburn Rovers,38,80,5,95,2004
+2,Newcastle United,38,62,6,80,2004
+3,Fulham,38,57,7,78,2004
+4,Birmingham City,38,58,3,67,2004
+4,Crystal Palace,38,58,3,67,2004
+4,Everton,38,55,4,67,2004
+7,Manchester United,38,49,5,64,2004
+8,Bolton Wanderers,38,57,2,63,2004
+9,Aston Villa,38,56,2,62,2004
+10,Southampton,38,55,2,61,2004
+11,Middlesbrough,38,53,2,59,2004
+12,West Bromwich Albion,38,41,5,56,2004
+13,Tottenham Hotspur,38,51,1,54,2004
+14,Manchester City,38,44,3,53,2004
+15,Chelsea,38,52,0,52,2004
+16,Portsmouth,38,46,1,49,2004
+16,Liverpool,38,43,2,49,2004
+16,Arsenal,38,46,1,49,2004
+19,Norwich City,38,38,2,44,2004
+19,Charlton Athletic,38,35,3,44,2004
+1,Blackburn Rovers,38,76,6,94,2005
+2,Everton,38,65,7,86,2005
+2,Newcastle United,38,65,7,86,2005
+4,Manchester City,38,69,4,81,2005
+4,Sunderland,38,69,4,81,2005
+6,Chelsea,38,63,5,78,2005
+7,Birmingham City,38,53,7,74,2005
+7,Tottenham Hotspur,38,53,7,74,2005
+9,Bolton Wanderers,38,64,3,73,2005
+10,Fulham,38,66,2,72,2005
+11,Wigan Athletic,38,55,4,67,2005
+12,Manchester United,38,60,2,66,2005
+13,Liverpool,38,50,5,65,2005
+13,Aston Villa,38,62,1,65,2005
+15,Middlesbrough,38,54,3,63,2005
+16,Arsenal,38,55,2,61,2005
+17,Portsmouth,38,56,1,59,2005
+18,West Ham United,38,50,2,56,2005
+19,West Bromwich Albion,38,46,2,52,2005
+20,Charlton Athletic,38,41,1,44,2005
+1,West Ham United,38,96,4,108,2006
+2,Bolton Wanderers,38,86,4,98,2006
+3,Blackburn Rovers,38,74,6,92,2006
+4,Wigan Athletic,38,78,4,90,2006
+5,Chelsea,38,64,4,76,2006
+6,Sheffield United,38,67,2,73,2006
+7,Charlton Athletic,38,62,3,71,2006
+7,Middlesbrough,38,65,2,71,2006
+9,Newcastle United,38,67,1,70,2006
+10,Everton,38,65,1,68,2006
+11,Manchester City,38,55,4,67,2006
+11,Arsenal,38,58,3,67,2006
+13,Fulham,38,57,3,66,2006
+14,Manchester United,38,58,1,61,2006
+15,Portsmouth,38,48,2,54,2006
+15,Tottenham Hotspur,38,45,3,54,2006
+17,Aston Villa,38,50,1,53,2006
+18,Watford,38,46,2,52,2006
+19,Reading,38,40,3,49,2006
+20,Liverpool,38,43,0,43,2006
+1,Blackburn Rovers,38,51,5,66,2007
+2,Chelsea,38,48,5,63,2007
+3,Fulham,38,42,5,57,2007
+4,Sunderland,38,44,4,56,2007
+5,Middlesbrough,38,55,0,55,2007
+6,Aston Villa,38,44,3,53,2007
+7,West Ham United,38,49,1,52,2007
+8,Bolton Wanderers,38,51,0,51,2007
+9,Birmingham City,38,50,0,50,2007
+10,Portsmouth,38,46,1,49,2007
+11,Manchester City,38,42,2,48,2007
+11,Derby County,38,45,1,48,2007
+11,Tottenham Hotspur,38,45,1,48,2007
+11,Newcastle United,38,45,1,48,2007
+11,Reading,38,36,4,48,2007
+16,Arsenal,38,40,2,46,2007
+16,Wigan Athletic,38,40,2,46,2007
+18,Manchester United,38,37,1,40,2007
+19,Everton,38,27,3,36,2007
+20,Liverpool,38,33,0,33,2007
+1,Stoke City,38,74,5,89,2008
+2,Tottenham Hotspur,38,72,5,87,2008
+2,Blackburn Rovers,38,75,4,87,2008
+2,Newcastle United,38,63,8,87,2008
+5,Hull City,38,70,3,79,2008
+6,Manchester United,38,60,5,75,2008
+7,Sunderland,38,71,1,74,2008
+8,Portsmouth,38,55,5,70,2008
+8,West Bromwich Albion,38,67,1,70,2008
+8,West Ham United,38,58,4,70,2008
+11,Arsenal,38,58,3,67,2008
+12,Manchester City,38,54,4,66,2008
+13,Wigan Athletic,38,53,4,65,2008
+14,Middlesbrough,38,53,3,62,2008
+15,Aston Villa,38,54,2,60,2008
+16,Chelsea,38,50,3,59,2008
+17,Bolton Wanderers,38,53,1,56,2008
+18,Everton,38,49,1,52,2008
+19,Liverpool,38,48,0,48,2008
+20,Fulham,38,39,1,42,2008
+1,Sunderland,38,80,9,107,2009
+2,Bolton Wanderers,38,72,5,87,2009
+3,Hull City,38,63,6,81,2009
+4,Birmingham City,38,75,1,78,2009
+4,Stoke City,38,63,5,78,2009
+6,Portsmouth,38,65,4,77,2009
+7,Wolverhampton Wanderers,38,63,4,75,2009
+8,Wigan Athletic,38,65,3,74,2009
+9,West Ham United,38,63,3,72,2009
+10,Liverpool,38,55,5,70,2009
+11,Chelsea,38,54,5,69,2009
+12,Tottenham Hotspur,38,59,2,65,2009
+12,Aston Villa,38,59,2,65,2009
+14,Burnley,38,57,2,63,2009
+14,Everton,38,57,2,63,2009
+16,Manchester United,38,49,4,61,2009
+17,Blackburn Rovers,38,54,2,60,2009
+18,Arsenal,38,56,1,59,2009
+19,Manchester City,38,49,2,55,2009
+20,Fulham,38,46,1,49,2009
+1,Newcastle United,38,78,2,84,2010
+2,Manchester City,38,71,4,83,2010
+2,Arsenal,38,65,6,83,2010
+4,Bolton Wanderers,38,67,5,82,2010
+5,Blackburn Rovers,38,65,5,80,2010
+6,Wigan Athletic,38,67,4,79,2010
+7,Aston Villa,38,71,2,77,2010
+8,Stoke City,38,68,2,74,2010
+9,West Bromwich Albion,38,52,7,73,2010
+10,Sunderland,38,57,5,72,2010
+11,Everton,38,55,5,70,2010
+12,Liverpool,38,63,2,69,2010
+13,Wolverhampton Wanderers,38,62,2,68,2010
+14,Birmingham City,38,57,3,66,2010
+15,Manchester United,38,56,3,65,2010
+16,West Ham United,38,60,1,63,2010
+17,Chelsea,38,59,1,62,2010
+18,Tottenham Hotspur,38,51,2,57,2010
+19,Fulham,38,52,1,55,2010
+20,Blackpool,38,47,2,53,2010
+1,Chelsea,38,74,4,86,2011
+2,Queens Park Rangers,38,55,9,82,2011
+3,Blackburn Rovers,38,66,5,81,2011
+4,Wolverhampton Wanderers,38,64,4,76,2011
+4,Aston Villa,38,70,2,76,2011
+4,Arsenal,38,64,4,76,2011
+4,Wigan Athletic,38,67,3,76,2011
+8,Sunderland,38,60,4,72,2011
+8,Newcastle United,38,66,2,72,2011
+10,Liverpool,38,53,5,68,2011
+11,Norwich City,38,58,3,67,2011
+12,Manchester City,38,51,5,66,2011
+12,Everton,38,60,2,66,2011
+12,Stoke City,38,60,2,66,2011
+15,Bolton Wanderers,38,50,5,65,2011
+16,Fulham,38,54,0,54,2011
+16,Manchester United,38,51,1,54,2011
+18,Tottenham Hotspur,38,43,3,52,2011
+19,West Bromwich Albion,38,48,1,51,2011
+20,Swansea City,38,40,2,46,2011
+1,Stoke City,38,78,4,90,2012
+2,Newcastle United,38,71,4,83,2012
+3,Aston Villa,38,72,3,81,2012
+4,West Ham United,38,74,1,77,2012
+5,West Bromwich Albion,38,63,4,75,2012
+6,Wigan Athletic,38,66,2,72,2012
+7,Manchester City,38,62,3,71,2012
+7,Sunderland,38,62,3,71,2012
+9,Queens Park Rangers,38,59,3,68,2012
+10,Everton,38,58,3,67,2012
+11,Swansea City,38,58,2,64,2012
+12,Norwich City,38,60,1,63,2012
+13,Tottenham Hotspur,38,55,2,61,2012
+14,Liverpool,38,54,2,60,2012
+14,Chelsea,38,51,3,60,2012
+14,Manchester United,38,57,1,60,2012
+17,Fulham,38,48,3,57,2012
+17,Arsenal,38,42,5,57,2012
+19,Southampton,38,43,2,49,2012
+20,Reading,38,45,1,48,2012
+1,Sunderland,38,69,7,90,2013
+2,Stoke City,38,72,5,87,2013
+3,Tottenham Hotspur,38,66,4,78,2013
+3,Aston Villa,38,78,0,78,2013
+5,West Ham United,38,62,5,77,2013
+6,Manchester City,38,72,1,75,2013
+6,Manchester United,38,66,3,75,2013
+8,Newcastle United,38,53,6,71,2013
+9,Norwich City,38,62,2,68,2013
+10,West Bromwich Albion,38,67,0,67,2013
+11,Chelsea,38,57,3,66,2013
+12,Arsenal,38,53,4,65,2013
+12,Hull City,38,53,4,65,2013
+14,Crystal Palace,38,58,2,64,2013
+14,Swansea City,38,55,3,64,2013
+16,Fulham,38,58,1,61,2013
+17,Southampton,38,60,0,60,2013
+18,Everton,38,54,1,57,2013
+18,Liverpool,38,54,1,57,2013
+20,Cardiff City,38,49,1,52,2013
+1,Sunderland,38,94,2,100,2014
+2,Tottenham Hotspur,38,79,4,91,2014
+2,Aston Villa,38,70,7,91,2014
+2,Hull City,38,73,6,91,2014
+5,Newcastle United,38,65,7,86,2014
+6,Chelsea,38,73,4,85,2014
+6,Stoke City,38,82,1,85,2014
+8,Queens Park Rangers,38,75,3,84,2014
+9,Manchester City,38,77,2,83,2014
+10,Manchester United,38,64,5,79,2014
+11,Crystal Palace,38,63,4,75,2014
+11,Liverpool,38,66,3,75,2014
+13,Arsenal,38,68,2,74,2014
+14,West Bromwich Albion,38,64,3,73,2014
+15,Everton,38,66,2,72,2014
+16,Burnley,38,64,2,70,2014
+16,West Ham United,38,64,2,70,2014
+18,Southampton,38,57,3,66,2014
+19,Swansea City,38,48,5,63,2014
+20,Leicester City,38,49,4,61,2014
+1,Aston Villa,38,75,3,84,2015
+2,Watford,38,73,3,82,2015
+3,Southampton,38,57,6,75,2015
+3,Newcastle United,38,60,5,75,2015
+5,West Bromwich Albion,38,65,3,74,2015
+6,West Ham United,38,58,5,73,2015
+6,Chelsea,38,58,5,73,2015
+8,Tottenham Hotspur,38,72,0,72,2015
+9,Norwich City,38,61,3,70,2015
+9,Sunderland,38,64,2,70,2015
+9,Liverpool,38,61,3,70,2015
+12,Manchester United,38,65,1,68,2015
+13,Crystal Palace,38,60,2,66,2015
+14,Stoke City,38,51,4,63,2015
+14,Swansea City,38,60,1,63,2015
+16,Manchester City,38,61,0,61,2015
+17,Everton,38,44,5,59,2015
+18,AFC Bournemouth,38,53,1,56,2015
+19,Leicester City,38,49,2,55,2015
+20,Arsenal,38,40,4,52,2015
+1,Watford,38,84,5,99,2016
+2,West Ham United,38,78,5,93,2016
+3,Sunderland,38,78,4,90,2016
+4,Manchester United,38,78,2,84,2016
+5,Manchester City,38,71,4,83,2016
+6,Hull City,38,67,5,82,2016
+7,West Bromwich Albion,38,80,0,80,2016
+7,Middlesbrough,38,77,1,80,2016
+9,Everton,38,72,2,78,2016
+10,Crystal Palace,38,77,0,77,2016
+10,Arsenal,38,68,3,77,2016
+12,Stoke City,38,70,2,76,2016
+13,Leicester City,38,72,1,75,2016
+14,Chelsea,38,72,0,72,2016
+15,Burnley,38,65,2,71,2016
+16,Southampton,38,59,2,65,2016
+17,Tottenham Hotspur,38,62,0,62,2016
+18,AFC Bournemouth,38,52,3,61,2016
+19,Swansea City,38,56,0,56,2016
+20,Liverpool,38,54,0,54,2016
+1,West Ham United,38,73,2,79,2017
+2,West Bromwich Albion,38,73,1,76,2017
+3,Watford,38,63,4,75,2017
+4,Crystal Palace,38,72,0,72,2017
+5,Huddersfield Town,38,62,3,71,2017
+6,Southampton,38,63,2,69,2017
+7,Leicester City,38,52,5,67,2017
+7,Manchester United,38,64,1,67,2017
+9,Manchester City,38,59,2,65,2017
+9,Burnley,38,65,0,65,2017
+9,Stoke City,38,62,1,65,2017
+12,Arsenal,38,57,2,63,2017
+13,Everton,38,51,3,60,2017
+13,Brighton & Hove Albion,38,54,2,60,2017
+15,Newcastle United,38,52,2,58,2017
+15,AFC Bournemouth,38,55,1,58,2017
+17,Tottenham Hotspur,38,50,2,56,2017
+18,Chelsea,38,42,4,54,2017
+18,Swansea City,38,51,1,54,2017
+20,Liverpool,38,44,1,47,2017
+1,Watford,38,77,4,89,2018
+2,Manchester United,38,73,4,85,2018
+3,Southampton,38,71,3,80,2018
+4,Burnley,38,75,1,78,2018
+4,Arsenal,38,72,2,78,2018
+6,Wolverhampton Wanderers,38,72,1,75,2018
+7,Fulham,38,68,2,74,2018
+8,Leicester City,38,57,5,72,2018
+8,Brighton & Hove Albion,38,60,4,72,2018
+10,Cardiff City,38,66,1,69,2018
+11,Everton,38,55,4,67,2018
+11,Huddersfield Town,38,55,4,67,2018
+13,Tottenham Hotspur,38,56,3,65,2018
+14,Crystal Palace,38,58,2,64,2018
+15,Newcastle United,38,57,2,63,2018
+15,AFC Bournemouth,38,60,1,63,2018
+17,West Ham United,38,59,1,62,2018
+18,Chelsea,38,49,0,49,2018
+19,Manchester City,38,44,1,47,2018
+20,Liverpool,38,37,2,43,2018
+1,Arsenal,38,87,5,102,2019
+2,Watford,38,76,3,85,2019
+3,Tottenham Hotspur,38,77,2,83,2019
+3,AFC Bournemouth,38,74,3,83,2019
+5,Newcastle United,38,71,3,80,2019
+6,Everton,38,70,3,79,2019
+7,Norwich City,38,68,3,77,2019
+8,Manchester United,38,73,0,73,2019
+9,Manchester City,38,60,4,72,2019
+10,Aston Villa,38,68,1,71,2019
+11,Crystal Palace,38,62,2,68,2019
+12,Sheffield United,38,61,2,67,2019
+12,Burnley,38,67,0,67,2019
+14,West Ham United,38,62,1,65,2019
+15,Southampton,38,52,4,64,2019
+16,Brighton & Hove Albion,38,57,2,63,2019
+17,Wolverhampton Wanderers,38,55,2,61,2019
+18,Chelsea,38,60,0,60,2019
+19,Leicester City,38,43,3,52,2019
+20,Liverpool,38,38,1,41,2019
+1,Sheffield United,38,73,3,82,2020
+2,Aston Villa,38,67,4,79,2020
+3,Fulham,38,67,3,76,2020
+4,Newcastle United,38,62,3,71,2020
+5,Manchester United,38,64,1,67,2020
+6,Everton,38,59,2,65,2020
+7,Leeds United,38,61,1,64,2020
+8,West Bromwich Albion,38,51,4,63,2020
+8,Arsenal,38,48,5,63,2020
+8,Brighton & Hove Albion,38,45,6,63,2020
+11,Crystal Palace,38,55,2,61,2020
+11,Southampton,38,52,3,61,2020
+11,Leicester City,38,61,0,61,2020
+11,Tottenham Hotspur,38,55,2,61,2020
+15,Chelsea,38,50,3,59,2020
+16,West Ham United,38,49,3,58,2020
+17,Wolverhampton Wanderers,38,54,1,57,2020
+18,Manchester City,38,46,2,52,2020
+19,Burnley,38,48,0,48,2020
+20,Liverpool,38,40,0,40,2020
+1,Leeds United,37,100,3,109,2021
+2,Everton,36,76,6,94,2021
+3,Newcastle United,37,87,2,93,2021
+4,Aston Villa,36,78,2,84,2021
+5,Manchester United,37,72,2,78,2021
+6,Arsenal,37,63,4,75,2021
+7,Brighton & Hove Albion,37,68,2,74,2021
+8,Watford,37,60,3,69,2021
+8,Southampton,37,63,2,69,2021
+8,Tottenham Hotspur,37,66,1,69,2021
+11,Burnley,36,65,1,68,2021
+12,Wolverhampton Wanderers,37,61,2,67,2021
+13,Crystal Palace,36,63,1,66,2021
+13,Brentford,37,60,2,66,2021
+15,Chelsea,36,59,1,62,2021
+16,Leicester City,36,54,1,57,2021
+16,West Ham United,37,48,3,57,2021
+18,Norwich City,37,53,1,56,2021
+19,Liverpool,37,49,1,52,2021
+20,Manchester City,37,42,1,45,2021

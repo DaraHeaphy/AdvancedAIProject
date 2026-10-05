@@ -1,0 +1,389 @@
+{
+  "source": "C:\\Users\\darah\\MyRepos\\MastersBlock\\AA\\project\\AdvancedAIProject\\dataset\\matches.csv",
+  "source_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1",
+  "raw_rows": 7979,
+  "excluded_non_completed": 2,
+  "excluded_duplicate_rows": 10,
+  "unique_completed_fixtures": 7967,
+  "history_length": 10,
+  "features": [
+    "goals_scored",
+    "goals_conceded",
+    "played_at_home"
+  ],
+  "labels": [
+    "home_win",
+    "draw",
+    "away_win"
+  ],
+  "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses seasons",
+  "scaling": "none",
+  "splits": {
+    "train": {
+      "seasons": [
+        "2001-2002",
+        "2002-2003",
+        "2003-2004",
+        "2004-2005",
+        "2005-2006",
+        "2006-2007",
+        "2007-2008",
+        "2008-2009",
+        "2009-2010",
+        "2010-2011",
+        "2011-2012",
+        "2012-2013",
+        "2013-2014",
+        "2014-2015",
+        "2015-2016",
+        "2016-2017",
+        "2017-2018",
+        "2018-2019",
+        "2019-2020"
+      ],
+      "completed_fixtures": 7220,
+      "skipped_insufficient_history": 308,
+      "examples": 6912,
+      "class_counts": {
+        "home_win": 3203,
+        "draw": 1733,
+        "away_win": 1976
+      },
+      "first_target": "2001-10-27T14:00:00+00:00",
+      "last_target": "2020-07-26T15:00:00+00:00"
+    },
+    "val": {
+      "seasons": [
+        "2020-2021"
+      ],
+      "completed_fixtures": 380,
+      "skipped_insufficient_history": 0,
+      "examples": 380,
+      "class_counts": {
+        "home_win": 144,
+        "draw": 83,
+        "away_win": 153
+      },
+      "first_target": "2020-09-12T11:30:00+00:00",
+      "last_target": "2021-05-23T15:00:00+00:00"
+    },
+    "test": {
+      "seasons": [
+        "2021-2022"
+      ],
+      "completed_fixtures": 367,
+      "skipped_insufficient_history": 10,
+      "examples": 357,
+      "class_counts": {
+        "home_win": 153,
+        "draw": 83,
+        "away_win": 121
+      },
+      "first_target": "2021-08-14T11:30:00+00:00",
+      "last_target": "2022-05-17T18:45:00+00:00"
+    }
+  },
+  "validation_example": {
+    "metadata": {
+      "target": {
+        "fixture_id": "578653",
+        "home": "Fulham",
+        "away": "Arsenal",
+        "kickoff": "2020-09-12T11:30:00+00:00",
+        "season": "2020-2021",
+        "home_score": 0,
+        "away_score": 3
+      },
+      "home_history": [
+        {
+          "fixture_id": "513552",
+          "home": "Fulham",
+          "away": "Chelsea",
+          "kickoff": "2019-03-03T14:05:00+00:00",
+          "season": "2018-2019",
+          "home_score": 1,
+          "away_score": 2
+        },
+        {
+          "fixture_id": "513544",
+          "home": "Leicester City",
+          "away": "Fulham",
+          "kickoff": "2019-03-09T15:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 3,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "513536",
+          "home": "Fulham",
+          "away": "Liverpool",
+          "kickoff": "2019-03-17T14:15:00+00:00",
+          "season": "2018-2019",
+          "home_score": 1,
+          "away_score": 2
+        },
+        {
+          "fixture_id": "513524",
+          "home": "Fulham",
+          "away": "Manchester City",
+          "kickoff": "2019-03-30T12:30:00+00:00",
+          "season": "2018-2019",
+          "home_score": 0,
+          "away_score": 2
+        },
+        {
+          "fixture_id": "513515",
+          "home": "Watford",
+          "away": "Fulham",
+          "kickoff": "2019-04-02T18:45:00+00:00",
+          "season": "2018-2019",
+          "home_score": 4,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "513504",
+          "home": "Fulham",
+          "away": "Everton",
+          "kickoff": "2019-04-13T14:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 2,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "513493",
+          "home": "AFC Bournemouth",
+          "away": "Fulham",
+          "kickoff": "2019-04-20T14:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 0,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "513482",
+          "home": "Fulham",
+          "away": "Cardiff City",
+          "kickoff": "2019-04-27T14:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "513473",
+          "home": "Wolverhampton Wanderers",
+          "away": "Fulham",
+          "kickoff": "2019-05-04T14:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "513467",
+          "home": "Fulham",
+          "away": "Newcastle United",
+          "kickoff": "2019-05-12T14:00:00+00:00",
+          "season": "2018-2019",
+          "home_score": 0,
+          "away_score": 4
+        }
+      ],
+      "away_history": [
+        {
+          "fixture_id": "541565",
+          "home": "Manchester City",
+          "away": "Arsenal",
+          "kickoff": "2020-06-17T19:15:00+00:00",
+          "season": "2019-2020",
+          "home_score": 3,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "541545",
+          "home": "Brighton & Hove Albion",
+          "away": "Arsenal",
+          "kickoff": "2020-06-20T14:00:00+00:00",
+          "season": "2019-2020",
+          "home_score": 2,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "541535",
+          "home": "Southampton",
+          "away": "Arsenal",
+          "kickoff": "2020-06-25T17:00:00+00:00",
+          "season": "2019-2020",
+          "home_score": 0,
+          "away_score": 2
+        },
+        {
+          "fixture_id": "541531",
+          "home": "Arsenal",
+          "away": "Norwich City",
+          "kickoff": "2020-07-01T17:00:00+00:00",
+          "season": "2019-2020",
+          "home_score": 4,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "541515",
+          "home": "Wolverhampton Wanderers",
+          "away": "Arsenal",
+          "kickoff": "2020-07-04T16:30:00+00:00",
+          "season": "2019-2020",
+          "home_score": 0,
+          "away_score": 2
+        },
+        {
+          "fixture_id": "541507",
+          "home": "Arsenal",
+          "away": "Leicester City",
+          "kickoff": "2020-07-07T19:15:00+00:00",
+          "season": "2019-2020",
+          "home_score": 1,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "541495",
+          "home": "Tottenham Hotspur",
+          "away": "Arsenal",
+          "kickoff": "2020-07-12T15:30:00+00:00",
+          "season": "2019-2020",
+          "home_score": 2,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "541488",
+          "home": "Arsenal",
+          "away": "Liverpool",
+          "kickoff": "2020-07-15T19:15:00+00:00",
+          "season": "2019-2020",
+          "home_score": 2,
+          "away_score": 1
+        },
+        {
+          "fixture_id": "541475",
+          "home": "Aston Villa",
+          "away": "Arsenal",
+          "kickoff": "2020-07-21T19:15:00+00:00",
+          "season": "2019-2020",
+          "home_score": 1,
+          "away_score": 0
+        },
+        {
+          "fixture_id": "541473",
+          "home": "Arsenal",
+          "away": "Watford",
+          "kickoff": "2020-07-26T15:00:00+00:00",
+          "season": "2019-2020",
+          "home_score": 3,
+          "away_score": 2
+        }
+      ]
+    },
+    "home_features": [
+      [
+        1.0,
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        3.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0,
+        1.0
+      ],
+      [
+        0.0,
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        4.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0,
+        1.0
+      ]
+    ],
+    "away_features": [
+      [
+        0.0,
+        3.0,
+        0.0
+      ],
+      [
+        1.0,
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        3.0,
+        2.0,
+        1.0
+      ]
+    ],
+    "label": 2,
+    "label_name": "away_win"
+  }
+}
