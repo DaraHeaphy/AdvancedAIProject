@@ -1,0 +1,17 @@
+{
+  "unit_tests_passed": 12,
+  "metrics_epochs_verified": 10,
+  "configuration_reconstruction_verified": true,
+  "source_sha256_verified": true,
+  "split_definitions_unchanged": true,
+  "checkpoint_validation_metrics_reproduced_exactly": true,
+  "saved_validation_prediction_reproduced_exactly": true,
+  "trained_none_independent_permutation_trials": 10,
+  "permutation_batch_size": 32,
+  "permutation_max_probability_difference": 1.1920928955078125e-07,
+  "permutation_atol": 1e-06,
+  "permutation_rtol": 1e-05,
+  "checkpoint_sha256": "4e1f8b96c6d65cd26ad63f53899c45b0bc4be4245e3296144d7fb9dbdadb964b",
+  "checkpoint_bytes": 42603,
+  "test_evaluated": false
+}
