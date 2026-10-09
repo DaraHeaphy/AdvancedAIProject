@@ -1,13 +1,11 @@
 """Train, check small-batch learning, or predict a validation fixture only."""
 
 import argparse
-import importlib.metadata
 import json
 import math
 import os
 import platform
 import random
-import re
 import time
 import uuid
 from datetime import datetime, timezone
@@ -19,6 +17,8 @@ from torch.utils.data import DataLoader
 
 from dataset import DEFAULT_CSV, LABELS, load_datasets
 from model import MatchTransformer
+from evidence import (dependency_versions, metrics_from_predictions, record_provenance,
+                      validation_predictions, verify_run)
 
 
 ROOT = Path(__file__).resolve().parent
@@ -50,16 +50,7 @@ def prepare_device(name, threads):
 
 
 def environment_details(device):
-    # Record installed versions of torch and its direct dependencies, plus numpy.
-    names = {"torch", "numpy"}
-    for requirement in importlib.metadata.requires("torch") or []:
-        names.add(re.split(r"[\s<>=!~;\[]", requirement, maxsplit=1)[0])
-    versions = {}
-    for name in sorted(names):
-        try:
-            versions[name] = importlib.metadata.version(name)
-        except importlib.metadata.PackageNotFoundError:
-            pass  # Optional platform-specific dependencies may be absent.
+    versions = dependency_versions()
     return {
         "python": platform.python_version(), "dependencies": versions,
         "torch_build": str(torch.__version__), "platform": platform.platform(),
@@ -152,12 +143,18 @@ def train(args):
     run_dir = args.runs_dir / name
     run_dir.mkdir(parents=True, exist_ok=False)
     config = {
+        "condition_role": "reference" if args.positional_encoding == "none" else "comparison",
         "seed": args.seed, "epochs": args.epochs, "batch_size": 32,
         "optimizer": "Adam", "learning_rate": 0.001,
         "loss": "cross_entropy_on_logits", "checkpoint_selection": "minimum_validation_log_loss",
         "shuffle_train": True, "shuffle_validation": False, "num_workers": 0,
         "device": str(device), "threads": args.threads, "model": model.config,
     }
+    record_provenance(run_dir, [
+        "python", "train.py", "train", "--positional-encoding", args.positional_encoding,
+        "--seed", str(args.seed), "--epochs", str(args.epochs),
+        "--device", str(device), "--threads", str(args.threads),
+    ])
     write_json(run_dir / "config.json", config)
     write_json(run_dir / "environment.json", environment_details(device))
     # Use a portable source path, leaving Dara's committed preparation report intact.
@@ -212,10 +209,15 @@ def train(args):
         "best_validation_accuracy": metrics[best_epoch - 1]["validation_accuracy"],
         "checkpoint": "best.pt", "checkpoint_reload_verified": True,
         "reloaded_validation_metrics": reloaded, "test_evaluated": False,
+        "training_examples": len(train_data), "validation_examples": len(val_data),
     }
     write_json(run_dir / "summary.json", summary)
     prediction = validation_prediction(best_model, val_data, 0, device)
     write_json(run_dir / "validation_prediction.json", prediction)
+    predictions = validation_predictions(best_model, val_data, device)
+    write_json(run_dir / "validation_predictions.json", predictions)
+    write_json(run_dir / "validation_metrics.json", metrics_from_predictions(predictions))
+    verify_run(run_dir, device, datasets=datasets)
     print(json.dumps(summary, indent=2), flush=True)
     print(json.dumps(prediction, indent=2), flush=True)
     return run_dir
