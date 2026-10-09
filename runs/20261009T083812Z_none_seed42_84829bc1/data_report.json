@@ -1,0 +1,86 @@
+{
+  "source": "dataset/matches.csv",
+  "source_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1",
+  "raw_rows": 7979,
+  "excluded_non_completed": 2,
+  "excluded_duplicate_rows": 10,
+  "unique_completed_fixtures": 7967,
+  "history_length": 10,
+  "features": [
+    "goals_scored",
+    "goals_conceded",
+    "played_at_home"
+  ],
+  "labels": [
+    "home_win",
+    "draw",
+    "away_win"
+  ],
+  "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses seasons",
+  "scaling": "none",
+  "splits": {
+    "train": {
+      "seasons": [
+        "2001-2002",
+        "2002-2003",
+        "2003-2004",
+        "2004-2005",
+        "2005-2006",
+        "2006-2007",
+        "2007-2008",
+        "2008-2009",
+        "2009-2010",
+        "2010-2011",
+        "2011-2012",
+        "2012-2013",
+        "2013-2014",
+        "2014-2015",
+        "2015-2016",
+        "2016-2017",
+        "2017-2018",
+        "2018-2019",
+        "2019-2020"
+      ],
+      "completed_fixtures": 7220,
+      "skipped_insufficient_history": 308,
+      "examples": 6912,
+      "class_counts": {
+        "home_win": 3203,
+        "draw": 1733,
+        "away_win": 1976
+      },
+      "first_target": "2001-10-27T14:00:00+00:00",
+      "last_target": "2020-07-26T15:00:00+00:00"
+    },
+    "val": {
+      "seasons": [
+        "2020-2021"
+      ],
+      "completed_fixtures": 380,
+      "skipped_insufficient_history": 0,
+      "examples": 380,
+      "class_counts": {
+        "home_win": 144,
+        "draw": 83,
+        "away_win": 153
+      },
+      "first_target": "2020-09-12T11:30:00+00:00",
+      "last_target": "2021-05-23T15:00:00+00:00"
+    },
+    "test": {
+      "seasons": [
+        "2021-2022"
+      ],
+      "completed_fixtures": 367,
+      "skipped_insufficient_history": 10,
+      "examples": 357,
+      "class_counts": {
+        "home_win": 153,
+        "draw": 83,
+        "away_win": 121
+      },
+      "first_target": "2021-08-14T11:30:00+00:00",
+      "last_target": "2022-05-17T18:45:00+00:00"
+    }
+  }
+}

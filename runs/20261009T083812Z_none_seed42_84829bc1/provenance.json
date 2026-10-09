@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-10-09T08:38:12.785990+00:00",
+  "training_command": [
+    "python",
+    "train.py",
+    "train",
+    "--positional-encoding",
+    "none",
+    "--seed",
+    "42",
+    "--epochs",
+    "10",
+    "--device",
+    "cpu",
+    "--threads",
+    "1"
+  ],
+  "git": {
+    "commit": "fffe4a24baf39d0ddf274165e78da92a4f8c1a9c",
+    "dirty": true
+  },
+  "source_files_sha256": {
+    "dataset.py": "0c231330ebc87bebe9cf183685dbccd9d5011fe594b0f43d73cb6928126020bf",
+    "model.py": "651b29f7d80e85a1334c53aa2956b34239bb29520bb1f07a68e2c7791d93d920",
+    "train.py": "3ce2359726778ae2f3daa3b0f74defa3301397ea10074a12f8d042802dfa8884",
+    "evidence.py": "1e266058329e05eef57d6ff6eda2ccafada4c9415f59d78db6a47b75ddeb3764",
+    "requirements.txt": "b8010b8b50445c650954f35cd7af528a47e727cb198cf1d212d4d6cf35ff33a8",
+    "requirements-lock.txt": "040f03cee973a93e32a498c4c51b6cac91ea185fe974693dfd7f8c761a527346",
+    "README.md": "7a1d71ceca7a945d4fec584d5b39207065d2302d9734e99f67285617375aa7a6",
+    "dataset/README.md": "7060470089004318cfbe15c0d25bf9f781c7bcad77023999f3d577fc07d2034a",
+    "tests/test_dataset.py": "be348f5bb295e25e9afe90bd2bbb402a4288b2242bec9ff668708aebd019f245",
+    "tests/test_evidence.py": "365479c52ed787aa1bcb490de67741d711e543909baf350bb9d144e0872e0223",
+    "tests/test_model.py": "a70a704b25cd483eb097430271b2a369fc72852dd879e375f5652e83db0b6914"
+  },
+  "source_snapshot": "source",
+  "note": "Source hashes identify the executed files even when Git is dirty or absent."
+}

@@ -1,0 +1,91 @@
+{
+  "verified_at_utc": "2026-10-09T09:17:40.003482+00:00",
+  "command": [
+    "python",
+    "evidence.py",
+    "verify",
+    "--run-dir",
+    "runs/20261009T083812Z_none_seed42_84829bc1"
+  ],
+  "passed": true,
+  "checks": {
+    "source_snapshot_hashes": true,
+    "executed_source_matches_snapshot": true,
+    "source_csv_hash": true,
+    "all_epochs_recorded": true,
+    "finite_epoch_metrics": true,
+    "checkpoint_configuration": true,
+    "checkpoint_selection": true,
+    "example_counts": true,
+    "checkpoint_metrics_reproduced": true,
+    "single_prediction_reproduced": true,
+    "all_validation_fixtures_exported": true,
+    "validation_predictions_reproduced": true,
+    "exported_metrics_recalculated": true,
+    "independent_metrics_match_training": true,
+    "training_only_baseline_reproduced": true,
+    "baseline_log_loss_independently_recalculated": true,
+    "test_not_evaluated": true,
+    "pinned_environment_matches_record": true,
+    "unit_tests_passed": true
+  },
+  "tolerances": {
+    "relative": 1e-06,
+    "absolute": 1e-07
+  },
+  "test_evaluated": false,
+  "verification_environment": {
+    "python": "3.14.2",
+    "torch_build": "2.14.0+cpu",
+    "dependencies": {
+      "filelock": "4.0.3",
+      "fsspec": "2026.9.0",
+      "jinja2": "3.1.6",
+      "markupsafe": "3.0.3",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "packaging": "26.0",
+      "setuptools": "84.0.0",
+      "sympy": "1.14.0",
+      "torch": "2.14.0",
+      "typing-extensions": "4.15.0"
+    },
+    "device": "cpu"
+  },
+  "recorded_environment_matches_current": true,
+  "unit_tests_run": 20,
+  "validation_examples": 380,
+  "independent_validation_metrics": {
+    "split": "val",
+    "examples": 380,
+    "log_loss": 1.0481606999107256,
+    "accuracy": 0.4763157894736842,
+    "brier_score": 0.6273670466003504,
+    "class_order": [
+      "home_win",
+      "draw",
+      "away_win"
+    ],
+    "confusion_matrix": [
+      [
+        123,
+        0,
+        21
+      ],
+      [
+        54,
+        0,
+        29
+      ],
+      [
+        95,
+        0,
+        58
+      ]
+    ],
+    "confusion_matrix_axes": "rows=true, columns=predicted",
+    "brier_definition": "mean sum of squared errors across the three classes",
+    "calculation": "Python math from exported probabilities; natural logarithm"
+  },
+  "checkpoint_sha256": "281fbc5da5e532e370ac9d237f134de21cbb1bcf1a2d1a9826c7060a4e4c07ac"
+}

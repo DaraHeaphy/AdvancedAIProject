@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 # Keep run JSON records visible; only binary checkpoints are excluded.
 /runs/**/*.pt
+# Bundles and source snapshots remain local; compact evidence records are tracked.
+/runs/**/source/
+/evidence_bundles/

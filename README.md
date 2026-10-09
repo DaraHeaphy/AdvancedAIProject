@@ -85,12 +85,14 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
-The checks should finish with `Ran 12 tests` and `OK`: five existing data tests
-and seven model/pipeline tests. The new checks cover both positional settings,
+The checks should finish with `Ran 20 tests` and `OK`: five data tests,
+seven model/pipeline tests and eight evidence tests. The checks cover both positional settings,
 finite `[batch, 3]` logits, usable gradients, equal parameter counts, probability
 sums, exact checkpoint reloads, independent history permutations, weighted
 validation loss, a training-only frequency baseline and reproducible distinct
 runs. Small pipeline tests supply only training and validation datasets.
+Evidence checks cover independently calculated metrics, invalid probabilities,
+dependency pins, corrupted artifacts, safe paths and bundle contents/hashes.
 
 ## Model and training (Tiernan's half)
 
@@ -144,12 +146,84 @@ directory. Existing run directories are never reused. Each directory contains:
 | `summary.json` | Parameter count, training-loop time, best epoch and verified reload metrics |
 | `validation_prediction.json` | Fixture metadata, true label and three probabilities from the reloaded best model |
 | `best.pt` | Best model weights, fixed position buffer, model/run configuration and selected epoch |
+| `validation_predictions.json` | Every validation fixture, true label and three probabilities, in dataset order |
+| `validation_metrics.json` | Independently calculated log loss, accuracy, Brier score and confusion matrix |
+| `provenance.json` | Git commit/dirty status, training command and SHA-256 hashes of source snapshots |
+| `requirements-lock.txt` | Exact installed versions of the active dependency closure |
+| `source/` | Source and test files copied before training for portable verification |
+| `verification.json` | Dated automatic checks with tolerances, pass/fail results and current environment |
 
 The loader prepares all three datasets, but the training and prediction commands
 use only training and validation. No test metrics or test predictions are
 calculated. The constant baseline predicts the training class proportions for
 every validation fixture and selects the training majority class for accuracy;
 validation frequencies do not fit the baseline.
+
+New training runs automatically export and verify this evidence. The original
+5 October record is preserved; it predates these additions. Validation export
+uses double-precision softmax on the model's logits, and Python's `math` module
+recalculates metrics independently of PyTorch cross-entropy. Verification uses
+relative tolerance `1e-6` and absolute tolerance `1e-7` for metric comparisons.
+The confusion matrix has true classes in rows and predicted classes in columns,
+in home-win/draw/away-win order. Brier score is the mean sum of the three squared
+probability errors. These are all validation results.
+
+## One-command evidence demonstration
+
+In **PowerShell**, from the repository root:
+
+```powershell
+Set-Location C:\Users\User\repos\AdvancedAIProject
+python evidence.py demo
+```
+
+This runs the test suite, trains the default ten-epoch reference condition
+(`none`, seed 42, CPU), verifies its artifacts and creates a new
+`evidence_bundles/<run-name>.zip`. Success prints `Verified run:` and
+`Evidence bundle:`; the run's `verification.json` has `passed: true`.
+Tests must pass before demonstration training starts. Run and ZIP names are
+distinct, and existing ZIPs are never overwritten. For a comparison demonstration:
+
+```powershell
+python evidence.py demo --positional-encoding sinusoidal --seed 42
+```
+
+The ZIP includes the saved checkpoint, all run records, source/test snapshots,
+the input `dataset/matches.csv`, a hash manifest and `EVIDENCE_README.md` with
+installation and verification commands. It contains only explicitly selected
+project files. Source snapshots and ZIP bundles are ignored by Git; the compact
+JSON evidence and run dependency pins remain visible to Git.
+
+The root `requirements-lock.txt` pins the tested Windows/Python 3.14.2 dependency
+set, including transitive dependencies. Each run also generates its own lock
+from the installed active dependencies. To install the pinned reference environment:
+
+```powershell
+python -m pip install -r requirements-lock.txt
+```
+
+Package pins do not guarantee identical hardware or PyTorch build. The run's
+`environment.json` records both; verification reports whether its current
+environment matches the original. Git's dirty flag is recorded honestly and
+source hashes identify the exact executed files even without a commit.
+
+To verify an evidence-enabled run or create another bundle, replace `<run-name>`
+with its actual directory name:
+
+```powershell
+python evidence.py verify --run-dir runs/<run-name>
+python evidence.py bundle --run-dir runs/<run-name> --output evidence_bundles/<run-name>-copy.zip
+```
+
+Verification checks source/input hashes, checkpoint configuration and selection,
+epoch completeness, all exported fixtures, independent metrics, baseline results
+and checkpoint predictions. Failures are saved with `passed: false` and the
+command exits unsuccessfully. Changed source files or data fail verification;
+use the source snapshot in the extracted bundle to verify an older run.
+An extracted bundle can verify and predict with its checkpoint immediately
+after dependencies are installed. The data loader's conservative chronological
+history policy and final-test reservation still apply. This is pipeline evidence;
+the matched-seed research comparison and final held-out evaluation remain future work.
 
 ## Reload a checkpoint and predict
 

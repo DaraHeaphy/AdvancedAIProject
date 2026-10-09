@@ -1,0 +1,17 @@
+{
+  "started_at_utc": "2026-10-09T08:38:12.154817+00:00",
+  "training_seconds": 12.72061560000293,
+  "parameter_count": 8867,
+  "best_epoch": 1,
+  "best_validation_log_loss": 1.0481606583846244,
+  "best_validation_accuracy": 0.4763157894736842,
+  "checkpoint": "best.pt",
+  "checkpoint_reload_verified": true,
+  "reloaded_validation_metrics": {
+    "log_loss": 1.0481606583846244,
+    "accuracy": 0.4763157894736842
+  },
+  "test_evaluated": false,
+  "training_examples": 6912,
+  "validation_examples": 380
+}

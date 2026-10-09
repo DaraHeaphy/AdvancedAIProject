@@ -1,0 +1,5702 @@
+[
+  {
+    "split": "val",
+    "index": 0,
+    "fixture_id": "578653",
+    "home": "Fulham",
+    "away": "Arsenal",
+    "kickoff": "2020-09-12T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3105281868383065,
+      "draw": 0.2867839852219392,
+      "away_win": 0.40268782793975433
+    }
+  },
+  {
+    "split": "val",
+    "index": 1,
+    "fixture_id": "578658",
+    "home": "Crystal Palace",
+    "away": "Southampton",
+    "kickoff": "2020-09-12T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.25661059099473055,
+      "draw": 0.2632484049573073,
+      "away_win": 0.4801410040479622
+    }
+  },
+  {
+    "split": "val",
+    "index": 2,
+    "fixture_id": "578655",
+    "home": "Liverpool",
+    "away": "Leeds United",
+    "kickoff": "2020-09-12T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.580476946256021,
+      "draw": 0.2534108415453328,
+      "away_win": 0.16611221219864622
+    }
+  },
+  {
+    "split": "val",
+    "index": 3,
+    "fixture_id": "578657",
+    "home": "West Ham United",
+    "away": "Newcastle United",
+    "kickoff": "2020-09-12T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.447768476464124,
+      "draw": 0.2815095095732275,
+      "away_win": 0.2707220139626484
+    }
+  },
+  {
+    "split": "val",
+    "index": 4,
+    "fixture_id": "578656",
+    "home": "West Bromwich Albion",
+    "away": "Leicester City",
+    "kickoff": "2020-09-13T13:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3623446293574642,
+      "draw": 0.29230262836251153,
+      "away_win": 0.34535274228002427
+    }
+  },
+  {
+    "split": "val",
+    "index": 5,
+    "fixture_id": "578654",
+    "home": "Tottenham Hotspur",
+    "away": "Everton",
+    "kickoff": "2020-09-13T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5892069051084714,
+      "draw": 0.25233866883049444,
+      "away_win": 0.15845442606103402
+    }
+  },
+  {
+    "split": "val",
+    "index": 6,
+    "fixture_id": "578652",
+    "home": "Sheffield United",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-09-14T17:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.318723616226973,
+      "draw": 0.28443798232587414,
+      "away_win": 0.396838401447153
+    }
+  },
+  {
+    "split": "val",
+    "index": 7,
+    "fixture_id": "578651",
+    "home": "Brighton & Hove Albion",
+    "away": "Chelsea",
+    "kickoff": "2020-09-14T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2753569319226972,
+      "draw": 0.2696122111187648,
+      "away_win": 0.455030856958538
+    }
+  },
+  {
+    "split": "val",
+    "index": 8,
+    "fixture_id": "578649",
+    "home": "Everton",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-09-19T11:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.45850395423950785,
+      "draw": 0.28867884354483025,
+      "away_win": 0.25281720221566195
+    }
+  },
+  {
+    "split": "val",
+    "index": 9,
+    "fixture_id": "578644",
+    "home": "Leeds United",
+    "away": "Fulham",
+    "kickoff": "2020-09-19T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4120887324898706,
+      "draw": 0.29835880235408735,
+      "away_win": 0.2895524651560422
+    }
+  },
+  {
+    "split": "val",
+    "index": 10,
+    "fixture_id": "578643",
+    "home": "Manchester United",
+    "away": "Crystal Palace",
+    "kickoff": "2020-09-19T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.7292276942372998,
+      "draw": 0.19374801620028254,
+      "away_win": 0.07702428956241766
+    }
+  },
+  {
+    "split": "val",
+    "index": 11,
+    "fixture_id": "578650",
+    "home": "Arsenal",
+    "away": "West Ham United",
+    "kickoff": "2020-09-19T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5624742586625897,
+      "draw": 0.24803440878474195,
+      "away_win": 0.1894913325526684
+    }
+  },
+  {
+    "split": "val",
+    "index": 12,
+    "fixture_id": "578648",
+    "home": "Southampton",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-09-20T11:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44917102491960287,
+      "draw": 0.2563405601213249,
+      "away_win": 0.2944884149590724
+    }
+  },
+  {
+    "split": "val",
+    "index": 13,
+    "fixture_id": "578641",
+    "home": "Newcastle United",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-09-20T13:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.48448762409816315,
+      "draw": 0.2844275122439755,
+      "away_win": 0.2310848636578614
+    }
+  },
+  {
+    "split": "val",
+    "index": 14,
+    "fixture_id": "578645",
+    "home": "Chelsea",
+    "away": "Liverpool",
+    "kickoff": "2020-09-20T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4319891081935441,
+      "draw": 0.25986226696899783,
+      "away_win": 0.3081486248374582
+    }
+  },
+  {
+    "split": "val",
+    "index": 15,
+    "fixture_id": "578642",
+    "home": "Leicester City",
+    "away": "Burnley",
+    "kickoff": "2020-09-20T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4541918876721083,
+      "draw": 0.2770583174224728,
+      "away_win": 0.26874979490541895
+    }
+  },
+  {
+    "split": "val",
+    "index": 16,
+    "fixture_id": "578647",
+    "home": "Aston Villa",
+    "away": "Sheffield United",
+    "kickoff": "2020-09-21T17:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4153122443992495,
+      "draw": 0.30054833031818146,
+      "away_win": 0.28413942528256897
+    }
+  },
+  {
+    "split": "val",
+    "index": 17,
+    "fixture_id": "578646",
+    "home": "Wolverhampton Wanderers",
+    "away": "Manchester City",
+    "kickoff": "2020-09-21T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.22290839519177352,
+      "draw": 0.22588350658379466,
+      "away_win": 0.5512080982244318
+    }
+  },
+  {
+    "split": "val",
+    "index": 18,
+    "fixture_id": "578637",
+    "home": "Brighton & Hove Albion",
+    "away": "Manchester United",
+    "kickoff": "2020-09-26T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.21032830274456943,
+      "draw": 0.23945365033993932,
+      "away_win": 0.5502180469154911
+    }
+  },
+  {
+    "split": "val",
+    "index": 19,
+    "fixture_id": "578634",
+    "home": "Crystal Palace",
+    "away": "Everton",
+    "kickoff": "2020-09-26T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3336101240489198,
+      "draw": 0.2868103887324015,
+      "away_win": 0.3795794872186786
+    }
+  },
+  {
+    "split": "val",
+    "index": 20,
+    "fixture_id": "578633",
+    "home": "West Bromwich Albion",
+    "away": "Chelsea",
+    "kickoff": "2020-09-26T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3370069255013333,
+      "draw": 0.27868549915939245,
+      "away_win": 0.3843075753392743
+    }
+  },
+  {
+    "split": "val",
+    "index": 21,
+    "fixture_id": "578639",
+    "home": "Burnley",
+    "away": "Southampton",
+    "kickoff": "2020-09-26T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3927896335139936,
+      "draw": 0.2831335419251633,
+      "away_win": 0.324076824560843
+    }
+  },
+  {
+    "split": "val",
+    "index": 22,
+    "fixture_id": "578635",
+    "home": "Sheffield United",
+    "away": "Leeds United",
+    "kickoff": "2020-09-27T11:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44191209619071803,
+      "draw": 0.29241612508705256,
+      "away_win": 0.2656717787222293
+    }
+  },
+  {
+    "split": "val",
+    "index": 23,
+    "fixture_id": "578638",
+    "home": "Tottenham Hotspur",
+    "away": "Newcastle United",
+    "kickoff": "2020-09-27T13:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5955020262429067,
+      "draw": 0.24963476900972797,
+      "away_win": 0.15486320474736542
+    }
+  },
+  {
+    "split": "val",
+    "index": 24,
+    "fixture_id": "578636",
+    "home": "Manchester City",
+    "away": "Leicester City",
+    "kickoff": "2020-09-27T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6877721864168279,
+      "draw": 0.2010102485365537,
+      "away_win": 0.11121756504661856
+    }
+  },
+  {
+    "split": "val",
+    "index": 25,
+    "fixture_id": "578640",
+    "home": "West Ham United",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-09-27T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38606029902101013,
+      "draw": 0.2793965339588856,
+      "away_win": 0.3345431670201044
+    }
+  },
+  {
+    "split": "val",
+    "index": 26,
+    "fixture_id": "578632",
+    "home": "Fulham",
+    "away": "Aston Villa",
+    "kickoff": "2020-09-28T16:45:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.38201604088338686,
+      "draw": 0.2918600492833887,
+      "away_win": 0.3261239098332244
+    }
+  },
+  {
+    "split": "val",
+    "index": 27,
+    "fixture_id": "578631",
+    "home": "Liverpool",
+    "away": "Arsenal",
+    "kickoff": "2020-09-28T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3738049238358948,
+      "draw": 0.2476991776923345,
+      "away_win": 0.37849589847177084
+    }
+  },
+  {
+    "split": "val",
+    "index": 28,
+    "fixture_id": "578623",
+    "home": "Chelsea",
+    "away": "Crystal Palace",
+    "kickoff": "2020-10-03T11:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5148945385398698,
+      "draw": 0.27143849800068265,
+      "away_win": 0.21366696345944766
+    }
+  },
+  {
+    "split": "val",
+    "index": 29,
+    "fixture_id": "578621",
+    "home": "Everton",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-10-03T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.48511085003411186,
+      "draw": 0.2806770224229067,
+      "away_win": 0.23421212754298154
+    }
+  },
+  {
+    "split": "val",
+    "index": 30,
+    "fixture_id": "578626",
+    "home": "Leeds United",
+    "away": "Manchester City",
+    "kickoff": "2020-10-03T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.18207169194478998,
+      "draw": 0.22608092497261645,
+      "away_win": 0.5918473830825934
+    }
+  },
+  {
+    "split": "val",
+    "index": 31,
+    "fixture_id": "578622",
+    "home": "Newcastle United",
+    "away": "Burnley",
+    "kickoff": "2020-10-03T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.35499007948906314,
+      "draw": 0.27726299970379964,
+      "away_win": 0.36774692080713717
+    }
+  },
+  {
+    "split": "val",
+    "index": 32,
+    "fixture_id": "578629",
+    "home": "Southampton",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-10-04T11:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5326184466854538,
+      "draw": 0.26212920546503365,
+      "away_win": 0.20525234784951263
+    }
+  },
+  {
+    "split": "val",
+    "index": 33,
+    "fixture_id": "578630",
+    "home": "Leicester City",
+    "away": "West Ham United",
+    "kickoff": "2020-10-04T11:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.41561153614751134,
+      "draw": 0.2622211003739396,
+      "away_win": 0.3221673634785489
+    }
+  },
+  {
+    "split": "val",
+    "index": 34,
+    "fixture_id": "578624",
+    "home": "Wolverhampton Wanderers",
+    "away": "Fulham",
+    "kickoff": "2020-10-04T13:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4732669429163079,
+      "draw": 0.29289603962715516,
+      "away_win": 0.23383701745653698
+    }
+  },
+  {
+    "split": "val",
+    "index": 35,
+    "fixture_id": "578627",
+    "home": "Arsenal",
+    "away": "Sheffield United",
+    "kickoff": "2020-10-04T13:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5423921098820581,
+      "draw": 0.26054673423727254,
+      "away_win": 0.1970611558806694
+    }
+  },
+  {
+    "split": "val",
+    "index": 36,
+    "fixture_id": "578628",
+    "home": "Manchester United",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-10-04T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5433212443368327,
+      "draw": 0.2358804421747186,
+      "away_win": 0.2207983134884488
+    }
+  },
+  {
+    "split": "val",
+    "index": 37,
+    "fixture_id": "578625",
+    "home": "Aston Villa",
+    "away": "Liverpool",
+    "kickoff": "2020-10-04T18:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3716908805187323,
+      "draw": 0.2689393724369936,
+      "away_win": 0.35936974704427427
+    }
+  },
+  {
+    "split": "val",
+    "index": 38,
+    "fixture_id": "578616",
+    "home": "Everton",
+    "away": "Liverpool",
+    "kickoff": "2020-10-17T11:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3817587821527486,
+      "draw": 0.2645242843204843,
+      "away_win": 0.353716933526767
+    }
+  },
+  {
+    "split": "val",
+    "index": 39,
+    "fixture_id": "578618",
+    "home": "Chelsea",
+    "away": "Southampton",
+    "kickoff": "2020-10-17T14:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4555090675781333,
+      "draw": 0.25854567621055824,
+      "away_win": 0.28594525621130856
+    }
+  },
+  {
+    "split": "val",
+    "index": 40,
+    "fixture_id": "578611",
+    "home": "Manchester City",
+    "away": "Arsenal",
+    "kickoff": "2020-10-17T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5993120882085279,
+      "draw": 0.22380623284576334,
+      "away_win": 0.17688167894570883
+    }
+  },
+  {
+    "split": "val",
+    "index": 41,
+    "fixture_id": "578617",
+    "home": "Newcastle United",
+    "away": "Manchester United",
+    "kickoff": "2020-10-17T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.294516821743761,
+      "draw": 0.26928638285964424,
+      "away_win": 0.4361967953965947
+    }
+  },
+  {
+    "split": "val",
+    "index": 42,
+    "fixture_id": "578615",
+    "home": "Sheffield United",
+    "away": "Fulham",
+    "kickoff": "2020-10-18T11:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.423042304971765,
+      "draw": 0.3029908105789473,
+      "away_win": 0.2739668844492878
+    }
+  },
+  {
+    "split": "val",
+    "index": 43,
+    "fixture_id": "578613",
+    "home": "Crystal Palace",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-10-18T13:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3853165815472626,
+      "draw": 0.299535364186594,
+      "away_win": 0.31514805426614334
+    }
+  },
+  {
+    "split": "val",
+    "index": 44,
+    "fixture_id": "578619",
+    "home": "Tottenham Hotspur",
+    "away": "West Ham United",
+    "kickoff": "2020-10-18T15:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5184890597614707,
+      "draw": 0.2452444839184245,
+      "away_win": 0.23626645632010465
+    }
+  },
+  {
+    "split": "val",
+    "index": 45,
+    "fixture_id": "578612",
+    "home": "Leicester City",
+    "away": "Aston Villa",
+    "kickoff": "2020-10-18T18:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3933907399541142,
+      "draw": 0.26683371901992725,
+      "away_win": 0.3397755410259585
+    }
+  },
+  {
+    "split": "val",
+    "index": 46,
+    "fixture_id": "578614",
+    "home": "West Bromwich Albion",
+    "away": "Burnley",
+    "kickoff": "2020-10-19T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3898787677171746,
+      "draw": 0.28881037224988226,
+      "away_win": 0.32131086003294307
+    }
+  },
+  {
+    "split": "val",
+    "index": 47,
+    "fixture_id": "578620",
+    "home": "Leeds United",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-10-19T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3640814640999357,
+      "draw": 0.2931750135588123,
+      "away_win": 0.342743522341252
+    }
+  },
+  {
+    "split": "val",
+    "index": 48,
+    "fixture_id": "578604",
+    "home": "Aston Villa",
+    "away": "Leeds United",
+    "kickoff": "2020-10-23T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5924475951041384,
+      "draw": 0.25416650049393874,
+      "away_win": 0.15338590440192287
+    }
+  },
+  {
+    "split": "val",
+    "index": 49,
+    "fixture_id": "578606",
+    "home": "West Ham United",
+    "away": "Manchester City",
+    "kickoff": "2020-10-24T11:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.30691079249653075,
+      "draw": 0.24190004229367496,
+      "away_win": 0.45118916520979424
+    }
+  },
+  {
+    "split": "val",
+    "index": 50,
+    "fixture_id": "578602",
+    "home": "Fulham",
+    "away": "Crystal Palace",
+    "kickoff": "2020-10-24T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4200773356134406,
+      "draw": 0.29899350945369774,
+      "away_win": 0.2809291549328615
+    }
+  },
+  {
+    "split": "val",
+    "index": 51,
+    "fixture_id": "578601",
+    "home": "Manchester United",
+    "away": "Chelsea",
+    "kickoff": "2020-10-24T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4604159483569767,
+      "draw": 0.2631700547683052,
+      "away_win": 0.2764139968747183
+    }
+  },
+  {
+    "split": "val",
+    "index": 52,
+    "fixture_id": "578608",
+    "home": "Liverpool",
+    "away": "Sheffield United",
+    "kickoff": "2020-10-24T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5190779796236483,
+      "draw": 0.26835630956395984,
+      "away_win": 0.21256571081239176
+    }
+  },
+  {
+    "split": "val",
+    "index": 53,
+    "fixture_id": "578603",
+    "home": "Southampton",
+    "away": "Everton",
+    "kickoff": "2020-10-25T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.456677482083151,
+      "draw": 0.2615204818839401,
+      "away_win": 0.2818020360329089
+    }
+  },
+  {
+    "split": "val",
+    "index": 54,
+    "fixture_id": "578607",
+    "home": "Wolverhampton Wanderers",
+    "away": "Newcastle United",
+    "kickoff": "2020-10-25T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5109453389477511,
+      "draw": 0.2859521555214126,
+      "away_win": 0.20310250553083628
+    }
+  },
+  {
+    "split": "val",
+    "index": 55,
+    "fixture_id": "578605",
+    "home": "Arsenal",
+    "away": "Leicester City",
+    "kickoff": "2020-10-25T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44560728371817543,
+      "draw": 0.2774211621129369,
+      "away_win": 0.27697155416888763
+    }
+  },
+  {
+    "split": "val",
+    "index": 56,
+    "fixture_id": "578610",
+    "home": "Brighton & Hove Albion",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-10-26T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.41189357787717396,
+      "draw": 0.29394731769322063,
+      "away_win": 0.29415910442960547
+    }
+  },
+  {
+    "split": "val",
+    "index": 57,
+    "fixture_id": "578609",
+    "home": "Burnley",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-10-26T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.25792207104620996,
+      "draw": 0.24714172453077496,
+      "away_win": 0.4949362044230149
+    }
+  },
+  {
+    "split": "val",
+    "index": 58,
+    "fixture_id": "578594",
+    "home": "Wolverhampton Wanderers",
+    "away": "Crystal Palace",
+    "kickoff": "2020-10-30T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5103421748816933,
+      "draw": 0.27901415730188545,
+      "away_win": 0.21064366781642122
+    }
+  },
+  {
+    "split": "val",
+    "index": 59,
+    "fixture_id": "578597",
+    "home": "Sheffield United",
+    "away": "Manchester City",
+    "kickoff": "2020-10-31T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.1624293649358184,
+      "draw": 0.21580048120857306,
+      "away_win": 0.6217701538556084
+    }
+  },
+  {
+    "split": "val",
+    "index": 60,
+    "fixture_id": "578593",
+    "home": "Burnley",
+    "away": "Chelsea",
+    "kickoff": "2020-10-31T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3530784595778474,
+      "draw": 0.2825085034021683,
+      "away_win": 0.36441303701998434
+    }
+  },
+  {
+    "split": "val",
+    "index": 61,
+    "fixture_id": "578600",
+    "home": "Liverpool",
+    "away": "West Ham United",
+    "kickoff": "2020-10-31T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3597339038431169,
+      "draw": 0.25620896928588804,
+      "away_win": 0.384057126870995
+    }
+  },
+  {
+    "split": "val",
+    "index": 62,
+    "fixture_id": "578598",
+    "home": "Aston Villa",
+    "away": "Southampton",
+    "kickoff": "2020-11-01T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44619466625015947,
+      "draw": 0.26373237668746,
+      "away_win": 0.2900729570623806
+    }
+  },
+  {
+    "split": "val",
+    "index": 63,
+    "fixture_id": "578595",
+    "home": "Newcastle United",
+    "away": "Everton",
+    "kickoff": "2020-11-01T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.366009973928193,
+      "draw": 0.2826966518028898,
+      "away_win": 0.3512933742689171
+    }
+  },
+  {
+    "split": "val",
+    "index": 64,
+    "fixture_id": "578591",
+    "home": "Manchester United",
+    "away": "Arsenal",
+    "kickoff": "2020-11-01T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.47021499410011824,
+      "draw": 0.27138398071019165,
+      "away_win": 0.25840102518969005
+    }
+  },
+  {
+    "split": "val",
+    "index": 65,
+    "fixture_id": "578592",
+    "home": "Tottenham Hotspur",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-11-01T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6375759890160942,
+      "draw": 0.2264633409057341,
+      "away_win": 0.13596067007817167
+    }
+  },
+  {
+    "split": "val",
+    "index": 66,
+    "fixture_id": "578599",
+    "home": "Fulham",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-11-02T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38827465788621185,
+      "draw": 0.3022911688105295,
+      "away_win": 0.3094341733032587
+    }
+  },
+  {
+    "split": "val",
+    "index": 67,
+    "fixture_id": "578596",
+    "home": "Leeds United",
+    "away": "Leicester City",
+    "kickoff": "2020-11-02T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3993053775599155,
+      "draw": 0.27934187561749735,
+      "away_win": 0.32135274682258713
+    }
+  },
+  {
+    "split": "val",
+    "index": 68,
+    "fixture_id": "578582",
+    "home": "Brighton & Hove Albion",
+    "away": "Burnley",
+    "kickoff": "2020-11-06T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4721190735445587,
+      "draw": 0.28475130140733407,
+      "away_win": 0.24312962504810723
+    }
+  },
+  {
+    "split": "val",
+    "index": 69,
+    "fixture_id": "578587",
+    "home": "Southampton",
+    "away": "Newcastle United",
+    "kickoff": "2020-11-06T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5506435590632577,
+      "draw": 0.25603043271478015,
+      "away_win": 0.1933260082219622
+    }
+  },
+  {
+    "split": "val",
+    "index": 70,
+    "fixture_id": "578586",
+    "home": "Everton",
+    "away": "Manchester United",
+    "kickoff": "2020-11-07T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.46145656798796175,
+      "draw": 0.26600534507407847,
+      "away_win": 0.2725380869379597
+    }
+  },
+  {
+    "split": "val",
+    "index": 71,
+    "fixture_id": "578584",
+    "home": "Crystal Palace",
+    "away": "Leeds United",
+    "kickoff": "2020-11-07T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38546651103825413,
+      "draw": 0.2923350345101521,
+      "away_win": 0.32219845445159384
+    }
+  },
+  {
+    "split": "val",
+    "index": 72,
+    "fixture_id": "578588",
+    "home": "Chelsea",
+    "away": "Sheffield United",
+    "kickoff": "2020-11-07T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6054894324466794,
+      "draw": 0.25234236477133076,
+      "away_win": 0.14216820278199
+    }
+  },
+  {
+    "split": "val",
+    "index": 73,
+    "fixture_id": "578583",
+    "home": "West Ham United",
+    "away": "Fulham",
+    "kickoff": "2020-11-07T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5373551369652988,
+      "draw": 0.2680244697918652,
+      "away_win": 0.19462039324283603
+    }
+  },
+  {
+    "split": "val",
+    "index": 74,
+    "fixture_id": "578589",
+    "home": "West Bromwich Albion",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-11-08T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.20624184827229822,
+      "draw": 0.23497297991457092,
+      "away_win": 0.5587851718131308
+    }
+  },
+  {
+    "split": "val",
+    "index": 75,
+    "fixture_id": "578590",
+    "home": "Leicester City",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-11-08T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4709410496434712,
+      "draw": 0.2677474176956169,
+      "away_win": 0.2613115326609119
+    }
+  },
+  {
+    "split": "val",
+    "index": 76,
+    "fixture_id": "578585",
+    "home": "Manchester City",
+    "away": "Liverpool",
+    "kickoff": "2020-11-08T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.6011280810797172,
+      "draw": 0.2262022324987198,
+      "away_win": 0.172669686421563
+    }
+  },
+  {
+    "split": "val",
+    "index": 77,
+    "fixture_id": "578581",
+    "home": "Arsenal",
+    "away": "Aston Villa",
+    "kickoff": "2020-11-08T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3544697428399751,
+      "draw": 0.2594043065525979,
+      "away_win": 0.386125950607427
+    }
+  },
+  {
+    "split": "val",
+    "index": 78,
+    "fixture_id": "578573",
+    "home": "Newcastle United",
+    "away": "Chelsea",
+    "kickoff": "2020-11-21T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2749062391423361,
+      "draw": 0.26125134362539215,
+      "away_win": 0.4638424172322718
+    }
+  },
+  {
+    "split": "val",
+    "index": 79,
+    "fixture_id": "578572",
+    "home": "Aston Villa",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-11-21T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5637060983399867,
+      "draw": 0.2492078627435766,
+      "away_win": 0.1870860389164367
+    }
+  },
+  {
+    "split": "val",
+    "index": 80,
+    "fixture_id": "578577",
+    "home": "Tottenham Hotspur",
+    "away": "Manchester City",
+    "kickoff": "2020-11-21T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.46573723671040573,
+      "draw": 0.24314189497304603,
+      "away_win": 0.29112086831654826
+    }
+  },
+  {
+    "split": "val",
+    "index": 81,
+    "fixture_id": "578579",
+    "home": "Manchester United",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-11-21T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5233884952643918,
+      "draw": 0.27946030221917467,
+      "away_win": 0.1971512025164336
+    }
+  },
+  {
+    "split": "val",
+    "index": 82,
+    "fixture_id": "578575",
+    "home": "Fulham",
+    "away": "Everton",
+    "kickoff": "2020-11-22T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.322119357563211,
+      "draw": 0.287084287780025,
+      "away_win": 0.39079635465676393
+    }
+  },
+  {
+    "split": "val",
+    "index": 83,
+    "fixture_id": "578580",
+    "home": "Sheffield United",
+    "away": "West Ham United",
+    "kickoff": "2020-11-22T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2811618924035352,
+      "draw": 0.27608468519148127,
+      "away_win": 0.44275342240498344
+    }
+  },
+  {
+    "split": "val",
+    "index": 84,
+    "fixture_id": "578571",
+    "home": "Leeds United",
+    "away": "Arsenal",
+    "kickoff": "2020-11-22T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4082104103346797,
+      "draw": 0.2829034132183701,
+      "away_win": 0.3088861764469502
+    }
+  },
+  {
+    "split": "val",
+    "index": 85,
+    "fixture_id": "578576",
+    "home": "Liverpool",
+    "away": "Leicester City",
+    "kickoff": "2020-11-22T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43447224043243704,
+      "draw": 0.2635339681464454,
+      "away_win": 0.30199379142111743
+    }
+  },
+  {
+    "split": "val",
+    "index": 86,
+    "fixture_id": "578574",
+    "home": "Burnley",
+    "away": "Crystal Palace",
+    "kickoff": "2020-11-23T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3730150700802024,
+      "draw": 0.2921190551253802,
+      "away_win": 0.3348658747944173
+    }
+  },
+  {
+    "split": "val",
+    "index": 87,
+    "fixture_id": "578578",
+    "home": "Wolverhampton Wanderers",
+    "away": "Southampton",
+    "kickoff": "2020-11-23T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.32364875128004444,
+      "draw": 0.26980516617432,
+      "away_win": 0.4065460825456356
+    }
+  },
+  {
+    "split": "val",
+    "index": 88,
+    "fixture_id": "578567",
+    "home": "Crystal Palace",
+    "away": "Newcastle United",
+    "kickoff": "2020-11-27T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.45545596205672884,
+      "draw": 0.28493825162531394,
+      "away_win": 0.25960578631795717
+    }
+  },
+  {
+    "split": "val",
+    "index": 89,
+    "fixture_id": "578565",
+    "home": "Brighton & Hove Albion",
+    "away": "Liverpool",
+    "kickoff": "2020-11-28T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3628935884010477,
+      "draw": 0.2628551837582213,
+      "away_win": 0.3742512278407309
+    }
+  },
+  {
+    "split": "val",
+    "index": 90,
+    "fixture_id": "578562",
+    "home": "Manchester City",
+    "away": "Burnley",
+    "kickoff": "2020-11-28T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.568782577650226,
+      "draw": 0.2605881940269972,
+      "away_win": 0.170629228322777
+    }
+  },
+  {
+    "split": "val",
+    "index": 91,
+    "fixture_id": "578564",
+    "home": "Everton",
+    "away": "Leeds United",
+    "kickoff": "2020-11-28T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4613096115646893,
+      "draw": 0.27463967805396766,
+      "away_win": 0.264050710381343
+    }
+  },
+  {
+    "split": "val",
+    "index": 92,
+    "fixture_id": "578568",
+    "home": "West Bromwich Albion",
+    "away": "Sheffield United",
+    "kickoff": "2020-11-28T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4032709831515783,
+      "draw": 0.31478209151890113,
+      "away_win": 0.28194692532952065
+    }
+  },
+  {
+    "split": "val",
+    "index": 93,
+    "fixture_id": "578566",
+    "home": "Southampton",
+    "away": "Manchester United",
+    "kickoff": "2020-11-29T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5085357175821472,
+      "draw": 0.2539868631649955,
+      "away_win": 0.2374774192528573
+    }
+  },
+  {
+    "split": "val",
+    "index": 94,
+    "fixture_id": "578569",
+    "home": "Chelsea",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-11-29T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4627267794488667,
+      "draw": 0.23808289730673388,
+      "away_win": 0.29919032324439954
+    }
+  },
+  {
+    "split": "val",
+    "index": 95,
+    "fixture_id": "578570",
+    "home": "Arsenal",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-11-29T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44656241857591633,
+      "draw": 0.2831316216744627,
+      "away_win": 0.27030595974962085
+    }
+  },
+  {
+    "split": "val",
+    "index": 96,
+    "fixture_id": "578563",
+    "home": "Leicester City",
+    "away": "Fulham",
+    "kickoff": "2020-11-30T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.540339348835852,
+      "draw": 0.2716800198296041,
+      "away_win": 0.1879806313345439
+    }
+  },
+  {
+    "split": "val",
+    "index": 97,
+    "fixture_id": "578561",
+    "home": "West Ham United",
+    "away": "Aston Villa",
+    "kickoff": "2020-11-30T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3821492460785137,
+      "draw": 0.2583959546052337,
+      "away_win": 0.3594547993162526
+    }
+  },
+  {
+    "split": "val",
+    "index": 98,
+    "fixture_id": "578553",
+    "home": "Burnley",
+    "away": "Everton",
+    "kickoff": "2020-12-05T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.30687561784881606,
+      "draw": 0.28761207519577436,
+      "away_win": 0.4055123069554097
+    }
+  },
+  {
+    "split": "val",
+    "index": 99,
+    "fixture_id": "578554",
+    "home": "Manchester City",
+    "away": "Fulham",
+    "kickoff": "2020-12-05T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5713814296325216,
+      "draw": 0.25855605392858666,
+      "away_win": 0.1700625164388918
+    }
+  },
+  {
+    "split": "val",
+    "index": 100,
+    "fixture_id": "578557",
+    "home": "West Ham United",
+    "away": "Manchester United",
+    "kickoff": "2020-12-05T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4821068344867574,
+      "draw": 0.2606194353953259,
+      "away_win": 0.25727373011791665
+    }
+  },
+  {
+    "split": "val",
+    "index": 101,
+    "fixture_id": "578555",
+    "home": "Chelsea",
+    "away": "Leeds United",
+    "kickoff": "2020-12-05T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5882615563894921,
+      "draw": 0.24084543498786648,
+      "away_win": 0.1708930086226415
+    }
+  },
+  {
+    "split": "val",
+    "index": 102,
+    "fixture_id": "578552",
+    "home": "West Bromwich Albion",
+    "away": "Crystal Palace",
+    "kickoff": "2020-12-06T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3626477888730368,
+      "draw": 0.29727714143225703,
+      "away_win": 0.34007506969470613
+    }
+  },
+  {
+    "split": "val",
+    "index": 103,
+    "fixture_id": "578556",
+    "home": "Sheffield United",
+    "away": "Leicester City",
+    "kickoff": "2020-12-06T14:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2648752435788724,
+      "draw": 0.2729296917721893,
+      "away_win": 0.4621950646489384
+    }
+  },
+  {
+    "split": "val",
+    "index": 104,
+    "fixture_id": "578551",
+    "home": "Tottenham Hotspur",
+    "away": "Arsenal",
+    "kickoff": "2020-12-06T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6003155126829329,
+      "draw": 0.24219564078293188,
+      "away_win": 0.15748884653413522
+    }
+  },
+  {
+    "split": "val",
+    "index": 105,
+    "fixture_id": "578560",
+    "home": "Liverpool",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-12-06T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4802868837771992,
+      "draw": 0.26492016413829156,
+      "away_win": 0.25479295208450925
+    }
+  },
+  {
+    "split": "val",
+    "index": 106,
+    "fixture_id": "578559",
+    "home": "Brighton & Hove Albion",
+    "away": "Southampton",
+    "kickoff": "2020-12-07T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.36758821333786734,
+      "draw": 0.2722850591114369,
+      "away_win": 0.36012672755069575
+    }
+  },
+  {
+    "split": "val",
+    "index": 107,
+    "fixture_id": "578550",
+    "home": "Leeds United",
+    "away": "West Ham United",
+    "kickoff": "2020-12-11T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3353271459521443,
+      "draw": 0.2719324720600079,
+      "away_win": 0.3927403819878477
+    }
+  },
+  {
+    "split": "val",
+    "index": 108,
+    "fixture_id": "578541",
+    "home": "Wolverhampton Wanderers",
+    "away": "Aston Villa",
+    "kickoff": "2020-12-12T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.30661201456480563,
+      "draw": 0.27523113362200996,
+      "away_win": 0.41815685181318435
+    }
+  },
+  {
+    "split": "val",
+    "index": 109,
+    "fixture_id": "578549",
+    "home": "Newcastle United",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-12-12T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4794448400977989,
+      "draw": 0.2908677424916044,
+      "away_win": 0.22968741741059662
+    }
+  },
+  {
+    "split": "val",
+    "index": 110,
+    "fixture_id": "578546",
+    "home": "Manchester United",
+    "away": "Manchester City",
+    "kickoff": "2020-12-12T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3810368745674159,
+      "draw": 0.2666118325140879,
+      "away_win": 0.3523512929184962
+    }
+  },
+  {
+    "split": "val",
+    "index": 111,
+    "fixture_id": "578544",
+    "home": "Everton",
+    "away": "Chelsea",
+    "kickoff": "2020-12-12T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.2833446911773076,
+      "draw": 0.24539990504884232,
+      "away_win": 0.47125540377385006
+    }
+  },
+  {
+    "split": "val",
+    "index": 112,
+    "fixture_id": "578547",
+    "home": "Southampton",
+    "away": "Sheffield United",
+    "kickoff": "2020-12-13T12:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5824313251687029,
+      "draw": 0.2597202657728387,
+      "away_win": 0.1578484090584584
+    }
+  },
+  {
+    "split": "val",
+    "index": 113,
+    "fixture_id": "578548",
+    "home": "Crystal Palace",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-12-13T14:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.21779941352957954,
+      "draw": 0.22648146086791593,
+      "away_win": 0.5557191256025046
+    }
+  },
+  {
+    "split": "val",
+    "index": 114,
+    "fixture_id": "578545",
+    "home": "Fulham",
+    "away": "Liverpool",
+    "kickoff": "2020-12-13T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.2930299164567663,
+      "draw": 0.2633543312438886,
+      "away_win": 0.4436157522993452
+    }
+  },
+  {
+    "split": "val",
+    "index": 115,
+    "fixture_id": "578542",
+    "home": "Leicester City",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-12-13T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4671709355634814,
+      "draw": 0.2674494802331797,
+      "away_win": 0.2653795842033389
+    }
+  },
+  {
+    "split": "val",
+    "index": 116,
+    "fixture_id": "578543",
+    "home": "Arsenal",
+    "away": "Burnley",
+    "kickoff": "2020-12-13T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44259488672170727,
+      "draw": 0.3047135830268061,
+      "away_win": 0.25269153025148655
+    }
+  },
+  {
+    "split": "val",
+    "index": 117,
+    "fixture_id": "578535",
+    "home": "Wolverhampton Wanderers",
+    "away": "Chelsea",
+    "kickoff": "2020-12-15T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.22388729257749623,
+      "draw": 0.2497220783388599,
+      "away_win": 0.5263906290836439
+    }
+  },
+  {
+    "split": "val",
+    "index": 118,
+    "fixture_id": "578532",
+    "home": "Manchester City",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-12-15T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5432788469654721,
+      "draw": 0.2763204484151502,
+      "away_win": 0.18040070461937754
+    }
+  },
+  {
+    "split": "val",
+    "index": 119,
+    "fixture_id": "578537",
+    "home": "Leicester City",
+    "away": "Everton",
+    "kickoff": "2020-12-16T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.48390599759624003,
+      "draw": 0.2689457756930547,
+      "away_win": 0.24714822671070533
+    }
+  },
+  {
+    "split": "val",
+    "index": 120,
+    "fixture_id": "578539",
+    "home": "Leeds United",
+    "away": "Newcastle United",
+    "kickoff": "2020-12-16T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.41757734426533477,
+      "draw": 0.2888503039810262,
+      "away_win": 0.29357235175363905
+    }
+  },
+  {
+    "split": "val",
+    "index": 121,
+    "fixture_id": "578540",
+    "home": "Arsenal",
+    "away": "Southampton",
+    "kickoff": "2020-12-16T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.19886798053296237,
+      "draw": 0.24108585653294046,
+      "away_win": 0.5600461629340971
+    }
+  },
+  {
+    "split": "val",
+    "index": 122,
+    "fixture_id": "578531",
+    "home": "Liverpool",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-12-16T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3094855632306077,
+      "draw": 0.24808127470543087,
+      "away_win": 0.44243316206396144
+    }
+  },
+  {
+    "split": "val",
+    "index": 123,
+    "fixture_id": "578533",
+    "home": "Fulham",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-12-16T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4222128074380387,
+      "draw": 0.2916471790991867,
+      "away_win": 0.2861400134627745
+    }
+  },
+  {
+    "split": "val",
+    "index": 124,
+    "fixture_id": "578536",
+    "home": "West Ham United",
+    "away": "Crystal Palace",
+    "kickoff": "2020-12-16T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5539006635907483,
+      "draw": 0.25522759522489447,
+      "away_win": 0.1908717411843572
+    }
+  },
+  {
+    "split": "val",
+    "index": 125,
+    "fixture_id": "578534",
+    "home": "Aston Villa",
+    "away": "Burnley",
+    "kickoff": "2020-12-17T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5975999552151285,
+      "draw": 0.2537283377274487,
+      "away_win": 0.14867170705742266
+    }
+  },
+  {
+    "split": "val",
+    "index": 126,
+    "fixture_id": "578538",
+    "home": "Sheffield United",
+    "away": "Manchester United",
+    "kickoff": "2020-12-17T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.28114534591775553,
+      "draw": 0.2710897334573,
+      "away_win": 0.4477649206249446
+    }
+  },
+  {
+    "split": "val",
+    "index": 127,
+    "fixture_id": "578526",
+    "home": "Crystal Palace",
+    "away": "Liverpool",
+    "kickoff": "2020-12-19T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3748515421622697,
+      "draw": 0.2722890283887502,
+      "away_win": 0.3528594294489802
+    }
+  },
+  {
+    "split": "val",
+    "index": 128,
+    "fixture_id": "578527",
+    "home": "Southampton",
+    "away": "Manchester City",
+    "kickoff": "2020-12-19T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4911081205013966,
+      "draw": 0.24958437435969497,
+      "away_win": 0.2593075051389085
+    }
+  },
+  {
+    "split": "val",
+    "index": 129,
+    "fixture_id": "578521",
+    "home": "Everton",
+    "away": "Arsenal",
+    "kickoff": "2020-12-19T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.49319701603653454,
+      "draw": 0.27869316975870023,
+      "away_win": 0.22810981420476523
+    }
+  },
+  {
+    "split": "val",
+    "index": 130,
+    "fixture_id": "578523",
+    "home": "Newcastle United",
+    "away": "Fulham",
+    "kickoff": "2020-12-19T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4265039780570972,
+      "draw": 0.2864682037590298,
+      "away_win": 0.28702781818387296
+    }
+  },
+  {
+    "split": "val",
+    "index": 131,
+    "fixture_id": "578528",
+    "home": "Brighton & Hove Albion",
+    "away": "Sheffield United",
+    "kickoff": "2020-12-20T12:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.44690119467638073,
+      "draw": 0.30250870755618237,
+      "away_win": 0.25059009776743696
+    }
+  },
+  {
+    "split": "val",
+    "index": 132,
+    "fixture_id": "578525",
+    "home": "Tottenham Hotspur",
+    "away": "Leicester City",
+    "kickoff": "2020-12-20T14:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5919621655007187,
+      "draw": 0.24105515637117272,
+      "away_win": 0.16698267812810874
+    }
+  },
+  {
+    "split": "val",
+    "index": 133,
+    "fixture_id": "578524",
+    "home": "Manchester United",
+    "away": "Leeds United",
+    "kickoff": "2020-12-20T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4897242985342927,
+      "draw": 0.269727856509311,
+      "away_win": 0.24054784495639628
+    }
+  },
+  {
+    "split": "val",
+    "index": 134,
+    "fixture_id": "578522",
+    "home": "West Bromwich Albion",
+    "away": "Aston Villa",
+    "kickoff": "2020-12-20T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2546104385497597,
+      "draw": 0.27059924239446886,
+      "away_win": 0.47479031905577146
+    }
+  },
+  {
+    "split": "val",
+    "index": 135,
+    "fixture_id": "578530",
+    "home": "Burnley",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-12-21T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.34804756132937215,
+      "draw": 0.2888313984660123,
+      "away_win": 0.3631210402046155
+    }
+  },
+  {
+    "split": "val",
+    "index": 136,
+    "fixture_id": "578529",
+    "home": "Chelsea",
+    "away": "West Ham United",
+    "kickoff": "2020-12-21T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5397949219037252,
+      "draw": 0.24308347916625347,
+      "away_win": 0.2171215989300213
+    }
+  },
+  {
+    "split": "val",
+    "index": 137,
+    "fixture_id": "578516",
+    "home": "Leicester City",
+    "away": "Manchester United",
+    "kickoff": "2020-12-26T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.31051289687696876,
+      "draw": 0.24494501925440354,
+      "away_win": 0.4445420838686276
+    }
+  },
+  {
+    "split": "val",
+    "index": 138,
+    "fixture_id": "578514",
+    "home": "Aston Villa",
+    "away": "Crystal Palace",
+    "kickoff": "2020-12-26T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5447145049641134,
+      "draw": 0.2612080967590693,
+      "away_win": 0.1940773982768172
+    }
+  },
+  {
+    "split": "val",
+    "index": 139,
+    "fixture_id": "578518",
+    "home": "Fulham",
+    "away": "Southampton",
+    "kickoff": "2020-12-26T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.31746950007974967,
+      "draw": 0.26480629677495693,
+      "away_win": 0.41772420314529335
+    }
+  },
+  {
+    "split": "val",
+    "index": 140,
+    "fixture_id": "578513",
+    "home": "Arsenal",
+    "away": "Chelsea",
+    "kickoff": "2020-12-26T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.2022664017747505,
+      "draw": 0.25075335613449884,
+      "away_win": 0.5469802420907507
+    }
+  },
+  {
+    "split": "val",
+    "index": 141,
+    "fixture_id": "578515",
+    "home": "Sheffield United",
+    "away": "Everton",
+    "kickoff": "2020-12-26T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3335435358262172,
+      "draw": 0.28678767351332884,
+      "away_win": 0.3796687906604539
+    }
+  },
+  {
+    "split": "val",
+    "index": 142,
+    "fixture_id": "578517",
+    "home": "Manchester City",
+    "away": "Newcastle United",
+    "kickoff": "2020-12-26T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5763926739633716,
+      "draw": 0.2513761932631354,
+      "away_win": 0.17223113277349314
+    }
+  },
+  {
+    "split": "val",
+    "index": 143,
+    "fixture_id": "578512",
+    "home": "Leeds United",
+    "away": "Burnley",
+    "kickoff": "2020-12-27T12:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.45480195056009654,
+      "draw": 0.2910199538584582,
+      "away_win": 0.25417809558144516
+    }
+  },
+  {
+    "split": "val",
+    "index": 144,
+    "fixture_id": "578511",
+    "home": "West Ham United",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2020-12-27T14:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.46153099759458255,
+      "draw": 0.2793218728570566,
+      "away_win": 0.2591471295483608
+    }
+  },
+  {
+    "split": "val",
+    "index": 145,
+    "fixture_id": "578520",
+    "home": "Liverpool",
+    "away": "West Bromwich Albion",
+    "kickoff": "2020-12-27T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.6914677497796062,
+      "draw": 0.2115859481484847,
+      "away_win": 0.09694630207190896
+    }
+  },
+  {
+    "split": "val",
+    "index": 146,
+    "fixture_id": "578519",
+    "home": "Wolverhampton Wanderers",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2020-12-27T19:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.34329112555708785,
+      "draw": 0.27802747464120464,
+      "away_win": 0.3786813998017075
+    }
+  },
+  {
+    "split": "val",
+    "index": 147,
+    "fixture_id": "578505",
+    "home": "Crystal Palace",
+    "away": "Leicester City",
+    "kickoff": "2020-12-28T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3129094096330562,
+      "draw": 0.2736139744599693,
+      "away_win": 0.41347661590697443
+    }
+  },
+  {
+    "split": "val",
+    "index": 148,
+    "fixture_id": "578502",
+    "home": "Chelsea",
+    "away": "Aston Villa",
+    "kickoff": "2020-12-28T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.47897451918118344,
+      "draw": 0.26398890660655244,
+      "away_win": 0.2570365742122641
+    }
+  },
+  {
+    "split": "val",
+    "index": 149,
+    "fixture_id": "578501",
+    "home": "Brighton & Hove Albion",
+    "away": "Arsenal",
+    "kickoff": "2020-12-29T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.43099159240793733,
+      "draw": 0.29260229509468444,
+      "away_win": 0.2764061124973781
+    }
+  },
+  {
+    "split": "val",
+    "index": 150,
+    "fixture_id": "578504",
+    "home": "West Bromwich Albion",
+    "away": "Leeds United",
+    "kickoff": "2020-12-29T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.346478719976922,
+      "draw": 0.29523809327228856,
+      "away_win": 0.3582831867507894
+    }
+  },
+  {
+    "split": "val",
+    "index": 151,
+    "fixture_id": "578508",
+    "home": "Burnley",
+    "away": "Sheffield United",
+    "kickoff": "2020-12-29T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4321677360745629,
+      "draw": 0.3125528955641781,
+      "away_win": 0.25527936836125903
+    }
+  },
+  {
+    "split": "val",
+    "index": 152,
+    "fixture_id": "578509",
+    "home": "Southampton",
+    "away": "West Ham United",
+    "kickoff": "2020-12-29T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5524582223584,
+      "draw": 0.24800722893855007,
+      "away_win": 0.19953454870304993
+    }
+  },
+  {
+    "split": "val",
+    "index": 153,
+    "fixture_id": "578510",
+    "home": "Manchester United",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2020-12-29T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6006140752561223,
+      "draw": 0.2347586295834035,
+      "away_win": 0.16462729516047422
+    }
+  },
+  {
+    "split": "val",
+    "index": 154,
+    "fixture_id": "578506",
+    "home": "Newcastle United",
+    "away": "Liverpool",
+    "kickoff": "2020-12-30T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.19118000451767497,
+      "draw": 0.2202251623270742,
+      "away_win": 0.5885948331552509
+    }
+  },
+  {
+    "split": "val",
+    "index": 155,
+    "fixture_id": "578499",
+    "home": "Everton",
+    "away": "West Ham United",
+    "kickoff": "2021-01-01T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.45951812056351954,
+      "draw": 0.27558201053283854,
+      "away_win": 0.2648998689036419
+    }
+  },
+  {
+    "split": "val",
+    "index": 156,
+    "fixture_id": "578492",
+    "home": "Manchester United",
+    "away": "Aston Villa",
+    "kickoff": "2021-01-01T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5268054873017025,
+      "draw": 0.2468594511381835,
+      "away_win": 0.22633506156011401
+    }
+  },
+  {
+    "split": "val",
+    "index": 157,
+    "fixture_id": "578494",
+    "home": "Tottenham Hotspur",
+    "away": "Leeds United",
+    "kickoff": "2021-01-02T12:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.49923360990456417,
+      "draw": 0.272177426898195,
+      "away_win": 0.22858896319724092
+    }
+  },
+  {
+    "split": "val",
+    "index": 158,
+    "fixture_id": "578498",
+    "home": "Crystal Palace",
+    "away": "Sheffield United",
+    "kickoff": "2021-01-02T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.45060814811388394,
+      "draw": 0.3050973504563179,
+      "away_win": 0.24429450142979806
+    }
+  },
+  {
+    "split": "val",
+    "index": 159,
+    "fixture_id": "578500",
+    "home": "Brighton & Hove Albion",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-01-02T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.41473118968331396,
+      "draw": 0.29219159387470844,
+      "away_win": 0.2930772164419777
+    }
+  },
+  {
+    "split": "val",
+    "index": 160,
+    "fixture_id": "578491",
+    "home": "West Bromwich Albion",
+    "away": "Arsenal",
+    "kickoff": "2021-01-02T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.35002875531258115,
+      "draw": 0.303180700697062,
+      "away_win": 0.3467905439903569
+    }
+  },
+  {
+    "split": "val",
+    "index": 161,
+    "fixture_id": "578495",
+    "home": "Newcastle United",
+    "away": "Leicester City",
+    "kickoff": "2021-01-03T14:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.33659400486393026,
+      "draw": 0.2775945476699366,
+      "away_win": 0.3858114474661333
+    }
+  },
+  {
+    "split": "val",
+    "index": 162,
+    "fixture_id": "578497",
+    "home": "Chelsea",
+    "away": "Manchester City",
+    "kickoff": "2021-01-03T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.40898224098537955,
+      "draw": 0.26265661162185006,
+      "away_win": 0.32836114739277034
+    }
+  },
+  {
+    "split": "val",
+    "index": 163,
+    "fixture_id": "578496",
+    "home": "Southampton",
+    "away": "Liverpool",
+    "kickoff": "2021-01-04T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.2992604467402373,
+      "draw": 0.2470387163963693,
+      "away_win": 0.45370083686339335
+    }
+  },
+  {
+    "split": "val",
+    "index": 164,
+    "fixture_id": "578487",
+    "home": "Sheffield United",
+    "away": "Newcastle United",
+    "kickoff": "2021-01-12T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.35981507754646674,
+      "draw": 0.2957235636434191,
+      "away_win": 0.3444613588101141
+    }
+  },
+  {
+    "split": "val",
+    "index": 165,
+    "fixture_id": "578485",
+    "home": "Wolverhampton Wanderers",
+    "away": "Everton",
+    "kickoff": "2021-01-12T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3473233077059535,
+      "draw": 0.27942627524955543,
+      "away_win": 0.37325041704449097
+    }
+  },
+  {
+    "split": "val",
+    "index": 166,
+    "fixture_id": "578660",
+    "home": "Burnley",
+    "away": "Manchester United",
+    "kickoff": "2021-01-12T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2089950607415443,
+      "draw": 0.23401946439015883,
+      "away_win": 0.556985474868297
+    }
+  },
+  {
+    "split": "val",
+    "index": 167,
+    "fixture_id": "578481",
+    "home": "Manchester City",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-01-13T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6319030528606305,
+      "draw": 0.2325072448658899,
+      "away_win": 0.13558970227347944
+    }
+  },
+  {
+    "split": "val",
+    "index": 168,
+    "fixture_id": "578503",
+    "home": "Tottenham Hotspur",
+    "away": "Fulham",
+    "kickoff": "2021-01-13T20:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5393402925584955,
+      "draw": 0.2600570852021037,
+      "away_win": 0.2006026222394009
+    }
+  },
+  {
+    "split": "val",
+    "index": 169,
+    "fixture_id": "578484",
+    "home": "Arsenal",
+    "away": "Crystal Palace",
+    "kickoff": "2021-01-14T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4349095589289919,
+      "draw": 0.28503799809897473,
+      "away_win": 0.2800524429720334
+    }
+  },
+  {
+    "split": "val",
+    "index": 170,
+    "fixture_id": "578480",
+    "home": "Wolverhampton Wanderers",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-01-16T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.45379156372704205,
+      "draw": 0.29897056796767957,
+      "away_win": 0.2472378683052783
+    }
+  },
+  {
+    "split": "val",
+    "index": 171,
+    "fixture_id": "578471",
+    "home": "Leeds United",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-01-16T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.47003327867400685,
+      "draw": 0.28293662130034286,
+      "away_win": 0.24703010002565032
+    }
+  },
+  {
+    "split": "val",
+    "index": 172,
+    "fixture_id": "578472",
+    "home": "West Ham United",
+    "away": "Burnley",
+    "kickoff": "2021-01-16T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4807795668799578,
+      "draw": 0.28046191402935716,
+      "away_win": 0.23875851909068502
+    }
+  },
+  {
+    "split": "val",
+    "index": 173,
+    "fixture_id": "578473",
+    "home": "Fulham",
+    "away": "Chelsea",
+    "kickoff": "2021-01-16T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.36743965122700134,
+      "draw": 0.2784951519958558,
+      "away_win": 0.3540651967771427
+    }
+  },
+  {
+    "split": "val",
+    "index": 174,
+    "fixture_id": "578478",
+    "home": "Leicester City",
+    "away": "Southampton",
+    "kickoff": "2021-01-16T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38600343125424386,
+      "draw": 0.26769368788812564,
+      "away_win": 0.3463028808576304
+    }
+  },
+  {
+    "split": "val",
+    "index": 175,
+    "fixture_id": "578479",
+    "home": "Sheffield United",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-01-17T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2671705112701165,
+      "draw": 0.27649478619327683,
+      "away_win": 0.4563347025366067
+    }
+  },
+  {
+    "split": "val",
+    "index": 176,
+    "fixture_id": "578476",
+    "home": "Liverpool",
+    "away": "Manchester United",
+    "kickoff": "2021-01-17T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.41762806346753867,
+      "draw": 0.24305001530713463,
+      "away_win": 0.3393219212253268
+    }
+  },
+  {
+    "split": "val",
+    "index": 177,
+    "fixture_id": "578474",
+    "home": "Manchester City",
+    "away": "Crystal Palace",
+    "kickoff": "2021-01-17T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6303321123020958,
+      "draw": 0.23869529056436642,
+      "away_win": 0.1309725971335378
+    }
+  },
+  {
+    "split": "val",
+    "index": 178,
+    "fixture_id": "578477",
+    "home": "Arsenal",
+    "away": "Newcastle United",
+    "kickoff": "2021-01-18T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4976467797708513,
+      "draw": 0.28410809279032484,
+      "away_win": 0.21824512743882385
+    }
+  },
+  {
+    "split": "val",
+    "index": 179,
+    "fixture_id": "578490",
+    "home": "West Ham United",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-01-19T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5151264046153169,
+      "draw": 0.2857284805546977,
+      "away_win": 0.19914511482998548
+    }
+  },
+  {
+    "split": "val",
+    "index": 180,
+    "fixture_id": "578483",
+    "home": "Leicester City",
+    "away": "Chelsea",
+    "kickoff": "2021-01-19T20:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43755144322053374,
+      "draw": 0.2739529460218796,
+      "away_win": 0.2884956107575866
+    }
+  },
+  {
+    "split": "val",
+    "index": 181,
+    "fixture_id": "578659",
+    "home": "Manchester City",
+    "away": "Aston Villa",
+    "kickoff": "2021-01-20T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5716647935342175,
+      "draw": 0.24255974288241522,
+      "away_win": 0.18577546358336736
+    }
+  },
+  {
+    "split": "val",
+    "index": 182,
+    "fixture_id": "578486",
+    "home": "Fulham",
+    "away": "Manchester United",
+    "kickoff": "2021-01-20T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.22928245312278442,
+      "draw": 0.24627322604313828,
+      "away_win": 0.5244443208340773
+    }
+  },
+  {
+    "split": "val",
+    "index": 183,
+    "fixture_id": "578482",
+    "home": "Liverpool",
+    "away": "Burnley",
+    "kickoff": "2021-01-21T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6357830544102797,
+      "draw": 0.23411198780839598,
+      "away_win": 0.13010495778132442
+    }
+  },
+  {
+    "split": "val",
+    "index": 184,
+    "fixture_id": "578558",
+    "home": "Aston Villa",
+    "away": "Newcastle United",
+    "kickoff": "2021-01-23T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5572057116875898,
+      "draw": 0.26619538153642286,
+      "away_win": 0.17659890677598733
+    }
+  },
+  {
+    "split": "val",
+    "index": 185,
+    "fixture_id": "578461",
+    "home": "Crystal Palace",
+    "away": "West Ham United",
+    "kickoff": "2021-01-26T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.36785681482767046,
+      "draw": 0.28190899490685745,
+      "away_win": 0.35023419026547215
+    }
+  },
+  {
+    "split": "val",
+    "index": 186,
+    "fixture_id": "578463",
+    "home": "Newcastle United",
+    "away": "Leeds United",
+    "kickoff": "2021-01-26T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3510181989461807,
+      "draw": 0.2908592514344086,
+      "away_win": 0.3581225496194107
+    }
+  },
+  {
+    "split": "val",
+    "index": 187,
+    "fixture_id": "578462",
+    "home": "Southampton",
+    "away": "Arsenal",
+    "kickoff": "2021-01-26T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3797815203440016,
+      "draw": 0.27497072232384234,
+      "away_win": 0.3452477573321562
+    }
+  },
+  {
+    "split": "val",
+    "index": 188,
+    "fixture_id": "578466",
+    "home": "West Bromwich Albion",
+    "away": "Manchester City",
+    "kickoff": "2021-01-26T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.09846130564844985,
+      "draw": 0.17068916596850123,
+      "away_win": 0.7308495283830488
+    }
+  },
+  {
+    "split": "val",
+    "index": 189,
+    "fixture_id": "578465",
+    "home": "Chelsea",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-01-27T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4672229305843425,
+      "draw": 0.2865955184877641,
+      "away_win": 0.24618155092789334
+    }
+  },
+  {
+    "split": "val",
+    "index": 190,
+    "fixture_id": "578468",
+    "home": "Burnley",
+    "away": "Aston Villa",
+    "kickoff": "2021-01-27T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.31956068896047096,
+      "draw": 0.29063429118715445,
+      "away_win": 0.3898050198523746
+    }
+  },
+  {
+    "split": "val",
+    "index": 191,
+    "fixture_id": "578469",
+    "home": "Brighton & Hove Albion",
+    "away": "Fulham",
+    "kickoff": "2021-01-27T19:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.412009909522014,
+      "draw": 0.2866532500744284,
+      "away_win": 0.30133684040355757
+    }
+  },
+  {
+    "split": "val",
+    "index": 192,
+    "fixture_id": "578467",
+    "home": "Manchester United",
+    "away": "Sheffield United",
+    "kickoff": "2021-01-27T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6603113793644352,
+      "draw": 0.2284781479954728,
+      "away_win": 0.11121047264009191
+    }
+  },
+  {
+    "split": "val",
+    "index": 193,
+    "fixture_id": "578470",
+    "home": "Everton",
+    "away": "Leicester City",
+    "kickoff": "2021-01-27T20:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.36802808096229095,
+      "draw": 0.25954384417775883,
+      "away_win": 0.37242807485995033
+    }
+  },
+  {
+    "split": "val",
+    "index": 194,
+    "fixture_id": "578464",
+    "home": "Tottenham Hotspur",
+    "away": "Liverpool",
+    "kickoff": "2021-01-28T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.40835714067878154,
+      "draw": 0.26801820733037524,
+      "away_win": 0.3236246519908433
+    }
+  },
+  {
+    "split": "val",
+    "index": 195,
+    "fixture_id": "578457",
+    "home": "Everton",
+    "away": "Newcastle United",
+    "kickoff": "2021-01-30T12:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5800078527277732,
+      "draw": 0.2608279244390081,
+      "away_win": 0.1591642228332187
+    }
+  },
+  {
+    "split": "val",
+    "index": 196,
+    "fixture_id": "578453",
+    "home": "West Bromwich Albion",
+    "away": "Fulham",
+    "kickoff": "2021-01-30T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.35003772601629707,
+      "draw": 0.297549100224356,
+      "away_win": 0.352413173759347
+    }
+  },
+  {
+    "split": "val",
+    "index": 197,
+    "fixture_id": "578458",
+    "home": "Manchester City",
+    "away": "Sheffield United",
+    "kickoff": "2021-01-30T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.7550526010724044,
+      "draw": 0.1808564068955761,
+      "away_win": 0.06409099203201951
+    }
+  },
+  {
+    "split": "val",
+    "index": 198,
+    "fixture_id": "578460",
+    "home": "Crystal Palace",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-01-30T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43403422694291494,
+      "draw": 0.29893953437133247,
+      "away_win": 0.2670262386857527
+    }
+  },
+  {
+    "split": "val",
+    "index": 199,
+    "fixture_id": "578456",
+    "home": "Arsenal",
+    "away": "Manchester United",
+    "kickoff": "2021-01-30T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4220569894391346,
+      "draw": 0.25826334448574817,
+      "away_win": 0.3196796660751173
+    }
+  },
+  {
+    "split": "val",
+    "index": 200,
+    "fixture_id": "578451",
+    "home": "Southampton",
+    "away": "Aston Villa",
+    "kickoff": "2021-01-30T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3506734292760054,
+      "draw": 0.28823363440246696,
+      "away_win": 0.3610929363215275
+    }
+  },
+  {
+    "split": "val",
+    "index": 201,
+    "fixture_id": "578452",
+    "home": "Chelsea",
+    "away": "Burnley",
+    "kickoff": "2021-01-31T12:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3815444073022667,
+      "draw": 0.28334082606646194,
+      "away_win": 0.3351147666312713
+    }
+  },
+  {
+    "split": "val",
+    "index": 202,
+    "fixture_id": "578454",
+    "home": "Leicester City",
+    "away": "Leeds United",
+    "kickoff": "2021-01-31T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5548876161094297,
+      "draw": 0.25107694921640206,
+      "away_win": 0.19403543467416828
+    }
+  },
+  {
+    "split": "val",
+    "index": 203,
+    "fixture_id": "578455",
+    "home": "West Ham United",
+    "away": "Liverpool",
+    "kickoff": "2021-01-31T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.29827834000973136,
+      "draw": 0.2602025300450056,
+      "away_win": 0.44151912994526304
+    }
+  },
+  {
+    "split": "val",
+    "index": 204,
+    "fixture_id": "578459",
+    "home": "Brighton & Hove Albion",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-01-31T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.34830998706365657,
+      "draw": 0.2867428918624868,
+      "away_win": 0.36494712107385674
+    }
+  },
+  {
+    "split": "val",
+    "index": 205,
+    "fixture_id": "578445",
+    "home": "Wolverhampton Wanderers",
+    "away": "Arsenal",
+    "kickoff": "2021-02-02T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.24203555968074653,
+      "draw": 0.24300747411926202,
+      "away_win": 0.5149569661999914
+    }
+  },
+  {
+    "split": "val",
+    "index": 206,
+    "fixture_id": "578449",
+    "home": "Sheffield United",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-02-02T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43248013841292143,
+      "draw": 0.3055298872315353,
+      "away_win": 0.2619899743555431
+    }
+  },
+  {
+    "split": "val",
+    "index": 207,
+    "fixture_id": "578443",
+    "home": "Newcastle United",
+    "away": "Crystal Palace",
+    "kickoff": "2021-02-02T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4170856317595951,
+      "draw": 0.3004397299414255,
+      "away_win": 0.2824746382989793
+    }
+  },
+  {
+    "split": "val",
+    "index": 208,
+    "fixture_id": "578444",
+    "home": "Manchester United",
+    "away": "Southampton",
+    "kickoff": "2021-02-02T20:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.555352404804889,
+      "draw": 0.25322273599569456,
+      "away_win": 0.19142485919941649
+    }
+  },
+  {
+    "split": "val",
+    "index": 209,
+    "fixture_id": "578447",
+    "home": "Fulham",
+    "away": "Leicester City",
+    "kickoff": "2021-02-03T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2991641349220212,
+      "draw": 0.27059866670743693,
+      "away_win": 0.4302371983705418
+    }
+  },
+  {
+    "split": "val",
+    "index": 210,
+    "fixture_id": "578448",
+    "home": "Burnley",
+    "away": "Manchester City",
+    "kickoff": "2021-02-03T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.1579037064092073,
+      "draw": 0.20472839278495084,
+      "away_win": 0.6373679008058418
+    }
+  },
+  {
+    "split": "val",
+    "index": 211,
+    "fixture_id": "578446",
+    "home": "Leeds United",
+    "away": "Everton",
+    "kickoff": "2021-02-03T19:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.41674839995058405,
+      "draw": 0.2654508546201596,
+      "away_win": 0.3178007454292564
+    }
+  },
+  {
+    "split": "val",
+    "index": 212,
+    "fixture_id": "578441",
+    "home": "Liverpool",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-02-03T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5675075997989212,
+      "draw": 0.2573524090857133,
+      "away_win": 0.17513999111536555
+    }
+  },
+  {
+    "split": "val",
+    "index": 213,
+    "fixture_id": "578450",
+    "home": "Aston Villa",
+    "away": "West Ham United",
+    "kickoff": "2021-02-03T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5333732207374704,
+      "draw": 0.2573330537960671,
+      "away_win": 0.2092937254664626
+    }
+  },
+  {
+    "split": "val",
+    "index": 214,
+    "fixture_id": "578442",
+    "home": "Tottenham Hotspur",
+    "away": "Chelsea",
+    "kickoff": "2021-02-04T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4437104081751778,
+      "draw": 0.2828477703899609,
+      "away_win": 0.27344182143486134
+    }
+  },
+  {
+    "split": "val",
+    "index": 215,
+    "fixture_id": "578431",
+    "home": "Aston Villa",
+    "away": "Arsenal",
+    "kickoff": "2021-02-06T12:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.33661637097142455,
+      "draw": 0.2590793740818708,
+      "away_win": 0.4043042549467047
+    }
+  },
+  {
+    "split": "val",
+    "index": 216,
+    "fixture_id": "578432",
+    "home": "Burnley",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-02-06T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3705586341737461,
+      "draw": 0.28686827860151104,
+      "away_win": 0.3425730872247428
+    }
+  },
+  {
+    "split": "val",
+    "index": 217,
+    "fixture_id": "578438",
+    "home": "Newcastle United",
+    "away": "Southampton",
+    "kickoff": "2021-02-06T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4109761994519537,
+      "draw": 0.3025001558945165,
+      "away_win": 0.28652364465352986
+    }
+  },
+  {
+    "split": "val",
+    "index": 218,
+    "fixture_id": "578440",
+    "home": "Fulham",
+    "away": "West Ham United",
+    "kickoff": "2021-02-06T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.36138579887206423,
+      "draw": 0.28195402533741365,
+      "away_win": 0.35666017579052217
+    }
+  },
+  {
+    "split": "val",
+    "index": 219,
+    "fixture_id": "578435",
+    "home": "Manchester United",
+    "away": "Everton",
+    "kickoff": "2021-02-06T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5575570390851274,
+      "draw": 0.23950604097983813,
+      "away_win": 0.2029369199350345
+    }
+  },
+  {
+    "split": "val",
+    "index": 220,
+    "fixture_id": "578439",
+    "home": "Tottenham Hotspur",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-02-07T12:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4851408804641698,
+      "draw": 0.29124906703923625,
+      "away_win": 0.22361005249659408
+    }
+  },
+  {
+    "split": "val",
+    "index": 221,
+    "fixture_id": "578436",
+    "home": "Wolverhampton Wanderers",
+    "away": "Leicester City",
+    "kickoff": "2021-02-07T14:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.32831512371912797,
+      "draw": 0.2679499975861736,
+      "away_win": 0.4037348786946984
+    }
+  },
+  {
+    "split": "val",
+    "index": 222,
+    "fixture_id": "578437",
+    "home": "Liverpool",
+    "away": "Manchester City",
+    "kickoff": "2021-02-07T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.19490696399482624,
+      "draw": 0.20682147659539843,
+      "away_win": 0.5982715594097752
+    }
+  },
+  {
+    "split": "val",
+    "index": 223,
+    "fixture_id": "578433",
+    "home": "Sheffield United",
+    "away": "Chelsea",
+    "kickoff": "2021-02-07T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.36119336182063677,
+      "draw": 0.28604548305358035,
+      "away_win": 0.3527611551257829
+    }
+  },
+  {
+    "split": "val",
+    "index": 224,
+    "fixture_id": "578434",
+    "home": "Leeds United",
+    "away": "Crystal Palace",
+    "kickoff": "2021-02-08T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5180257872931872,
+      "draw": 0.2719029971239076,
+      "away_win": 0.21007121558290517
+    }
+  },
+  {
+    "split": "val",
+    "index": 225,
+    "fixture_id": "578425",
+    "home": "Leicester City",
+    "away": "Liverpool",
+    "kickoff": "2021-02-13T12:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5051768903171869,
+      "draw": 0.26129688957781966,
+      "away_win": 0.23352622010499335
+    }
+  },
+  {
+    "split": "val",
+    "index": 226,
+    "fixture_id": "578422",
+    "home": "Crystal Palace",
+    "away": "Burnley",
+    "kickoff": "2021-02-13T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.37254679091753345,
+      "draw": 0.2981615973802873,
+      "away_win": 0.32929161170217924
+    }
+  },
+  {
+    "split": "val",
+    "index": 227,
+    "fixture_id": "578429",
+    "home": "Manchester City",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-02-13T17:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.7558159695761393,
+      "draw": 0.1708398885076648,
+      "away_win": 0.07334414191619587
+    }
+  },
+  {
+    "split": "val",
+    "index": 228,
+    "fixture_id": "578421",
+    "home": "Brighton & Hove Albion",
+    "away": "Aston Villa",
+    "kickoff": "2021-02-13T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.38314355716602305,
+      "draw": 0.2815041486280468,
+      "away_win": 0.33535229420593027
+    }
+  },
+  {
+    "split": "val",
+    "index": 229,
+    "fixture_id": "578430",
+    "home": "Southampton",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-02-14T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.35381300094113033,
+      "draw": 0.30489329601546744,
+      "away_win": 0.3412937030434022
+    }
+  },
+  {
+    "split": "val",
+    "index": 230,
+    "fixture_id": "578426",
+    "home": "West Bromwich Albion",
+    "away": "Manchester United",
+    "kickoff": "2021-02-14T14:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.20509949355817575,
+      "draw": 0.24992866075192602,
+      "away_win": 0.5449718456898982
+    }
+  },
+  {
+    "split": "val",
+    "index": 231,
+    "fixture_id": "578424",
+    "home": "Arsenal",
+    "away": "Leeds United",
+    "kickoff": "2021-02-14T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5020489866477945,
+      "draw": 0.2567568657221633,
+      "away_win": 0.24119414763004218
+    }
+  },
+  {
+    "split": "val",
+    "index": 232,
+    "fixture_id": "578423",
+    "home": "Everton",
+    "away": "Fulham",
+    "kickoff": "2021-02-14T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5373712137720884,
+      "draw": 0.2622831917535372,
+      "away_win": 0.20034559447437436
+    }
+  },
+  {
+    "split": "val",
+    "index": 233,
+    "fixture_id": "578428",
+    "home": "West Ham United",
+    "away": "Sheffield United",
+    "kickoff": "2021-02-15T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.492205744317779,
+      "draw": 0.281158012502747,
+      "away_win": 0.2266362431794741
+    }
+  },
+  {
+    "split": "val",
+    "index": 234,
+    "fixture_id": "578427",
+    "home": "Chelsea",
+    "away": "Newcastle United",
+    "kickoff": "2021-02-15T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5162478462956999,
+      "draw": 0.2817499846096555,
+      "away_win": 0.20200216909464466
+    }
+  },
+  {
+    "split": "val",
+    "index": 235,
+    "fixture_id": "578493",
+    "home": "Burnley",
+    "away": "Fulham",
+    "kickoff": "2021-02-17T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.43055000340379646,
+      "draw": 0.28920886658359585,
+      "away_win": 0.28024113001260786
+    }
+  },
+  {
+    "split": "val",
+    "index": 236,
+    "fixture_id": "578507",
+    "home": "Everton",
+    "away": "Manchester City",
+    "kickoff": "2021-02-17T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.12002763313568368,
+      "draw": 0.16910941726115467,
+      "away_win": 0.7108629496031617
+    }
+  },
+  {
+    "split": "val",
+    "index": 237,
+    "fixture_id": "578414",
+    "home": "Wolverhampton Wanderers",
+    "away": "Leeds United",
+    "kickoff": "2021-02-19T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38521937865980727,
+      "draw": 0.28017143847225723,
+      "away_win": 0.33460918286793556
+    }
+  },
+  {
+    "split": "val",
+    "index": 238,
+    "fixture_id": "578411",
+    "home": "Southampton",
+    "away": "Chelsea",
+    "kickoff": "2021-02-20T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.29338467265626084,
+      "draw": 0.28917326091287265,
+      "away_win": 0.41744206643086645
+    }
+  },
+  {
+    "split": "val",
+    "index": 239,
+    "fixture_id": "578420",
+    "home": "Burnley",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-02-20T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5050473139367905,
+      "draw": 0.2889266935741393,
+      "away_win": 0.20602599248907028
+    }
+  },
+  {
+    "split": "val",
+    "index": 240,
+    "fixture_id": "578413",
+    "home": "Liverpool",
+    "away": "Everton",
+    "kickoff": "2021-02-20T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.40319288657014396,
+      "draw": 0.2844445453138887,
+      "away_win": 0.31236256811596735
+    }
+  },
+  {
+    "split": "val",
+    "index": 241,
+    "fixture_id": "578418",
+    "home": "Fulham",
+    "away": "Sheffield United",
+    "kickoff": "2021-02-20T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.457663008749722,
+      "draw": 0.2962448355898675,
+      "away_win": 0.2460921556604105
+    }
+  },
+  {
+    "split": "val",
+    "index": 242,
+    "fixture_id": "578419",
+    "home": "West Ham United",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-02-21T12:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5453490566415166,
+      "draw": 0.25920355851719756,
+      "away_win": 0.19544738484128593
+    }
+  },
+  {
+    "split": "val",
+    "index": 243,
+    "fixture_id": "578415",
+    "home": "Aston Villa",
+    "away": "Leicester City",
+    "kickoff": "2021-02-21T14:05:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3569330602392407,
+      "draw": 0.26974230441443814,
+      "away_win": 0.37332463534632115
+    }
+  },
+  {
+    "split": "val",
+    "index": 244,
+    "fixture_id": "578416",
+    "home": "Arsenal",
+    "away": "Manchester City",
+    "kickoff": "2021-02-21T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2255815677341152,
+      "draw": 0.20675953899036037,
+      "away_win": 0.5676588932755244
+    }
+  },
+  {
+    "split": "val",
+    "index": 245,
+    "fixture_id": "578417",
+    "home": "Manchester United",
+    "away": "Newcastle United",
+    "kickoff": "2021-02-21T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6046198560066419,
+      "draw": 0.25104929832345446,
+      "away_win": 0.14433084566990373
+    }
+  },
+  {
+    "split": "val",
+    "index": 246,
+    "fixture_id": "578412",
+    "home": "Brighton & Hove Albion",
+    "away": "Crystal Palace",
+    "kickoff": "2021-02-22T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.50207506504396,
+      "draw": 0.28417021681970495,
+      "away_win": 0.21375471813633495
+    }
+  },
+  {
+    "split": "val",
+    "index": 247,
+    "fixture_id": "578488",
+    "home": "Leeds United",
+    "away": "Southampton",
+    "kickoff": "2021-02-23T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5573466395013453,
+      "draw": 0.26858508006123943,
+      "away_win": 0.17406828043741518
+    }
+  },
+  {
+    "split": "val",
+    "index": 248,
+    "fixture_id": "578409",
+    "home": "Manchester City",
+    "away": "West Ham United",
+    "kickoff": "2021-02-27T12:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6807021058826823,
+      "draw": 0.19325401091570762,
+      "away_win": 0.12604388320161009
+    }
+  },
+  {
+    "split": "val",
+    "index": 249,
+    "fixture_id": "578403",
+    "home": "West Bromwich Albion",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-02-27T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.31676352792709384,
+      "draw": 0.28459684276600655,
+      "away_win": 0.39863962930689967
+    }
+  },
+  {
+    "split": "val",
+    "index": 250,
+    "fixture_id": "578402",
+    "home": "Leeds United",
+    "away": "Aston Villa",
+    "kickoff": "2021-02-27T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5056178453400099,
+      "draw": 0.27185167687038825,
+      "away_win": 0.2225304777896018
+    }
+  },
+  {
+    "split": "val",
+    "index": 251,
+    "fixture_id": "578410",
+    "home": "Newcastle United",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-02-27T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3563957878862156,
+      "draw": 0.2883362983775814,
+      "away_win": 0.3552679137362031
+    }
+  },
+  {
+    "split": "val",
+    "index": 252,
+    "fixture_id": "578401",
+    "home": "Leicester City",
+    "away": "Arsenal",
+    "kickoff": "2021-02-28T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4401275582310103,
+      "draw": 0.259368213144247,
+      "away_win": 0.30050422862474263
+    }
+  },
+  {
+    "split": "val",
+    "index": 253,
+    "fixture_id": "578405",
+    "home": "Crystal Palace",
+    "away": "Fulham",
+    "kickoff": "2021-02-28T12:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.39497289230793875,
+      "draw": 0.2892873736271818,
+      "away_win": 0.3157397340648794
+    }
+  },
+  {
+    "split": "val",
+    "index": 254,
+    "fixture_id": "578404",
+    "home": "Tottenham Hotspur",
+    "away": "Burnley",
+    "kickoff": "2021-02-28T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4272301273876979,
+      "draw": 0.28066024400348855,
+      "away_win": 0.29210962860881357
+    }
+  },
+  {
+    "split": "val",
+    "index": 255,
+    "fixture_id": "578407",
+    "home": "Chelsea",
+    "away": "Manchester United",
+    "kickoff": "2021-02-28T16:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3465723322280011,
+      "draw": 0.2667124059845869,
+      "away_win": 0.3867152617874119
+    }
+  },
+  {
+    "split": "val",
+    "index": 256,
+    "fixture_id": "578406",
+    "home": "Sheffield United",
+    "away": "Liverpool",
+    "kickoff": "2021-02-28T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3952474314406029,
+      "draw": 0.30249744184632066,
+      "away_win": 0.3022551267130764
+    }
+  },
+  {
+    "split": "val",
+    "index": 257,
+    "fixture_id": "578408",
+    "home": "Everton",
+    "away": "Southampton",
+    "kickoff": "2021-03-01T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5085382436757347,
+      "draw": 0.28377452247589746,
+      "away_win": 0.20768723384836768
+    }
+  },
+  {
+    "split": "val",
+    "index": 258,
+    "fixture_id": "578380",
+    "home": "Manchester City",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-03-02T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.7532109713127161,
+      "draw": 0.17013978660103243,
+      "away_win": 0.07664924208625133
+    }
+  },
+  {
+    "split": "val",
+    "index": 259,
+    "fixture_id": "578372",
+    "home": "Sheffield United",
+    "away": "Aston Villa",
+    "kickoff": "2021-03-03T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.35535556625007475,
+      "draw": 0.29620625937883105,
+      "away_win": 0.3484381743710942
+    }
+  },
+  {
+    "split": "val",
+    "index": 260,
+    "fixture_id": "578376",
+    "home": "Burnley",
+    "away": "Leicester City",
+    "kickoff": "2021-03-03T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3034593970096261,
+      "draw": 0.273556786164787,
+      "away_win": 0.422983816825587
+    }
+  },
+  {
+    "split": "val",
+    "index": 261,
+    "fixture_id": "578377",
+    "home": "Crystal Palace",
+    "away": "Manchester United",
+    "kickoff": "2021-03-03T20:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.26436953840146105,
+      "draw": 0.273279287187951,
+      "away_win": 0.46235117441058804
+    }
+  },
+  {
+    "split": "val",
+    "index": 262,
+    "fixture_id": "578339",
+    "home": "Fulham",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-03-04T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.37466330008950055,
+      "draw": 0.28619491079583875,
+      "away_win": 0.33914178911466075
+    }
+  },
+  {
+    "split": "val",
+    "index": 263,
+    "fixture_id": "578374",
+    "home": "West Bromwich Albion",
+    "away": "Everton",
+    "kickoff": "2021-03-04T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3504713059515822,
+      "draw": 0.28611579508475243,
+      "away_win": 0.3634128989636654
+    }
+  },
+  {
+    "split": "val",
+    "index": 264,
+    "fixture_id": "578373",
+    "home": "Liverpool",
+    "away": "Chelsea",
+    "kickoff": "2021-03-04T20:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3367407333036254,
+      "draw": 0.2791779029466216,
+      "away_win": 0.38408136374975294
+    }
+  },
+  {
+    "split": "val",
+    "index": 265,
+    "fixture_id": "578391",
+    "home": "Burnley",
+    "away": "Arsenal",
+    "kickoff": "2021-03-06T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.2683945538894243,
+      "draw": 0.2616497267296052,
+      "away_win": 0.4699557193809706
+    }
+  },
+  {
+    "split": "val",
+    "index": 266,
+    "fixture_id": "578399",
+    "home": "Sheffield United",
+    "away": "Southampton",
+    "kickoff": "2021-03-06T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.46704517707357524,
+      "draw": 0.2998741664197922,
+      "away_win": 0.2330806565066325
+    }
+  },
+  {
+    "split": "val",
+    "index": 267,
+    "fixture_id": "578400",
+    "home": "Aston Villa",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-03-06T17:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4487386397896778,
+      "draw": 0.2858349615997755,
+      "away_win": 0.2654263986105466
+    }
+  },
+  {
+    "split": "val",
+    "index": 268,
+    "fixture_id": "578396",
+    "home": "Brighton & Hove Albion",
+    "away": "Leicester City",
+    "kickoff": "2021-03-06T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3634928319005388,
+      "draw": 0.2789098692022313,
+      "away_win": 0.3575972988972299
+    }
+  },
+  {
+    "split": "val",
+    "index": 269,
+    "fixture_id": "578398",
+    "home": "West Bromwich Albion",
+    "away": "Newcastle United",
+    "kickoff": "2021-03-07T12:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4030303134737865,
+      "draw": 0.3068439155710197,
+      "away_win": 0.2901257709551938
+    }
+  },
+  {
+    "split": "val",
+    "index": 270,
+    "fixture_id": "578394",
+    "home": "Liverpool",
+    "away": "Fulham",
+    "kickoff": "2021-03-07T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.39871900821689954,
+      "draw": 0.28962452928190124,
+      "away_win": 0.3116564625011993
+    }
+  },
+  {
+    "split": "val",
+    "index": 271,
+    "fixture_id": "578397",
+    "home": "Manchester City",
+    "away": "Manchester United",
+    "kickoff": "2021-03-07T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6661204303521215,
+      "draw": 0.20645457737872083,
+      "away_win": 0.12742499226915746
+    }
+  },
+  {
+    "split": "val",
+    "index": 272,
+    "fixture_id": "578392",
+    "home": "Tottenham Hotspur",
+    "away": "Crystal Palace",
+    "kickoff": "2021-03-07T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4944715905053783,
+      "draw": 0.28162404350136605,
+      "away_win": 0.22390436599325578
+    }
+  },
+  {
+    "split": "val",
+    "index": 273,
+    "fixture_id": "578393",
+    "home": "Chelsea",
+    "away": "Everton",
+    "kickoff": "2021-03-08T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5479139642540514,
+      "draw": 0.25694457018126904,
+      "away_win": 0.19514146556467962
+    }
+  },
+  {
+    "split": "val",
+    "index": 274,
+    "fixture_id": "578395",
+    "home": "West Ham United",
+    "away": "Leeds United",
+    "kickoff": "2021-03-08T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.531902124006473,
+      "draw": 0.2598460317510678,
+      "away_win": 0.20825184424245918
+    }
+  },
+  {
+    "split": "val",
+    "index": 275,
+    "fixture_id": "578338",
+    "home": "Manchester City",
+    "away": "Southampton",
+    "kickoff": "2021-03-10T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.7418288688268411,
+      "draw": 0.18841937861724958,
+      "away_win": 0.06975175255590933
+    }
+  },
+  {
+    "split": "val",
+    "index": 276,
+    "fixture_id": "578381",
+    "home": "Newcastle United",
+    "away": "Aston Villa",
+    "kickoff": "2021-03-12T20:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3515820059614522,
+      "draw": 0.28860514650290303,
+      "away_win": 0.3598128475356447
+    }
+  },
+  {
+    "split": "val",
+    "index": 277,
+    "fixture_id": "578384",
+    "home": "Leeds United",
+    "away": "Chelsea",
+    "kickoff": "2021-03-13T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.29739156296467745,
+      "draw": 0.2626673430271547,
+      "away_win": 0.43994109400816794
+    }
+  },
+  {
+    "split": "val",
+    "index": 278,
+    "fixture_id": "578389",
+    "home": "Crystal Palace",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-03-13T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43127828549364644,
+      "draw": 0.3002154851864841,
+      "away_win": 0.2685062293198694
+    }
+  },
+  {
+    "split": "val",
+    "index": 279,
+    "fixture_id": "578383",
+    "home": "Everton",
+    "away": "Burnley",
+    "kickoff": "2021-03-13T17:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44887197428673975,
+      "draw": 0.27884193366763443,
+      "away_win": 0.2722860920456258
+    }
+  },
+  {
+    "split": "val",
+    "index": 280,
+    "fixture_id": "578386",
+    "home": "Fulham",
+    "away": "Manchester City",
+    "kickoff": "2021-03-13T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.23125699163443098,
+      "draw": 0.23427091830527016,
+      "away_win": 0.5344720900602988
+    }
+  },
+  {
+    "split": "val",
+    "index": 281,
+    "fixture_id": "578382",
+    "home": "Southampton",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-03-14T12:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3306398967249726,
+      "draw": 0.2972164443394183,
+      "away_win": 0.372143658935609
+    }
+  },
+  {
+    "split": "val",
+    "index": 282,
+    "fixture_id": "578387",
+    "home": "Leicester City",
+    "away": "Sheffield United",
+    "kickoff": "2021-03-14T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5495830892821468,
+      "draw": 0.26622194147335565,
+      "away_win": 0.18419496924449746
+    }
+  },
+  {
+    "split": "val",
+    "index": 283,
+    "fixture_id": "578388",
+    "home": "Arsenal",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-03-14T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.44833937115693073,
+      "draw": 0.27391081690872143,
+      "away_win": 0.2777498119343479
+    }
+  },
+  {
+    "split": "val",
+    "index": 284,
+    "fixture_id": "578390",
+    "home": "Manchester United",
+    "away": "West Ham United",
+    "kickoff": "2021-03-14T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4731388804080148,
+      "draw": 0.25236881509834264,
+      "away_win": 0.2744923044936426
+    }
+  },
+  {
+    "split": "val",
+    "index": 285,
+    "fixture_id": "578385",
+    "home": "Wolverhampton Wanderers",
+    "away": "Liverpool",
+    "kickoff": "2021-03-15T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4331760942914413,
+      "draw": 0.29093930582999217,
+      "away_win": 0.27588459987856656
+    }
+  },
+  {
+    "split": "val",
+    "index": 286,
+    "fixture_id": "578375",
+    "home": "Fulham",
+    "away": "Leeds United",
+    "kickoff": "2021-03-19T20:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.38459732089601595,
+      "draw": 0.289344517986704,
+      "away_win": 0.32605816111728014
+    }
+  },
+  {
+    "split": "val",
+    "index": 287,
+    "fixture_id": "578378",
+    "home": "Brighton & Hove Albion",
+    "away": "Newcastle United",
+    "kickoff": "2021-03-20T20:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.49043347063632564,
+      "draw": 0.2817160127309858,
+      "away_win": 0.22785051663268854
+    }
+  },
+  {
+    "split": "val",
+    "index": 288,
+    "fixture_id": "578371",
+    "home": "West Ham United",
+    "away": "Arsenal",
+    "kickoff": "2021-03-21T15:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.42439692702209464,
+      "draw": 0.2616317434600764,
+      "away_win": 0.31397132951782886
+    }
+  },
+  {
+    "split": "val",
+    "index": 289,
+    "fixture_id": "578489",
+    "home": "Aston Villa",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-03-21T19:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.38973669223547025,
+      "draw": 0.29275940026426195,
+      "away_win": 0.31750390750026786
+    }
+  },
+  {
+    "split": "val",
+    "index": 290,
+    "fixture_id": "578369",
+    "home": "Chelsea",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-04-03T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6784098258964918,
+      "draw": 0.22399708406700092,
+      "away_win": 0.09759309003650715
+    }
+  },
+  {
+    "split": "val",
+    "index": 291,
+    "fixture_id": "578367",
+    "home": "Leeds United",
+    "away": "Sheffield United",
+    "kickoff": "2021-04-03T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5205115742046065,
+      "draw": 0.2810707500892774,
+      "away_win": 0.19841767570611604
+    }
+  },
+  {
+    "split": "val",
+    "index": 292,
+    "fixture_id": "578366",
+    "home": "Leicester City",
+    "away": "Manchester City",
+    "kickoff": "2021-04-03T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2691107336342732,
+      "draw": 0.2300945672979661,
+      "away_win": 0.5007946990677608
+    }
+  },
+  {
+    "split": "val",
+    "index": 293,
+    "fixture_id": "578365",
+    "home": "Arsenal",
+    "away": "Liverpool",
+    "kickoff": "2021-04-03T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4923754400211724,
+      "draw": 0.26845824270561697,
+      "away_win": 0.23916631727321067
+    }
+  },
+  {
+    "split": "val",
+    "index": 294,
+    "fixture_id": "578362",
+    "home": "Southampton",
+    "away": "Burnley",
+    "kickoff": "2021-04-04T11:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.36515595365554,
+      "draw": 0.295761981237645,
+      "away_win": 0.33908206510681504
+    }
+  },
+  {
+    "split": "val",
+    "index": 295,
+    "fixture_id": "578368",
+    "home": "Newcastle United",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-04-04T13:05:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.30605224368645345,
+      "draw": 0.28553007268014974,
+      "away_win": 0.40841768363339687
+    }
+  },
+  {
+    "split": "val",
+    "index": 296,
+    "fixture_id": "578364",
+    "home": "Aston Villa",
+    "away": "Fulham",
+    "kickoff": "2021-04-04T15:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.41881888782976845,
+      "draw": 0.2930205093834814,
+      "away_win": 0.2881606027867502
+    }
+  },
+  {
+    "split": "val",
+    "index": 297,
+    "fixture_id": "578361",
+    "home": "Manchester United",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-04-04T18:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5362769630511193,
+      "draw": 0.25287152407264507,
+      "away_win": 0.21085151287623566
+    }
+  },
+  {
+    "split": "val",
+    "index": 298,
+    "fixture_id": "578363",
+    "home": "Everton",
+    "away": "Crystal Palace",
+    "kickoff": "2021-04-05T17:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.43548950252293145,
+      "draw": 0.28304486079658536,
+      "away_win": 0.28146563668048313
+    }
+  },
+  {
+    "split": "val",
+    "index": 299,
+    "fixture_id": "578370",
+    "home": "Wolverhampton Wanderers",
+    "away": "West Ham United",
+    "kickoff": "2021-04-05T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.33889679580050047,
+      "draw": 0.2824930585593641,
+      "away_win": 0.3786101456401354
+    }
+  },
+  {
+    "split": "val",
+    "index": 300,
+    "fixture_id": "578360",
+    "home": "Fulham",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-04-09T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4290030676352605,
+      "draw": 0.2919588716121171,
+      "away_win": 0.27903806075262244
+    }
+  },
+  {
+    "split": "val",
+    "index": 301,
+    "fixture_id": "578355",
+    "home": "Manchester City",
+    "away": "Leeds United",
+    "kickoff": "2021-04-10T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6629136630050183,
+      "draw": 0.20957426848655777,
+      "away_win": 0.12751206850842384
+    }
+  },
+  {
+    "split": "val",
+    "index": 302,
+    "fixture_id": "578352",
+    "home": "Liverpool",
+    "away": "Aston Villa",
+    "kickoff": "2021-04-10T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4357009865686907,
+      "draw": 0.2839922010855486,
+      "away_win": 0.2803068123457607
+    }
+  },
+  {
+    "split": "val",
+    "index": 303,
+    "fixture_id": "578353",
+    "home": "Crystal Palace",
+    "away": "Chelsea",
+    "kickoff": "2021-04-10T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.29496200302191317,
+      "draw": 0.2732799275686278,
+      "away_win": 0.43175806940945904
+    }
+  },
+  {
+    "split": "val",
+    "index": 304,
+    "fixture_id": "578358",
+    "home": "Burnley",
+    "away": "Newcastle United",
+    "kickoff": "2021-04-11T11:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.43002976925599684,
+      "draw": 0.28948354634935497,
+      "away_win": 0.2804866843946481
+    }
+  },
+  {
+    "split": "val",
+    "index": 305,
+    "fixture_id": "578356",
+    "home": "West Ham United",
+    "away": "Leicester City",
+    "kickoff": "2021-04-11T13:05:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.43971981377465835,
+      "draw": 0.2659745354223652,
+      "away_win": 0.2943056508029764
+    }
+  },
+  {
+    "split": "val",
+    "index": 306,
+    "fixture_id": "578357",
+    "home": "Tottenham Hotspur",
+    "away": "Manchester United",
+    "kickoff": "2021-04-11T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3080060530368155,
+      "draw": 0.2557656824168852,
+      "away_win": 0.4362282645462993
+    }
+  },
+  {
+    "split": "val",
+    "index": 307,
+    "fixture_id": "578351",
+    "home": "Sheffield United",
+    "away": "Arsenal",
+    "kickoff": "2021-04-11T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.332424091162873,
+      "draw": 0.2938674735888071,
+      "away_win": 0.37370843524832004
+    }
+  },
+  {
+    "split": "val",
+    "index": 308,
+    "fixture_id": "578359",
+    "home": "West Bromwich Albion",
+    "away": "Southampton",
+    "kickoff": "2021-04-12T17:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.48765867845679234,
+      "draw": 0.2927112207344453,
+      "away_win": 0.2196301008087624
+    }
+  },
+  {
+    "split": "val",
+    "index": 309,
+    "fixture_id": "578354",
+    "home": "Brighton & Hove Albion",
+    "away": "Everton",
+    "kickoff": "2021-04-12T19:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.46749963189483007,
+      "draw": 0.2747096683558908,
+      "away_win": 0.25779069974927904
+    }
+  },
+  {
+    "split": "val",
+    "index": 310,
+    "fixture_id": "578348",
+    "home": "Everton",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-04-16T19:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3370831411634673,
+      "draw": 0.2837184510562044,
+      "away_win": 0.3791984077803284
+    }
+  },
+  {
+    "split": "val",
+    "index": 311,
+    "fixture_id": "578350",
+    "home": "Newcastle United",
+    "away": "West Ham United",
+    "kickoff": "2021-04-17T11:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.27477074162227555,
+      "draw": 0.26251111642596914,
+      "away_win": 0.4627181419517553
+    }
+  },
+  {
+    "split": "val",
+    "index": 312,
+    "fixture_id": "578347",
+    "home": "Wolverhampton Wanderers",
+    "away": "Sheffield United",
+    "kickoff": "2021-04-17T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5034197807540153,
+      "draw": 0.2905668194330482,
+      "away_win": 0.20601339981293654
+    }
+  },
+  {
+    "split": "val",
+    "index": 313,
+    "fixture_id": "578344",
+    "home": "Arsenal",
+    "away": "Fulham",
+    "kickoff": "2021-04-18T12:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.47861711699787396,
+      "draw": 0.2765799904632869,
+      "away_win": 0.2448028925388392
+    }
+  },
+  {
+    "split": "val",
+    "index": 314,
+    "fixture_id": "578342",
+    "home": "Manchester United",
+    "away": "Burnley",
+    "kickoff": "2021-04-18T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.6722161662558559,
+      "draw": 0.20960265682727539,
+      "away_win": 0.11818117691686872
+    }
+  },
+  {
+    "split": "val",
+    "index": 315,
+    "fixture_id": "578345",
+    "home": "Leeds United",
+    "away": "Liverpool",
+    "kickoff": "2021-04-19T19:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.46971027593513387,
+      "draw": 0.276867917590393,
+      "away_win": 0.2534218064744732
+    }
+  },
+  {
+    "split": "val",
+    "index": 316,
+    "fixture_id": "578341",
+    "home": "Chelsea",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-04-20T19:15:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.5308200381521856,
+      "draw": 0.2624187461361526,
+      "away_win": 0.20676121571166178
+    }
+  },
+  {
+    "split": "val",
+    "index": 317,
+    "fixture_id": "578379",
+    "home": "Tottenham Hotspur",
+    "away": "Southampton",
+    "kickoff": "2021-04-21T17:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5231477263667603,
+      "draw": 0.27452952381151996,
+      "away_win": 0.2023227498217198
+    }
+  },
+  {
+    "split": "val",
+    "index": 318,
+    "fixture_id": "578346",
+    "home": "Aston Villa",
+    "away": "Manchester City",
+    "kickoff": "2021-04-21T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.23841735066876105,
+      "draw": 0.24065652777423777,
+      "away_win": 0.5209261215570012
+    }
+  },
+  {
+    "split": "val",
+    "index": 319,
+    "fixture_id": "578349",
+    "home": "Leicester City",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-04-22T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4788872564571932,
+      "draw": 0.26884328263781393,
+      "away_win": 0.2522694609049928
+    }
+  },
+  {
+    "split": "val",
+    "index": 320,
+    "fixture_id": "578335",
+    "home": "Arsenal",
+    "away": "Everton",
+    "kickoff": "2021-04-23T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.47542172482136963,
+      "draw": 0.27007858565262005,
+      "away_win": 0.25449968952601026
+    }
+  },
+  {
+    "split": "val",
+    "index": 321,
+    "fixture_id": "578337",
+    "home": "Liverpool",
+    "away": "Newcastle United",
+    "kickoff": "2021-04-24T11:30:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.45009149363820394,
+      "draw": 0.28372773996786294,
+      "away_win": 0.26618076639393323
+    }
+  },
+  {
+    "split": "val",
+    "index": 322,
+    "fixture_id": "578333",
+    "home": "West Ham United",
+    "away": "Chelsea",
+    "kickoff": "2021-04-24T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.40932846692959374,
+      "draw": 0.2590399988965786,
+      "away_win": 0.3316315341738277
+    }
+  },
+  {
+    "split": "val",
+    "index": 323,
+    "fixture_id": "578331",
+    "home": "Sheffield United",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-04-24T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.308594233610152,
+      "draw": 0.29582925185758174,
+      "away_win": 0.3955765145322662
+    }
+  },
+  {
+    "split": "val",
+    "index": 324,
+    "fixture_id": "578332",
+    "home": "Wolverhampton Wanderers",
+    "away": "Burnley",
+    "kickoff": "2021-04-25T11:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4580122714794979,
+      "draw": 0.28503967337688774,
+      "away_win": 0.2569480551436144
+    }
+  },
+  {
+    "split": "val",
+    "index": 325,
+    "fixture_id": "578336",
+    "home": "Leeds United",
+    "away": "Manchester United",
+    "kickoff": "2021-04-25T13:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.2778114574714016,
+      "draw": 0.25308535168890955,
+      "away_win": 0.4691031908396889
+    }
+  },
+  {
+    "split": "val",
+    "index": 326,
+    "fixture_id": "578340",
+    "home": "Aston Villa",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-04-25T18:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.3892416254108527,
+      "draw": 0.29165051975302286,
+      "away_win": 0.31910785483612425
+    }
+  },
+  {
+    "split": "val",
+    "index": 327,
+    "fixture_id": "578334",
+    "home": "Leicester City",
+    "away": "Crystal Palace",
+    "kickoff": "2021-04-26T19:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5576444113928862,
+      "draw": 0.2600267225929711,
+      "away_win": 0.18232886601414272
+    }
+  },
+  {
+    "split": "val",
+    "index": 328,
+    "fixture_id": "578325",
+    "home": "Southampton",
+    "away": "Leicester City",
+    "kickoff": "2021-04-30T19:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.28411428988414644,
+      "draw": 0.26374278195007583,
+      "away_win": 0.4521429281657776
+    }
+  },
+  {
+    "split": "val",
+    "index": 329,
+    "fixture_id": "578327",
+    "home": "Crystal Palace",
+    "away": "Manchester City",
+    "kickoff": "2021-05-01T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.20599269929525443,
+      "draw": 0.23983042873496918,
+      "away_win": 0.5541768719697764
+    }
+  },
+  {
+    "split": "val",
+    "index": 330,
+    "fixture_id": "578324",
+    "home": "Brighton & Hove Albion",
+    "away": "Leeds United",
+    "kickoff": "2021-05-01T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38327018721370404,
+      "draw": 0.2807344406171031,
+      "away_win": 0.33599537216919284
+    }
+  },
+  {
+    "split": "val",
+    "index": 331,
+    "fixture_id": "578323",
+    "home": "Chelsea",
+    "away": "Fulham",
+    "kickoff": "2021-05-01T16:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5762556532783961,
+      "draw": 0.2636338292491772,
+      "away_win": 0.1601105174724266
+    }
+  },
+  {
+    "split": "val",
+    "index": 332,
+    "fixture_id": "578322",
+    "home": "Everton",
+    "away": "Aston Villa",
+    "kickoff": "2021-05-01T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4645734464970174,
+      "draw": 0.2807343570862559,
+      "away_win": 0.25469219641672686
+    }
+  },
+  {
+    "split": "val",
+    "index": 333,
+    "fixture_id": "578321",
+    "home": "Newcastle United",
+    "away": "Arsenal",
+    "kickoff": "2021-05-02T13:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3571200230700842,
+      "draw": 0.27335541190674295,
+      "away_win": 0.3695245650231728
+    }
+  },
+  {
+    "split": "val",
+    "index": 334,
+    "fixture_id": "578328",
+    "home": "Tottenham Hotspur",
+    "away": "Sheffield United",
+    "kickoff": "2021-05-02T18:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5951645058458475,
+      "draw": 0.25739276447791176,
+      "away_win": 0.1474427296762407
+    }
+  },
+  {
+    "split": "val",
+    "index": 335,
+    "fixture_id": "578330",
+    "home": "West Bromwich Albion",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-05-03T17:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4843487387406621,
+      "draw": 0.2816440179382796,
+      "away_win": 0.23400724332105835
+    }
+  },
+  {
+    "split": "val",
+    "index": 336,
+    "fixture_id": "578329",
+    "home": "Burnley",
+    "away": "West Ham United",
+    "kickoff": "2021-05-03T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3500884450484685,
+      "draw": 0.2726315069637327,
+      "away_win": 0.37728004798779874
+    }
+  },
+  {
+    "split": "val",
+    "index": 337,
+    "fixture_id": "578317",
+    "home": "Leicester City",
+    "away": "Newcastle United",
+    "kickoff": "2021-05-07T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5348606545490615,
+      "draw": 0.2608922762174634,
+      "away_win": 0.20424706923347502
+    }
+  },
+  {
+    "split": "val",
+    "index": 338,
+    "fixture_id": "578319",
+    "home": "Leeds United",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-05-08T11:30:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.29781271928646147,
+      "draw": 0.2621185419864306,
+      "away_win": 0.440068738727108
+    }
+  },
+  {
+    "split": "val",
+    "index": 339,
+    "fixture_id": "578314",
+    "home": "Sheffield United",
+    "away": "Crystal Palace",
+    "kickoff": "2021-05-08T14:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.37860024639476814,
+      "draw": 0.30855932543572556,
+      "away_win": 0.31284042816950625
+    }
+  },
+  {
+    "split": "val",
+    "index": 340,
+    "fixture_id": "578313",
+    "home": "Manchester City",
+    "away": "Chelsea",
+    "kickoff": "2021-05-08T16:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5118548415474079,
+      "draw": 0.2466019613521475,
+      "away_win": 0.24154319710044456
+    }
+  },
+  {
+    "split": "val",
+    "index": 341,
+    "fixture_id": "578318",
+    "home": "Liverpool",
+    "away": "Southampton",
+    "kickoff": "2021-05-08T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.49626493414285994,
+      "draw": 0.2843510307822799,
+      "away_win": 0.21938403507486004
+    }
+  },
+  {
+    "split": "val",
+    "index": 342,
+    "fixture_id": "578311",
+    "home": "Wolverhampton Wanderers",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-05-09T11:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.35546873684168573,
+      "draw": 0.29547390254299344,
+      "away_win": 0.3490573606153209
+    }
+  },
+  {
+    "split": "val",
+    "index": 343,
+    "fixture_id": "578316",
+    "home": "Aston Villa",
+    "away": "Manchester United",
+    "kickoff": "2021-05-09T13:05:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2528427231473511,
+      "draw": 0.2560396478506182,
+      "away_win": 0.4911176290020307
+    }
+  },
+  {
+    "split": "val",
+    "index": 344,
+    "fixture_id": "578315",
+    "home": "West Ham United",
+    "away": "Everton",
+    "kickoff": "2021-05-09T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44220885421490713,
+      "draw": 0.2648681081309906,
+      "away_win": 0.2929230376541022
+    }
+  },
+  {
+    "split": "val",
+    "index": 345,
+    "fixture_id": "578320",
+    "home": "Arsenal",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-05-09T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.44051257206833183,
+      "draw": 0.27408258009804404,
+      "away_win": 0.28540484783362413
+    }
+  },
+  {
+    "split": "val",
+    "index": 346,
+    "fixture_id": "578312",
+    "home": "Fulham",
+    "away": "Burnley",
+    "kickoff": "2021-05-10T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.37927214253664016,
+      "draw": 0.2974463712151567,
+      "away_win": 0.32328148624820313
+    }
+  },
+  {
+    "split": "val",
+    "index": 347,
+    "fixture_id": "578306",
+    "home": "Manchester United",
+    "away": "Leicester City",
+    "kickoff": "2021-05-11T17:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.6135934224697455,
+      "draw": 0.2327049705501742,
+      "away_win": 0.15370160698008026
+    }
+  },
+  {
+    "split": "val",
+    "index": 348,
+    "fixture_id": "578343",
+    "home": "Southampton",
+    "away": "Crystal Palace",
+    "kickoff": "2021-05-11T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38716840373345673,
+      "draw": 0.2947539170836098,
+      "away_win": 0.31807767918293356
+    }
+  },
+  {
+    "split": "val",
+    "index": 349,
+    "fixture_id": "578302",
+    "home": "Chelsea",
+    "away": "Arsenal",
+    "kickoff": "2021-05-12T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.48668345553638254,
+      "draw": 0.2602602815398744,
+      "away_win": 0.25305626292374306
+    }
+  },
+  {
+    "split": "val",
+    "index": 350,
+    "fixture_id": "578475",
+    "home": "Aston Villa",
+    "away": "Everton",
+    "kickoff": "2021-05-13T17:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.38061049715191725,
+      "draw": 0.2799685101421406,
+      "away_win": 0.33942099270594217
+    }
+  },
+  {
+    "split": "val",
+    "index": 351,
+    "fixture_id": "578326",
+    "home": "Manchester United",
+    "away": "Liverpool",
+    "kickoff": "2021-05-13T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5165363727815121,
+      "draw": 0.252156361943454,
+      "away_win": 0.23130726527503395
+    }
+  },
+  {
+    "split": "val",
+    "index": 352,
+    "fixture_id": "578304",
+    "home": "Newcastle United",
+    "away": "Manchester City",
+    "kickoff": "2021-05-14T19:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.29081749067662843,
+      "draw": 0.2504388074304269,
+      "away_win": 0.45874370189294467
+    }
+  },
+  {
+    "split": "val",
+    "index": 353,
+    "fixture_id": "578308",
+    "home": "Burnley",
+    "away": "Leeds United",
+    "kickoff": "2021-05-15T11:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.4117797927951563,
+      "draw": 0.27575081424352227,
+      "away_win": 0.3124693929613215
+    }
+  },
+  {
+    "split": "val",
+    "index": 354,
+    "fixture_id": "578303",
+    "home": "Southampton",
+    "away": "Fulham",
+    "kickoff": "2021-05-15T14:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4550265985038705,
+      "draw": 0.29943204277566826,
+      "away_win": 0.24554135872046115
+    }
+  },
+  {
+    "split": "val",
+    "index": 355,
+    "fixture_id": "578310",
+    "home": "Brighton & Hove Albion",
+    "away": "West Ham United",
+    "kickoff": "2021-05-15T19:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.4322898638523044,
+      "draw": 0.27994154360812734,
+      "away_win": 0.28776859253956827
+    }
+  },
+  {
+    "split": "val",
+    "index": 356,
+    "fixture_id": "578301",
+    "home": "Crystal Palace",
+    "away": "Aston Villa",
+    "kickoff": "2021-05-16T11:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.38999085029821623,
+      "draw": 0.28681577623457594,
+      "away_win": 0.3231933734672079
+    }
+  },
+  {
+    "split": "val",
+    "index": 357,
+    "fixture_id": "578305",
+    "home": "Tottenham Hotspur",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-05-16T13:05:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5551834197339739,
+      "draw": 0.25881214613330733,
+      "away_win": 0.18600443413271892
+    }
+  },
+  {
+    "split": "val",
+    "index": 358,
+    "fixture_id": "578307",
+    "home": "West Bromwich Albion",
+    "away": "Liverpool",
+    "kickoff": "2021-05-16T15:30:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.2957940858626803,
+      "draw": 0.25571987167336613,
+      "away_win": 0.4484860424639537
+    }
+  },
+  {
+    "split": "val",
+    "index": 359,
+    "fixture_id": "578309",
+    "home": "Everton",
+    "away": "Sheffield United",
+    "kickoff": "2021-05-16T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5056478581033185,
+      "draw": 0.29331835634977216,
+      "away_win": 0.20103378554690937
+    }
+  },
+  {
+    "split": "val",
+    "index": 360,
+    "fixture_id": "578293",
+    "home": "Manchester United",
+    "away": "Fulham",
+    "kickoff": "2021-05-18T17:00:00+00:00",
+    "label": 1,
+    "label_name": "draw",
+    "probabilities": {
+      "home_win": 0.6014291624181929,
+      "draw": 0.2559493317555062,
+      "away_win": 0.14262150582630082
+    }
+  },
+  {
+    "split": "val",
+    "index": 361,
+    "fixture_id": "578294",
+    "home": "Southampton",
+    "away": "Leeds United",
+    "kickoff": "2021-05-18T17:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.34739873576750563,
+      "draw": 0.2688915109786688,
+      "away_win": 0.3837097532538256
+    }
+  },
+  {
+    "split": "val",
+    "index": 362,
+    "fixture_id": "578297",
+    "home": "Brighton & Hove Albion",
+    "away": "Manchester City",
+    "kickoff": "2021-05-18T18:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.33412572939396007,
+      "draw": 0.2614048714615335,
+      "away_win": 0.40446939914450636
+    }
+  },
+  {
+    "split": "val",
+    "index": 363,
+    "fixture_id": "578295",
+    "home": "Chelsea",
+    "away": "Leicester City",
+    "kickoff": "2021-05-18T19:15:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.46828797399750594,
+      "draw": 0.2672539865341549,
+      "away_win": 0.2644580394683392
+    }
+  },
+  {
+    "split": "val",
+    "index": 364,
+    "fixture_id": "578292",
+    "home": "Tottenham Hotspur",
+    "away": "Aston Villa",
+    "kickoff": "2021-05-19T17:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.5403678072413123,
+      "draw": 0.2548795294308768,
+      "away_win": 0.20475266332781097
+    }
+  },
+  {
+    "split": "val",
+    "index": 365,
+    "fixture_id": "578298",
+    "home": "Newcastle United",
+    "away": "Sheffield United",
+    "kickoff": "2021-05-19T17:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4889609942815916,
+      "draw": 0.28767309439196753,
+      "away_win": 0.22336591132644074
+    }
+  },
+  {
+    "split": "val",
+    "index": 366,
+    "fixture_id": "578300",
+    "home": "Everton",
+    "away": "Wolverhampton Wanderers",
+    "kickoff": "2021-05-19T17:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4492583211292737,
+      "draw": 0.2949242737229378,
+      "away_win": 0.25581740514778845
+    }
+  },
+  {
+    "split": "val",
+    "index": 367,
+    "fixture_id": "578291",
+    "home": "Crystal Palace",
+    "away": "Arsenal",
+    "kickoff": "2021-05-19T18:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.32124570506235656,
+      "draw": 0.27133274813608393,
+      "away_win": 0.40742154680155956
+    }
+  },
+  {
+    "split": "val",
+    "index": 368,
+    "fixture_id": "578296",
+    "home": "Burnley",
+    "away": "Liverpool",
+    "kickoff": "2021-05-19T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.30102378599396706,
+      "draw": 0.25637210612130173,
+      "away_win": 0.4426041078847312
+    }
+  },
+  {
+    "split": "val",
+    "index": 369,
+    "fixture_id": "578299",
+    "home": "West Bromwich Albion",
+    "away": "West Ham United",
+    "kickoff": "2021-05-19T19:15:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.38717652514875583,
+      "draw": 0.2786267329618412,
+      "away_win": 0.3341967418894031
+    }
+  },
+  {
+    "split": "val",
+    "index": 370,
+    "fixture_id": "578281",
+    "home": "Arsenal",
+    "away": "Brighton & Hove Albion",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.4653161176633371,
+      "draw": 0.2647070165342266,
+      "away_win": 0.26997686580243646
+    }
+  },
+  {
+    "split": "val",
+    "index": 371,
+    "fixture_id": "578282",
+    "home": "Sheffield United",
+    "away": "Burnley",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.3401748791843016,
+      "draw": 0.30221530646054057,
+      "away_win": 0.35760981435515793
+    }
+  },
+  {
+    "split": "val",
+    "index": 372,
+    "fixture_id": "578283",
+    "home": "Aston Villa",
+    "away": "Chelsea",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.31985685345886317,
+      "draw": 0.25914898416774157,
+      "away_win": 0.4209941623733952
+    }
+  },
+  {
+    "split": "val",
+    "index": 373,
+    "fixture_id": "578284",
+    "home": "Liverpool",
+    "away": "Crystal Palace",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.652184048432654,
+      "draw": 0.22627107794259455,
+      "away_win": 0.12154487362475136
+    }
+  },
+  {
+    "split": "val",
+    "index": 374,
+    "fixture_id": "578285",
+    "home": "Manchester City",
+    "away": "Everton",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5109915732243628,
+      "draw": 0.2535247963856218,
+      "away_win": 0.23548363039001544
+    }
+  },
+  {
+    "split": "val",
+    "index": 375,
+    "fixture_id": "578286",
+    "home": "Wolverhampton Wanderers",
+    "away": "Manchester United",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.27681990693017794,
+      "draw": 0.2594966513525447,
+      "away_win": 0.46368344171727727
+    }
+  },
+  {
+    "split": "val",
+    "index": 376,
+    "fixture_id": "578287",
+    "home": "Fulham",
+    "away": "Newcastle United",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.3447271876028364,
+      "draw": 0.28344181027096943,
+      "away_win": 0.3718310021261942
+    }
+  },
+  {
+    "split": "val",
+    "index": 377,
+    "fixture_id": "578288",
+    "home": "West Ham United",
+    "away": "Southampton",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.49201808574240713,
+      "draw": 0.26888374489913214,
+      "away_win": 0.23909816935846084
+    }
+  },
+  {
+    "split": "val",
+    "index": 378,
+    "fixture_id": "578289",
+    "home": "Leicester City",
+    "away": "Tottenham Hotspur",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 2,
+    "label_name": "away_win",
+    "probabilities": {
+      "home_win": 0.44335428468857657,
+      "draw": 0.26524755613114553,
+      "away_win": 0.29139815918027784
+    }
+  },
+  {
+    "split": "val",
+    "index": 379,
+    "fixture_id": "578290",
+    "home": "Leeds United",
+    "away": "West Bromwich Albion",
+    "kickoff": "2021-05-23T15:00:00+00:00",
+    "label": 0,
+    "label_name": "home_win",
+    "probabilities": {
+      "home_win": 0.5747883880660983,
+      "draw": 0.25271720209788556,
+      "away_win": 0.17249440983601605
+    }
+  }
+]
