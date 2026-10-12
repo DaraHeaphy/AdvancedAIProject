@@ -1,0 +1,15 @@
+{
+  "split": "val",
+  "index": 0,
+  "fixture_id": "578653",
+  "home": "Fulham",
+  "away": "Arsenal",
+  "kickoff": "2020-09-12T11:30:00+00:00",
+  "label": 2,
+  "label_name": "away_win",
+  "probabilities": {
+    "home_win": 0.3105281889438629,
+    "draw": 0.28678399324417114,
+    "away_win": 0.40268784761428833
+  }
+}

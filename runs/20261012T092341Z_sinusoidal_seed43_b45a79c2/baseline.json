@@ -1,0 +1,14 @@
+{
+  "training_class_counts": {
+    "home_win": 3203,
+    "draw": 1733,
+    "away_win": 1976
+  },
+  "probabilities": {
+    "home_win": 0.46339699074074076,
+    "draw": 0.25072337962962965,
+    "away_win": 0.28587962962962965
+  },
+  "validation_log_loss": 1.097809163191235,
+  "validation_accuracy": 0.37894736842105264
+}

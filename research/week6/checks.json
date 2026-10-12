@@ -1,0 +1,58 @@
+{
+  "verified_at_utc": "2026-10-12T09:26:38.623883+00:00",
+  "passed": true,
+  "test_evaluated": false,
+  "checks": {
+    "complete_unique_seed_grid": true,
+    "checkpoint_reload_and_artifact_verification": true,
+    "matched_source_data_environment_and_settings": true,
+    "identical_validation_fixtures": true,
+    "independent_metrics": true
+  },
+  "runs": [
+    {
+      "condition": "none",
+      "seed": 42,
+      "run_dir": "runs/20261012T092250Z_none_seed42_a1c6a4b1"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 42,
+      "run_dir": "runs/20261012T092307Z_sinusoidal_seed42_8413164e"
+    },
+    {
+      "condition": "none",
+      "seed": 43,
+      "run_dir": "runs/20261012T092324Z_none_seed43_0182789c"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 43,
+      "run_dir": "runs/20261012T092341Z_sinusoidal_seed43_b45a79c2"
+    },
+    {
+      "condition": "none",
+      "seed": 44,
+      "run_dir": "runs/20261012T092357Z_none_seed44_ceec63f6"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 44,
+      "run_dir": "runs/20261012T092414Z_sinusoidal_seed44_d81773da"
+    }
+  ],
+  "analysis_source_sha256": "aa38d758c8ca102ad71e08e1ed88fbd7be89f922a8c456a57745c9bbec5fa4a5",
+  "analysis_dependencies": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.64.0",
+    "kiwisolver": "1.5.1",
+    "packaging": "26.0",
+    "pillow": "12.1.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  }
+}

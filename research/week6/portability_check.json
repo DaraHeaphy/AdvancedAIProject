@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-10-12T09:28:52.185395+00:00",
+  "passed": true,
+  "test_evaluated": false,
+  "checks": {
+    "independent_csv_probability_metrics": true,
+    "manual_mean_sample_sd_and_paired_differences": true,
+    "pre_training_protocol_timestamp": true,
+    "utf8_report_and_valid_figures": true,
+    "all_bundle_member_hashes": true,
+    "six_checkpoints_and_comparison_sources_in_bundle": true,
+    "extracted_bundle_25_tests": true,
+    "extracted_bundle_report_reproduced": true
+  },
+  "bundle": "evidence_bundles/week6_20261012T092638Z_1fbb2fb6.zip",
+  "bundle_sha256": "42a0ea09d6d2b828d81f59f8bcc807efde434a589ff543ad1b0c836cbdd6f6bd",
+  "bundle_member_count": 205,
+  "unit_tests_run_after_extraction": 25
+}

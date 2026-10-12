@@ -1,0 +1,32 @@
+{
+  "split": "val",
+  "examples": 380,
+  "log_loss": 1.0596250138350782,
+  "accuracy": 0.4763157894736842,
+  "brier_score": 0.6334007499635214,
+  "class_order": [
+    "home_win",
+    "draw",
+    "away_win"
+  ],
+  "confusion_matrix": [
+    [
+      121,
+      0,
+      23
+    ],
+    [
+      55,
+      0,
+      28
+    ],
+    [
+      93,
+      0,
+      60
+    ]
+  ],
+  "confusion_matrix_axes": "rows=true, columns=predicted",
+  "brier_definition": "mean sum of squared errors across the three classes",
+  "calculation": "Python math from exported probabilities; natural logarithm"
+}

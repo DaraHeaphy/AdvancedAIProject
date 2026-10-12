@@ -1,0 +1,105 @@
+{
+  "generated_at_utc": "2026-10-12T09:26:37.459828+00:00",
+  "split": "val",
+  "test_evaluated": false,
+  "conditions": {
+    "none": {
+      "log_loss": {
+        "mean": 1.0546660973015083,
+        "sample_sd": 0.006094059216211877,
+        "min": 1.0481606999107256,
+        "max": 1.0602420289429675
+      },
+      "accuracy": {
+        "mean": 0.4763157894736842,
+        "sample_sd": 0.005263157894736831,
+        "min": 0.4710526315789474,
+        "max": 0.48157894736842105
+      }
+    },
+    "sinusoidal": {
+      "log_loss": {
+        "mean": 1.0571206864862237,
+        "sample_sd": 0.004491012573830162,
+        "min": 1.0519359088801175,
+        "max": 1.0598011367434752
+      },
+      "accuracy": {
+        "mean": 0.47368421052631576,
+        "sample_sd": 0.009488292830168391,
+        "min": 0.4631578947368421,
+        "max": 0.48157894736842105
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "seed": 42,
+      "log_loss_difference": 0.0037752089693918744,
+      "accuracy_difference_pp": 0.5263157894736858
+    },
+    {
+      "seed": 43,
+      "log_loss_difference": -0.0006170151078892516,
+      "accuracy_difference_pp": -0.5263157894736858
+    },
+    {
+      "seed": 44,
+      "log_loss_difference": 0.004205573692643405,
+      "accuracy_difference_pp": -0.7894736842105288
+    }
+  ],
+  "paired_log_loss": {
+    "mean": 0.0024545891847153425,
+    "sample_sd": 0.002668776526147341,
+    "min": -0.0006170151078892516,
+    "max": 0.004205573692643405
+  },
+  "baseline": {
+    "training_class_counts": {
+      "home_win": 3203,
+      "draw": 1733,
+      "away_win": 1976
+    },
+    "probabilities": {
+      "home_win": 0.46339699074074076,
+      "draw": 0.25072337962962965,
+      "away_win": 0.28587962962962965
+    },
+    "validation_log_loss": 1.097809163191235,
+    "validation_accuracy": 0.37894736842105264
+  },
+  "training_environment": {
+    "python": "3.14.2",
+    "dependencies": {
+      "filelock": "4.0.3",
+      "fsspec": "2026.9.0",
+      "jinja2": "3.1.6",
+      "markupsafe": "3.0.3",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "packaging": "26.0",
+      "setuptools": "84.0.0",
+      "sympy": "1.14.0",
+      "torch": "2.14.0",
+      "typing-extensions": "4.15.0"
+    },
+    "torch_build": "2.14.0+cpu",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "logical_cpu_count": 16,
+    "torch_threads": 1,
+    "device": "cpu",
+    "cuda_build": null,
+    "device_name": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "deterministic_algorithms": true
+  },
+  "total_training_seconds": 68.77722879999783,
+  "runner_wall_seconds": 101.41909069998655,
+  "packaging_audit": {
+    "runs": 6,
+    "training_seconds": 100.43787540018093
+  },
+  "interpretation": "Sinusoidal encoding improved validation log loss for 1 of three seeds. The direction varies across seeds, so there is no consistent improvement in this comparison. A small mean difference should be interpreted alongside the paired variation."
+}

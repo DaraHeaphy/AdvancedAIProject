@@ -1,0 +1,59 @@
+{
+  "created_before_training_at_utc": "2026-10-12T09:17:30.426458+00:00",
+  "protocol": {
+    "question": "Does fixed sinusoidal positional encoding improve next-fixture prediction compared with no positional encoding?",
+    "conditions": [
+      "none",
+      "sinusoidal"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 10,
+    "device": "cpu",
+    "threads": 1,
+    "primary_metric": "validation multiclass log loss, natural logarithm",
+    "secondary_metric": "validation accuracy",
+    "checkpoint_selection": "minimum validation log loss within each run",
+    "paired_difference": "sinusoidal minus none; negative favours sinusoidal",
+    "variation": "sample standard deviation across training seeds (ddof=1)",
+    "test_evaluated": false
+  },
+  "status": "complete",
+  "runs": [
+    {
+      "condition": "none",
+      "seed": 42,
+      "run_dir": "runs/20261012T091735Z_none_seed42_5e48689c"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 42,
+      "run_dir": "runs/20261012T091759Z_sinusoidal_seed42_1512af41"
+    },
+    {
+      "condition": "none",
+      "seed": 43,
+      "run_dir": "runs/20261012T091825Z_none_seed43_c8691e09"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 43,
+      "run_dir": "runs/20261012T091850Z_sinusoidal_seed43_459b0125"
+    },
+    {
+      "condition": "none",
+      "seed": 44,
+      "run_dir": "runs/20261012T091914Z_none_seed44_306dc50c"
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 44,
+      "run_dir": "runs/20261012T091939Z_sinusoidal_seed44_748a9ec3"
+    }
+  ],
+  "script_sha256": "fc2bf95f72f9c174cff2e3a5f3803763420eea12b342b0d78f8fbaacd38b92a7",
+  "wall_seconds": 148.36113890004344
+}

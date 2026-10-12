@@ -1,0 +1,40 @@
+{
+  "recorded_at_utc": "2026-10-12T09:24:14.907016+00:00",
+  "training_command": [
+    "python",
+    "train.py",
+    "train",
+    "--positional-encoding",
+    "sinusoidal",
+    "--seed",
+    "44",
+    "--epochs",
+    "10",
+    "--device",
+    "cpu",
+    "--threads",
+    "1"
+  ],
+  "git": {
+    "commit": "3197606c74237d3fb773c0c1f7cf8fd83b946465",
+    "dirty": true
+  },
+  "source_files_sha256": {
+    "dataset.py": "0c231330ebc87bebe9cf183685dbccd9d5011fe594b0f43d73cb6928126020bf",
+    "model.py": "651b29f7d80e85a1334c53aa2956b34239bb29520bb1f07a68e2c7791d93d920",
+    "train.py": "3ce2359726778ae2f3daa3b0f74defa3301397ea10074a12f8d042802dfa8884",
+    "evidence.py": "ec18004e935a2b1c198af3d545689e32a40ee3bfe75e495c84876d3e19991cb6",
+    "comparison.py": "aa38d758c8ca102ad71e08e1ed88fbd7be89f922a8c456a57745c9bbec5fa4a5",
+    "requirements-analysis.txt": "426dd59816a8d566497c1d87fe87ca591f989bca39a5b9dbe46c8b984a413602",
+    "requirements.txt": "b8010b8b50445c650954f35cd7af528a47e727cb198cf1d212d4d6cf35ff33a8",
+    "requirements-lock.txt": "040f03cee973a93e32a498c4c51b6cac91ea185fe974693dfd7f8c761a527346",
+    "README.md": "72011ffee8c07ad1e97a311036d996c027395c7822d5ddc01efc35e9a97668cc",
+    "dataset/README.md": "7060470089004318cfbe15c0d25bf9f781c7bcad77023999f3d577fc07d2034a",
+    "tests/test_comparison.py": "ec9674b161e7abe8c3110831a4285add9429bd8a14d9fab80162a3457d18fefe",
+    "tests/test_dataset.py": "be348f5bb295e25e9afe90bd2bbb402a4288b2242bec9ff668708aebd019f245",
+    "tests/test_evidence.py": "4af469e062cfbe44e28cdc827dde712985de88b6d0178d9384213764fe0aa3f1",
+    "tests/test_model.py": "a70a704b25cd483eb097430271b2a369fc72852dd879e375f5652e83db0b6914"
+  },
+  "source_snapshot": "source",
+  "note": "Source hashes identify the executed files even when Git is dirty or absent."
+}
