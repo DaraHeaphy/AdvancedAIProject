@@ -127,6 +127,9 @@ class RunEvidenceTests(unittest.TestCase):
                 self.assertIn("dataset/matches.csv", archive.namelist())
                 self.assertIn(f"runs/{self.run_dir.name}/best.pt", archive.namelist())
                 self.assertIn("tests/test_evidence.py", archive.namelist())
+                self.assertIn("comparison.py", archive.namelist())
+                self.assertIn("requirements-analysis.txt", archive.namelist())
+                self.assertIn(f"runs/{self.run_dir.name}/source/comparison.py", archive.namelist())
                 self.assertFalse(any(".git/" in name or ".venv/" in name for name in archive.namelist()))
 
 

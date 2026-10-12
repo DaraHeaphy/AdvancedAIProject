@@ -85,14 +85,56 @@ python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 ```
 
-The checks should finish with `Ran 20 tests` and `OK`: five data tests,
-seven model/pipeline tests and eight evidence tests. The checks cover both positional settings,
+The checks should finish with `Ran 25 tests` and `OK`: five data tests,
+seven model/pipeline tests, eight evidence tests and five comparison tests. The checks cover both positional settings,
 finite `[batch, 3]` logits, usable gradients, equal parameter counts, probability
 sums, exact checkpoint reloads, independent history permutations, weighted
 validation loss, a training-only frequency baseline and reproducible distinct
 runs. Small pipeline tests supply only training and validation datasets.
 Evidence checks cover independently calculated metrics, invalid probabilities,
 dependency pins, corrupted artifacts, safe paths and bundle contents/hashes.
+Comparison checks cover complete independent-seed pairs, sample variation,
+paired differences and rejection of mismatched settings, source, data or fixtures.
+
+## Week 6 results checkpoint
+
+The fixed comparison uses `none` and `sinusoidal` with seeds **42, 43 and 44**,
+ten epochs, CPU and one PyTorch thread. Six fresh runs are recorded explicitly
+in a study manifest; previous repeats of seed 42 are not independent seeds.
+All other model, data and training settings are held fixed. Test results remain
+reserved for final evaluation after the experiment is frozen.
+
+In **PowerShell**, from `C:\Users\User\repos\AdvancedAIProject`:
+
+```powershell
+python -m pip install -r requirements-analysis.txt
+python -m unittest discover -s tests -v
+python comparison.py run --output research/week6
+```
+
+Success prints `Verified six-run Week 6 report:`. Start with
+[the checkpoint report](research/week6/REPORT.md), which contains every run,
+mean/sample standard deviation, paired differences, useful figures, the current
+interpretation and failure cases. [The study manifest](research/week6/experiment.json)
+retains the pre-training protocol and exact run folders. Raw tables and full
+precision summaries are alongside the report. Plotting dependencies are separate
+from the original training requirements, and recorded in `checks.json`.
+
+To verify checkpoints and regenerate the report without training, or to create a
+portable evidence ZIP containing all six checkpoints and source/data snapshots:
+
+```powershell
+python comparison.py report --output research/week6
+python comparison.py bundle --output research/week6
+```
+
+ZIPs are saved under `evidence_bundles/` and never overwritten. Checkpoints,
+source snapshots and ZIPs are ignored by Git, so retain the ZIP for handover.
+To reproduce training separately, use `--output research/week6_reproduction`.
+A resumed study skips only its manifest's completed, verified runs. A report
+rejects incomplete pairs or differences in controlled settings, source/data
+hashes, environments, validation fixtures and baseline. This is a validation
+checkpoint; final held-out evaluation is still pending.
 
 ## Model and training (Tiernan's half)
 
@@ -223,7 +265,8 @@ use the source snapshot in the extracted bundle to verify an older run.
 An extracted bundle can verify and predict with its checkpoint immediately
 after dependencies are installed. The data loader's conservative chronological
 history policy and final-test reservation still apply. This is pipeline evidence;
-the matched-seed research comparison and final held-out evaluation remain future work.
+the matched-seed research comparison is recorded in the Week 6 report above;
+final held-out evaluation remains pending.
 
 ## Reload a checkpoint and predict
 
@@ -292,9 +335,9 @@ python train.py overfit --positional-encoding none --seed 42 --steps 300 --devic
 An optional `--output <new-file.json>` saves this diagnostic without overwriting
 an existing file. The diagnostic is separate from the ten-epoch run.
 
-This is a pipeline sanity check, not evidence of a positional effect. The main
-study still needs at least three independent seeds per condition, the same
-seeds across conditions, reporting every run and final held-out evaluation.
+This first run is a pipeline sanity check, not evidence of a positional effect.
+The Week 6 comparison above uses three independent seeds per condition and
+reports every matched run. Final held-out evaluation remains pending.
 The logistic regression baseline is deferred. The final season remains incomplete.
 
 
