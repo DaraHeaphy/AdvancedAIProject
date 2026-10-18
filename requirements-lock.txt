@@ -1,13 +1,21 @@
-# Recorded on Python 3.14.2, Windows AMD64.
-# Package versions are pinned; the exact torch build is in environment.json.
-filelock==4.0.3
-fsspec==2026.9.0
-jinja2==3.1.6
-markupsafe==3.0.3
+# Week 7 reproduction; Python 3.11 on Windows; exact torch build recorded per run.
+contourpy==1.2.0
+cycler==0.12.1
+filelock==3.13.1
+fonttools==4.49.0
+fsspec==2025.3.0
+jinja2==3.1.3
+kiwisolver==1.4.5
+markupsafe==2.1.5
+matplotlib==3.8.3
 mpmath==1.3.0
-networkx==3.7
-packaging==26.0
-setuptools==84.0.0
-sympy==1.14.0
-torch==2.14.0
-typing-extensions==4.15.0
+networkx==3.4.2
+numpy==1.26.4
+packaging==23.2
+pillow==10.2.0
+pyparsing==3.1.1
+python-dateutil==2.9.0.post0
+six==1.16.0
+sympy==1.13.1
+torch==2.6.0
+typing-extensions==4.16.0

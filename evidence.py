@@ -91,6 +91,8 @@ def record_provenance(run_dir, command):
              "comparison.py", "requirements-analysis.txt",
              "requirements.txt", "requirements-lock.txt", "README.md", "dataset/README.md"]
     files += [path.relative_to(ROOT).as_posix() for path in sorted((ROOT / "tests").glob("test_*.py"))]
+    if (ROOT / "final_evaluation.py").exists():
+        files.append("final_evaluation.py")
     hashes = {}
     for relative in files:
         source = portable_path(ROOT, relative)
@@ -135,7 +137,7 @@ def validation_predictions(model, val, device, batch_size=32):
     return rows
 
 
-def metrics_from_predictions(rows):
+def metrics_from_predictions(rows, split="val"):
     """Calculate metrics with Python maths only, independently of torch losses."""
     if not rows:
         raise ValueError("Validation predictions are empty")
@@ -143,8 +145,8 @@ def metrics_from_predictions(rows):
     confusion = [[0] * 3 for _ in range(3)]
     identifiers = set()
     for index, row in enumerate(rows):
-        if row["split"] != "val" or row["index"] != index:
-            raise ValueError("Predictions must be ordered validation fixtures")
+        if row["split"] != split or row["index"] != index:
+            raise ValueError(f"Predictions must be ordered {split} fixtures")
         if row["fixture_id"] in identifiers:
             raise ValueError("Duplicate prediction fixture")
         identifiers.add(row["fixture_id"])
@@ -165,7 +167,7 @@ def metrics_from_predictions(rows):
         losses.append(-math.log(probabilities[label]))
         brier.append(math.fsum((value - int(i == label)) ** 2 for i, value in enumerate(probabilities)))
     return {
-        "split": "val", "examples": len(rows), "log_loss": math.fsum(losses) / len(rows),
+        "split": split, "examples": len(rows), "log_loss": math.fsum(losses) / len(rows),
         "accuracy": sum(confusion[i][i] for i in range(3)) / len(rows),
         "brier_score": math.fsum(brier) / len(rows), "class_order": LABELS,
         "confusion_matrix": confusion, "confusion_matrix_axes": "rows=true, columns=predicted",

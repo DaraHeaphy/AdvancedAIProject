@@ -29,3 +29,15 @@ https://www.kaggle.com/datasets/josephvm/english-premier-league-game-events-and-
 The proposal reports CC0/Public Domain licensing. Source attribution and licence
 are carried over from the proposal; they have not been independently verified
 against the downloaded files in this step.
+
+## Week 7 source check
+
+On 18 October 2026, the publisher's Kaggle metadata page was checked:
+https://www.kaggle.com/josephvm/english-premier-league-game-events-and-results/metadata
+It identifies Joseph Mohr as publisher, lists ESPN as the scraped source, and
+labels the dataset CC0: Public Domain. It also explains that the year column is
+the season start year. This confirms the publisher's declared terms; it does
+not independently establish rights in upstream ESPN content or that the local
+files are identical to a particular Kaggle version. The local matches.csv hash
+and preprocessing counts are retained with every run. Only match results and
+home status enter the model; player names and lineups are not used.

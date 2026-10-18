@@ -1,0 +1,23 @@
+# Frozen evidence records SHA-256 of exact file bytes, including line endings.
+# Preserve these bytes across Windows, macOS and Linux checkouts.
+* whitespace=cr-at-eol
+/dataset.py -text
+/model.py -text
+/train.py -text
+/evidence.py -text
+/comparison.py -text
+/final_evaluation.py -text
+/README.md -text
+/requirements*.txt -text
+/dataset/README.md -text
+/dataset/matches.csv -text
+/tests/*.py -text
+/research/week7/** -text
+/research/week7_reproduction/** -text
+/research/week7_notes/** -text
+/runs/**/source/** -text
+/output/** -text
+# Generated SVG formatting and preserved Markdown hard breaks are intentional.
+*.svg -whitespace
+/research/week7_reproduction/REPORT.md -whitespace
+/research/week7_notes/README_before_week7.md -whitespace
