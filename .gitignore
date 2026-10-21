@@ -1,30 +1,17 @@
 __pycache__/
 *.py[cod]
-.venv/
-# Keep run JSON records visible; only binary checkpoints are excluded.
-/runs/**/*.pt
-# Bundles and source snapshots remain local; compact evidence records are tracked.
-/runs/**/source/
-/evidence_bundles/
-# Local rendering tools, previews and isolated extraction checks.
+.venv*/
 /tmp/
-/.venv_submission/
-/output/submission/*.zip
-/output/submission/*.log
-
-# Retain the final six models and their exact source snapshots for teammate review.
-!/runs/20261018T104408Z_none_seed42_d53fef0e/best.pt
-!/runs/20261018T104408Z_none_seed42_d53fef0e/source/
-!/runs/20261018T104513Z_sinusoidal_seed42_f90ed229/best.pt
-!/runs/20261018T104513Z_sinusoidal_seed42_f90ed229/source/
-!/runs/20261018T104617Z_none_seed43_d0e8bdb7/best.pt
-!/runs/20261018T104617Z_none_seed43_d0e8bdb7/source/
-!/runs/20261018T104722Z_sinusoidal_seed43_4ef81009/best.pt
-!/runs/20261018T104722Z_sinusoidal_seed43_4ef81009/source/
-!/runs/20261018T104827Z_none_seed44_4ebc7cde/best.pt
-!/runs/20261018T104827Z_none_seed44_4ebc7cde/source/
-!/runs/20261018T104929Z_sinusoidal_seed44_bd619ab3/best.pt
-!/runs/20261018T104929Z_sinusoidal_seed44_bd619ab3/source/
-
-# The verified final submission bundle is small enough to share in this repository.
-!/output/submission/AdvancedAIProject-Week7-20261018T110409Z.zip
+/local_archive/
+/runs/
+/research/
+/output/
+/evidence_bundles/
+/tools/
+/FIRST_ATTEMPT.md
+/REVIEW.md
+/PROJECT_REVIEW.md
+/dataset/events.csv
+/dataset/all_tables.csv
+/dataset/agg_stats/
+~$*

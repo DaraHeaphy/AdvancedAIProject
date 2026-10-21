@@ -89,7 +89,7 @@ def portable_path(directory, relative):
 def record_provenance(run_dir, command):
     files = ["dataset.py", "model.py", "train.py", "evidence.py",
              "comparison.py", "requirements-analysis.txt",
-             "requirements.txt", "requirements-lock.txt", "README.md", "dataset/README.md"]
+             "requirements.txt", "requirements-lock.txt"]
     files += [path.relative_to(ROOT).as_posix() for path in sorted((ROOT / "tests").glob("test_*.py"))]
     if (ROOT / "final_evaluation.py").exists():
         files.append("final_evaluation.py")

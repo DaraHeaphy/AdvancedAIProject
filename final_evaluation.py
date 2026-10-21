@@ -1,4 +1,4 @@
-"""Freeze, evaluate and verify Week 7 evidence without choosing models on test data."""
+"""Freeze, evaluate and verify the revised experiment without choosing models on test."""
 
 import argparse
 import math
@@ -91,6 +91,7 @@ def freeze(study, output):
         "uncertainty": "sample SD across training seeds; no significance claim or independent-fixture assumption",
         "test_policy": "available 2021-2022 season; frozen models; earlier completed test fixtures may enter later histories",
         "no_test_feedback": "No architecture, training, checkpoint, seed, threshold or ensemble selection after evaluation",
+        "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
         "baseline": "constant class probabilities fitted to training labels only",
         "runs": [{**entry, "checkpoint_sha256": sha256(safe_run(entry["run_dir"]) / "best.pt")}
                  for entry in manifest["runs"]],
@@ -231,8 +232,8 @@ def verify(output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("freeze", "evaluate", "verify"))
-    parser.add_argument("--study", type=Path, default=Path("research/week7_reproduction"))
-    parser.add_argument("--output", type=Path, default=Path("research/week7"))
+    parser.add_argument("--study", type=Path, default=Path("research/revised_validation"))
+    parser.add_argument("--output", type=Path, default=Path("research/revised_evaluation"))
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(ROOT / "research") or output == ROOT / "research":

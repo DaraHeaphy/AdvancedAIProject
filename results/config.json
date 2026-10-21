@@ -1,0 +1,45 @@
+{
+  "epochs": 10,
+  "batch_size": 32,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "cross_entropy_on_logits",
+  "checkpoint_selection": "minimum_validation_log_loss",
+  "shuffle_train": true,
+  "shuffle_validation": false,
+  "num_workers": 0,
+  "device": "cpu",
+  "threads": 1,
+  "model": {
+    "history_length": 10,
+    "input_features": 3,
+    "d_model": 32,
+    "nhead": 2,
+    "dim_feedforward": 64,
+    "dropout": 0.1,
+    "num_classes": 3
+  },
+  "conditions": [
+    "none",
+    "sinusoidal"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "research_question": "Does fixed sinusoidal positional encoding improve next-fixture prediction compared with no positional encoding?",
+  "primary_evaluation_metric": "multiclass log loss, natural logarithm",
+  "paired_difference": "sinusoidal minus none; lower favours sinusoidal",
+  "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses consecutive seasons; resets after a missing season",
+  "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
+  "source_sha256": {
+    "dataset.py": "9e64ee44d85dd7f547441dd2c3bb02f1262027418839915c74714997b538fa5b",
+    "model.py": "634914bed498c4cf6b4379ed70c6ae5206838ef7578bad2e52278b1b2210c98d",
+    "train.py": "90870edd73ed63b65c9afdfcbcf02db73fe8e76c25e1c3c078aa1d3723e1c11e",
+    "evidence.py": "20cb44842932fe8358382ae1dd30cef7f6d6642bcb122a16886998e09661fa71",
+    "comparison.py": "08f843e2c3381e1c01b0d3cc6207b5ff90b3139ad66d9e80223aa1ff2b14dda7",
+    "final_evaluation.py": "956d59ee0dbd609d6cc66a064fe54dde4d19f5e39d669189e17d07681f7e616a"
+  },
+  "data_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1"
+}

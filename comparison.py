@@ -1,4 +1,4 @@
-"""Run and report the fixed Week 6 comparison, using validation evidence only."""
+"""Run and report the fixed paired comparison using validation evidence only."""
 
 import argparse
 import csv
@@ -9,8 +9,6 @@ import statistics
 import subprocess
 import sys
 import time
-import uuid
-import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,6 +29,8 @@ PROTOCOL = {
     "paired_difference": "sinusoidal minus none; negative favours sinusoidal",
     "variation": "sample standard deviation across training seeds (ddof=1)",
     "test_evaluated": False,
+    "history_policy": "Reset team history after a missing Premier League season",
+    "evaluation_status": "Revised analysis; the final test season was previously inspected",
 }
 
 
@@ -249,7 +249,7 @@ def figures(output, rows, pairs, evidence, baseline):
         axes[1].annotate(f"{difference:+.4f}", (index, difference), xytext=(0, 5 if difference >= 0 else -14),
                          textcoords="offset points", ha="center", fontsize=9)
     axes[1].margins(y=0.3)
-    fig.suptitle("Week 6: positional encoding comparison on 380 validation fixtures")
+    fig.suptitle("Positional encoding comparison on the corrected validation split")
     for suffix in ("png", "svg"):
         fig.savefig(output / f"paired_log_loss.{suffix}", dpi=180)
     plt.close(fig)
@@ -288,129 +288,32 @@ def interpretation(pairs):
 
 
 def report_text(rows, pairs, summaries, errors, cases, result):
-    baseline, env = result["baseline"], result["training_environment"]
-    text = ["# Week 6 — results checkpoint", "", "Team: Trivial  ",
-            "Dara Heaphy — 23369914  ", "Tiernan Scully — 23365528", "",
-            "## Question and fixed experiment", "", PROTOCOL["question"], "",
-            "We compared no positional encoding with fixed sinusoidal encoding using seeds 42, 43 and 44 for both conditions. "
-            "All six runs were trained fresh for this checkpoint. The seed set and protocol were saved before training. "
-            "Each used ten epochs, Adam at 0.001, batch size 32, dropout 0.1, ten-match histories, CPU and one PyTorch thread. "
-            "The shared one-layer transformer has 8,867 trainable parameters in both conditions. "
-            "Only positional encoding changes within each seed pair.", "",
-            "The chronological splits contain 6,912 training, 380 validation and 357 reserved test examples. "
-            "The lowest validation log loss selects each run's checkpoint. Results below are validation results used for "
-            "development and checkpoint selection; final held-out evaluation has not been performed. "
-            "There is no ensemble or best-seed selection.", "",
-            "## Individual results", "", "Log loss uses natural logarithms; lower is better. Accuracy is secondary. "
-            "Table log loss is independently recalculated from exported probabilities; tiny rounding differences from "
-            "PyTorch cross-entropy are covered by the run verifier's tolerance.", "",
-            "| Condition | Seed | Selected epoch | Validation log loss | Accuracy | Training seconds |",
-            "| --- | ---: | ---: | ---: | ---: | ---: |"]
+    text = ["# Revised validation comparison", "", PROTOCOL["question"], "",
+            "Team histories reset after a missing Premier League season. Architecture, optimiser, "
+            "seeds and ten-epoch budget are unchanged. The test season was previously inspected; "
+            "subsequent test results are a revised analysis, not a new untouched holdout.", "",
+            "| Condition | Seed | Selected epoch | Validation log loss | Accuracy |",
+            "| --- | ---: | ---: | ---: | ---: |"]
     for row in rows:
-        text.append(f"| {row['condition']} | {row['seed']} | {row['selected_epoch']} | {row['validation_log_loss']:.6f} | {100*row['validation_accuracy']:.2f}% | {row['training_seconds']:.2f} |")
-    text += [f"| Training-frequency constant baseline | — | — | {baseline['validation_log_loss']:.6f} | {100*baseline['validation_accuracy']:.2f}% | — |", "",
-             "The constant predictor is fitted only to training class frequencies. It is a sanity baseline; "
-             "the no-position transformer is the reference for the positional-information question.", "",
-             "## Variation and paired comparison", "",
-             "| Condition | Mean log loss | Sample SD | Range | Mean accuracy | Accuracy SD (percentage points) |",
-             "| --- | ---: | ---: | --- | ---: | ---: |"]
-    for condition in CONDITIONS:
-        loss, accuracy = summaries[condition]["log_loss"], summaries[condition]["accuracy"]
-        text.append(f"| {condition} | {loss['mean']:.6f} | {loss['sample_sd']:.6f} | {loss['min']:.6f}–{loss['max']:.6f} | {100*accuracy['mean']:.2f}% | {100*accuracy['sample_sd']:.2f} |")
-    text += ["", "Sample SD uses ddof=1 across three training seeds. It measures training variation on the same "
-             "fixtures, not uncertainty across future seasons.", "",
-             "| Seed | Log-loss difference: sinusoidal − none | Accuracy difference (percentage points) |",
-             "| --- | ---: | ---: |"]
-    for pair in pairs:
-        text.append(f"| {pair['seed']} | {pair['log_loss_difference']:+.6f} | {pair['accuracy_difference_pp']:+.2f} |")
-    delta = result["paired_log_loss"]
-    text += ["", f"Mean paired log-loss difference: **{delta['mean']:+.6f}**, sample SD **{delta['sample_sd']:.6f}**. "
-             "Negative favours sinusoidal encoding. Three runs do not establish statistical significance.", "",
-             "![Every run and its paired difference](paired_log_loss.png)", "",
-             "## Current interpretation", "", interpretation(pairs), "",
-             "Both conditions beat the constant baseline in every run." if all(r["validation_log_loss"] < baseline["validation_log_loss"] for r in rows)
-             else "Performance against the constant baseline varies across runs; inspect the full table.", "",
-             "The experiment tests whether this particular sinusoidal representation helps this small model. "
-             "It does not directly test whether football recency is useful in every model. "
-             "The no-position model ignores history order in evaluation; adding position allows order to matter "
-             "but does not guarantee the model learns a useful recency rule.", "",
-             "## Anomalies and failure cases", "",
-             "![Validation learning curves](learning_curves.png)", "",
-             "Selected epochs: " + "; ".join(f"{r['condition']} seed {r['seed']}: {r['selected_epoch']}" for r in rows) + ". "
-             "The curves show whether later training improves validation loss. An early best checkpoint is an observation; "
-             "it alone does not prove a particular cause such as overfitting.", "",
-             "### Draw predictions", "",
-             "| Condition | Seed | Actual draws | Predicted draws | Correct draws | Draw recall | Mean probability assigned to actual draws |",
-             "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
-    for row in errors:
-        if row["class"] == "draw":
-            text.append(f"| {row['condition']} | {row['seed']} | {row['actual_count']} | {row['predicted_count']} | {row['correct_count']} | {100*row['recall']:.2f}% | {row['mean_true_class_probability']:.4f} |")
-    text += ["", "Draw predictions above mean the highest-probability class, not zero probability of a draw. "
-             "Accuracy can obscure poor class recall; log loss still penalises the probability assigned to actual draws. "
-             "Full class counts, recalls and class log losses are in `class_errors.csv`; each run retains its confusion matrix.", "",
-             "### Examples with the largest average log loss", "",
-             "These are validation fixtures ranked by mean individual-model log loss across all six selected checkpoints. "
-             "They are selected examples, not an unbiased estimate of overall performance. Condition-level values are "
-             "averages across its three seeds, not ensemble metrics.", "",
-             "| Fixture | Actual outcome | none: mean true-outcome probability | sinusoidal: mean true-outcome probability | Wrong seeds (none / sinusoidal) |",
-             "| --- | --- | ---: | ---: | --- |"]
-    for case in cases[:5]:
-        text.append(f"| {case['home']} vs {case['away']} ({case['fixture_id']}) | {case['label_name']} | {case['none_mean_true_probability']:.4f} | {case['sinusoidal_mean_true_probability']:.4f} | {case['none_wrong_seeds']} / {case['sinusoidal_wrong_seeds']} |")
-    text += ["", "The ten highest-loss cases, dates and condition-level losses are in `failure_cases.csv`. "
-             "Inspect the underlying histories before attributing an error to a football-specific cause.", "",
-             "## Limitations and final evaluation", "",
-             "- Only three seeds and one validation season are available. Fixtures share teams and overlapping histories, "
-             "so they are not independent observations.",
-             "- Each checkpoint is selected on this validation season; the reported validation results can be optimistic.",
-             "- Inputs contain goals scored, goals conceded and home status, but no team or opponent identity, injuries, "
-             "squad changes or time gaps. Ten positions need not represent equal intervals of time.",
-             "- The small model, raw unscaled features and ten-epoch budget limit the conclusion to this setup.",
-             "- The final season has 367 unique completed fixtures and only 357 usable targets, not a full season.",
-             "- Future performance and betting value are not established by this experiment.", "",
-             "For Week 7, freeze the experiment and agree a final evaluation protocol before opening the test results. "
-             "Retain all seeds; do not choose the best seed. The existing training and reporting commands produce no test "
-             "predictions or metrics. The checkpoint's final held-out evaluation remains pending.", "",
-             "## Compute and verification", "",
-             f"Six ten-epoch CPU runs, 8,867 parameters each. Total training/validation-loop time: "
-             f"{result['total_training_seconds']:.2f} seconds. Runner wall time, including process startup and "
-             f"verification before reporting: {result['runner_wall_seconds']:.2f} seconds. "
-             "Training timings exclude preprocessing and evidence export. No GPU or paid compute was used.", "",
-             f"Recorded processor: `{env['processor']}`; {env['logical_cpu_count']} logical CPUs, one PyTorch thread. "
-             f"Python {env['python']}, PyTorch {env['torch_build']}, {env['platform']}.", "",
-             f"An earlier packaging audit retained {result['packaging_audit']['runs']} additional full training runs "
-             f"({result['packaging_audit']['training_seconds']:.2f} training-loop seconds). These used the same seeds "
-             "and were excluded because the original source snapshot omitted the new comparison script imported by tests. "
-             "After correcting the packager, all six main runs were repeated. This was a portability correction, "
-             "not selection based on results. See `research/week6_packaging_audit/NOTE.md`.", "",
-             "All six checkpoints were reloaded and verified against their saved predictions. Independent Python metric "
-             "calculations matched the training metrics within the recorded tolerances. The comparison also checked "
-             "identical controlled settings, parameter counts, source/data hashes, environments, fixture order and baseline. "
-             "See `checks.json` and each run's `verification.json`. Existing Week 5 repeats of seed 42 are not counted "
-             "as independent runs in this study.", "",
-             "## Reproduction and evidence", "",
-             "In PowerShell, from `C:\\Users\\User\\repos\\AdvancedAIProject`:", "", "```powershell",
-             "python -m pip install -r requirements-analysis.txt", "python -m unittest discover -s tests -v",
-             "python comparison.py report --output research/week6", "```", "",
-             "To train a fresh complete comparison without replacing this evidence:", "", "```powershell",
-             "python comparison.py run --output research/week6_reproduction", "```", "",
-             "A resumed `run` uses only its manifest's completed, verified runs. Failed or unlisted runs are not "
-             "silently substituted. A report rejects incomplete or mismatched conditions. "
-             "`python comparison.py bundle --output research/week6` creates an allowlisted ZIP including all six "
-             "checkpoints, source snapshots, input CSV, reports, figures and SHA-256 manifest. Checkpoints and source "
-             "snapshots remain ignored by Git, so retain the bundle or regenerate after cloning.", "",
-             "Run directories:", ""]
-    text += [f"- `{r['condition']}`, seed {r['seed']}: `{r['run_dir']}`" for r in rows]
-    text += ["", "## External tools, provenance and team responsibility", "",
-             "Codex helped implement the comparison runner, aggregate the saved evidence, generate figures and draft "
-             "this checkpoint. Its output was checked using unit tests, checkpoint reloads, independent metric "
-             "calculations, controlled-run checks and visual inspection of the figures. "
-             "The earlier report cited a run folder absent from this local repository; this report uses the actual "
-             "manifest paths. Both team members must review the interpretation and be able to explain the code.", "",
-             "Dataset source and licence are described in `dataset/README.md`. Its CC0 statement is carried over "
-             "from the proposal and has not been independently confirmed by this checkpoint work. Confirm the "
-             "source terms before final submission. No pretrained model is used.", "",
-             "The final contribution statement needs confirmation from Dara and Tiernan; generated work is not evidence "
-             "of either person's individual contribution.", ""]
+        text.append(f"| {row['condition']} | {row['seed']} | {row['selected_epoch']} | "
+                    f"{row['validation_log_loss']:.6f} | {100*row['validation_accuracy']:.2f}% |")
+    text += ["", interpretation(pairs), "",
+             f"Mean paired log-loss difference: {result['paired_log_loss']['mean']:+.6f}; "
+             f"sample SD: {result['paired_log_loss']['sample_sd']:.6f}. "
+             "Negative favours sinusoidal encoding.", "",
+             "The same validation fixtures select checkpoints and provide these scores. "
+             "Three seeds measure training variation on one season, not uncertainty across seasons. "
+             "Fixtures share teams and overlapping histories. The incomplete final season and "
+             "exclusion of fixtures with insufficient history limit generalisation.", "",
+             f"Six training runs; total training/validation-loop time "
+             f"{result['total_training_seconds']:.2f} seconds. One CPU thread per run. "
+             "Both conditions have 8,867 trainable parameters.", "",
+             "All six checkpoints and exported predictions were verified. Class errors and "
+             "selected validation failure cases accompany this report. They do not establish "
+             "the football-specific causes of errors.", "",
+             "Codex assisted with implementation, analysis and writing. Regression tests, "
+             "data audits, checkpoint reloads and independent probability metrics check its output. "
+             "Individual contributions and lecturer gate decisions require the team's records.", ""]
     return "\n".join(text)
 
 
@@ -419,16 +322,12 @@ def report_study(output):
     rows, evidence, reference = collect_runs(manifest)
     pairs, summaries = paired_results(rows)
     errors, cases = class_errors(evidence), failure_cases(evidence)
-    audit_manifest = ROOT / "research" / "week6_packaging_audit" / "experiment.json"
-    audit_runs = read_json(audit_manifest)["runs"] if audit_manifest.exists() else []
     result = {"generated_at_utc": utc_now(), "split": "val", "test_evaluated": False,
               "conditions": summaries, "paired_differences": pairs,
               "paired_log_loss": distribution([p["log_loss_difference"] for p in pairs]),
               "baseline": reference["baseline"], "training_environment": reference["environment"],
               "total_training_seconds": sum(r["training_seconds"] for r in rows),
               "runner_wall_seconds": manifest["wall_seconds"],
-              "packaging_audit": {"runs": len(audit_runs), "training_seconds": sum(
-                  read_json(safe_run(entry["run_dir"]) / "summary.json")["training_seconds"] for entry in audit_runs)},
               "interpretation": interpretation(pairs)}
     write_csv(output / "individual_runs.csv", rows)
     write_csv(output / "paired_differences.csv", pairs)
@@ -446,75 +345,19 @@ def report_study(output):
                   "matplotlib", "numpy", "contourpy", "cycler", "fonttools", "kiwisolver",
                   "packaging", "pillow", "pyparsing", "python-dateutil", "six")}}
     write_json(output / "checks.json", checks)
-    print(f"Verified six-run Week 6 report: {output / 'REPORT.md'}", flush=True)
+    print(f"Verified six-run validation report: {output / 'REPORT.md'}", flush=True)
     print(json.dumps({"conditions": summaries, "paired_log_loss": result["paired_log_loss"]}, indent=2))
-
-
-def bundle_study(output):
-    report_study(output)
-    manifest = read_json(output / "experiment.json")
-    members = {}
-    source_names = ["comparison.py", "requirements-analysis.txt"]
-    source_names += [p.relative_to(ROOT).as_posix() for p in (ROOT / "tests").glob("test_*.py")]
-    first = safe_run(manifest["runs"][0]["run_dir"])
-    source_names += list(read_json(first / "provenance.json")["source_files_sha256"])
-    source_names += ["dataset/matches.csv"]
-    for name in set(source_names):
-        members[name] = ROOT / name
-    allowed = {"config.json", "environment.json", "data_report.json", "baseline.json", "metrics.json",
-               "summary.json", "validation_prediction.json", "validation_predictions.json", "validation_metrics.json",
-               "provenance.json", "requirements-lock.txt", "verification.json", "best.pt"}
-    for entry in manifest["runs"]:
-        run = safe_run(entry["run_dir"])
-        for name in allowed:
-            members[f"{entry['run_dir']}/{name}"] = run / name
-        for name in read_json(run / "provenance.json")["source_files_sha256"]:
-            members[f"{entry['run_dir']}/source/{name}"] = run / "source" / name
-    study_files = {"experiment.json", "individual_runs.csv", "paired_differences.csv", "class_errors.csv",
-                   "failure_cases.csv", "summary.json", "checks.json", "REPORT.md",
-                   "paired_log_loss.png", "paired_log_loss.svg", "learning_curves.png", "learning_curves.svg"}
-    study_files.update(f"training_{c}_seed{s}.log" for c in CONDITIONS for s in SEEDS)
-    for name in study_files:
-        members[f"research/week6/{name}"] = output / name
-    audit = ROOT / "research" / "week6_packaging_audit"
-    if (audit / "experiment.json").exists():
-        for name in ("experiment.json", "NOTE.md"):
-            members[f"research/week6_packaging_audit/{name}"] = audit / name
-        # Audit metadata accounts for extra compute; main runs retain full evidence.
-        for entry in read_json(audit / "experiment.json")["runs"]:
-            members[f"{entry['run_dir']}/summary.json"] = safe_run(entry["run_dir"]) / "summary.json"
-    destination = ROOT / "evidence_bundles" / f"week6_{datetime.now(timezone.utc):%Y%m%dT%H%M%SZ}_{uuid.uuid4().hex[:8]}.zip"
-    destination.parent.mkdir(exist_ok=True)
-    with zipfile.ZipFile(destination, "x", compression=zipfile.ZIP_DEFLATED) as archive:
-        hashes = {}
-        for name, path in sorted(members.items()):
-            archive.write(path, name)
-            hashes[name] = sha256(path)
-        instructions = ("# Week 6 comparison evidence\n\nExtract the ZIP and enter its root in PowerShell.\n\n"
-                        "```powershell\npython -m pip install -r requirements-lock.txt\n"
-                        "python -m pip install -r requirements-analysis.txt\n"
-                        "python -m unittest discover -s tests -v\n"
-                        "python comparison.py report --output research/week6\n```\n\n"
-                        "Expected: tests pass and the six-run report verifies. No test metrics are produced.\n"
-                        "The original Python/platform/build are recorded per run. Other builds may differ numerically.\n")
-        archive.writestr("WEEK6_README.md", instructions)
-        import hashlib
-        hashes["WEEK6_README.md"] = hashlib.sha256(instructions.encode()).hexdigest()
-        archive.writestr("bundle_manifest.json", json.dumps({"created_at_utc": utc_now(),
-                         "test_evaluated": False, "files_sha256": hashes}, indent=2) + "\n")
-    print(f"Week 6 evidence bundle: {destination}")
-    return destination
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("run", "report", "bundle"))
-    parser.add_argument("--output", type=Path, default=ROOT / "research" / "week6")
+    parser.add_argument("command", choices=("run", "report"))
+    parser.add_argument("--output", type=Path, default=ROOT / "research" / "revised_validation")
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(ROOT / "research") or output == ROOT / "research":
         raise ValueError("Output must be a study directory within research/")
-    {"run": run_study, "report": report_study, "bundle": bundle_study}[args.command](output)
+    {"run": run_study, "report": report_study}[args.command](output)
 
 
 if __name__ == "__main__":

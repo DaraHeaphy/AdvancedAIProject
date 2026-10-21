@@ -1,140 +1,45 @@
-﻿# Advanced AI project
+# Football match-history transformer
 
 Team Trivial: Dara Heaphy (23369914) and Tiernan Scully (23365528).
-Track 3.3: a small transformer trained from scratch.
+Advanced AI project, track 3.3: a small transformer trained from scratch.
 
-## Final study
+Does fixed sinusoidal positional encoding improve home/draw/away probability prediction compared with the same transformer without positions?
 
-**Question:** Does fixed sinusoidal positional encoding improve next-fixture
-home/draw/away probability prediction compared with no positional encoding,
-under the same small-model training budget?
+Both conditions share a one-layer team encoder: three inputs projected to width 32, two attention heads, feedforward width 64, dropout 0.1 and mean pooling. The home and away summaries feed a linear three-class head. Each model has 8,867 trainable parameters; fixed sinusoidal positions add none.
 
-The shared encoder has 8,867 trainable parameters. Inputs are each team's ten
-previous completed Premier League matches, with goals scored, goals conceded
-and home status. Both conditions use one layer, width 32, two heads, feedforward
-width 64, dropout 0.1, mean pooling and a linear classifier. Fixed positional
-vectors add no parameters. All other choices are held fixed.
+## Data and correction
 
-Training: Adam, learning rate 0.001, batch size 32, ten epochs, CPU, one thread.
-Seeds 42, 43 and 44 are paired across conditions. Minimum validation log loss
-selects each checkpoint. Every seed is retained; there is no best-seed selection
-or ensemble. The training-frequency constant predictor is a sanity baseline;
-the no-position transformer is the informative reference for the main question.
+Inputs are each team's ten previous completed Premier League matches: goals scored, goals conceded and home status. Only results from earlier UTC dates enter a history. Histories carry across consecutive seasons but reset after a missing season. Returning teams must accumulate ten new matches. Names and dates are audit metadata, rather than model inputs.
 
-## Submission material
+Training targets span 2001-02 through 2019-20 (6,604 examples); validation is 2020-21 (352); evaluation uses available 2021-22 fixtures (338). The final source season has 367 completed fixtures rather than 380. Missing source fixtures and insufficient-history exclusions are different issues. See `dataset/README.md` for provenance and `results/data_audit.json` for the audit.
 
-- `research/week7/REPORT.md`: final written analysis and all-six-run tables.
-- `research/week7/protocol.json`: protocol frozen before test evaluation.
-- `research/week7/results.json`: full-precision held-out results.
-- `research/week7/verification.json`: checkpoint and metric verification.
-- `output/docx/Advanced AI Project - Positional Encoding Study.docx`: updated Week 7 document.
-- `output/pptx/Advanced AI Project - Week 7.pptx`: group presentation.
-- `research/week7_notes/DEFENCE.md`: individual preparation notes.
-- `research/week7_notes/SUBMISSION_CHECKLIST.md`: final administrative checks.
-- `output/submission/`: portable submission ZIP and its audit.
+The earlier experiment retained histories through relegation gaps, including Leeds results from 2004 in 2020 inputs. This revision corrects that policy. **The test season was already inspected. These revised results are a reanalysis, not a newly untouched holdout.** Architecture, seeds and training settings were held fixed.
 
-The final package preserves the earlier Week 6 analysis. Its original six
-checkpoints and its named comparison ZIP were absent from this checkout, so
-Week 7 uses a transparently labelled fresh reproduction of the same six-run
-protocol in `research/week7_reproduction/`. No model or training hyperparameter
-was changed to improve the outcome. The reproduction uses the available Python
-3.11/PyTorch 2.6 CPU environment; earlier records used a different environment.
-The final report distinguishes the historical results from the reproduction.
+## Run
 
-## Installation
-
-From this repository's root in PowerShell, using Python 3.11:
+Use Python 3.11 from the repository root. In PowerShell:
 
 ```powershell
-python -m venv .venv_submission
-.\.venv_submission\Scripts\python.exe -m pip install -r requirements-lock.txt
-.\.venv_submission\Scripts\python.exe -m unittest discover -s tests -v
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe audit.py
+.\.venv\Scripts\python.exe comparison.py run --output research/reproduction_validation
+.\.venv\Scripts\python.exe final_evaluation.py freeze --study research/reproduction_validation --output research/reproduction_evaluation
+.\.venv\Scripts\python.exe final_evaluation.py evaluate --output research/reproduction_evaluation
+.\.venv\Scripts\python.exe final_evaluation.py verify --output research/reproduction_evaluation
 ```
 
-The root lock records the Week 7 training environment. Every run also records
-its installed dependency closure, exact PyTorch build, hardware, configuration,
-source snapshots and data SHA-256. Bitwise identity on different hardware or
-software is not guaranteed. Analysis dependencies are pinned in the root lock.
+Use new output directories for each fresh comparison. Both conditions use Adam at 0.001, batch size 32, ten epochs, CPU and one thread. Seeds 42, 43 and 44 are paired; every seed is retained. Minimum validation log loss selects each checkpoint. Primary comparison is paired multiclass log loss; accuracy, Brier score and class errors are secondary. A constant predictor uses training class frequencies only.
 
-## Verify the submitted results
+Earlier completed evaluation results may enter later histories while model weights stay frozen. This is sequential pre-match prediction. For one run use `python train.py train --positional-encoding none --seed 42`. `python train.py overfit --steps 300` checks learning on eight training examples. Checkpoints support inference; exact mid-run training resumption is not implemented.
 
-Extract the complete submission ZIP if working from a fresh clone: binary
-checkpoints and per-run source snapshots are intentionally ignored by Git.
+Training creates ignored `runs/` weights, configurations, source snapshots, environments and predictions. The comparison creates ignored `research/` reports and figures. Verification checks executed source bytes and data, so run it before editing that source. Different hardware or software can produce numerical differences.
 
-```powershell
-python -m unittest discover -s tests -v
-python comparison.py report --output research/week7_reproduction
-python final_evaluation.py verify --output research/week7
-```
+## Evidence and limits
 
-Verification reloads all six models and reproduces their saved predictions and
-independent probability metrics. It does not train or change model selection.
-The final evaluation verifier also checks the frozen source, data, manifest and
-checkpoint hashes. Do not edit frozen experiment source before verifying.
+`results/` retains the compact audit, configuration, individual run tables and analysis. Regenerate full local artifacts with the commands above. Old documents, unused CSVs, duplicated snapshots and run histories are excluded from Git. A verified local archive preserves the original project and original Git history.
 
-## Reproduce training separately
+Three seeds on one incomplete evaluation season provide limited evidence. Shared teams and overlapping histories make fixtures dependent; seed variation does not measure future-season uncertainty. Excluding early promoted-team fixtures narrows the evaluated population. Inputs omit opponent strength, squad changes and elapsed time. This comparison does not establish the best football predictor or betting value.
 
-Use new directories so submitted evidence is preserved:
-
-```powershell
-python comparison.py run --output research/reproduction_new
-python final_evaluation.py freeze --study research/reproduction_new --output research/evaluation_new
-python final_evaluation.py evaluate --output research/evaluation_new
-python final_evaluation.py verify --output research/evaluation_new
-```
-
-Only run final evaluation after development is fixed. Do not use test outcomes
-to choose architecture, features, epochs, checkpoints, seeds or thresholds.
-Repeated verification checks the same frozen result; it is not another model
-selection opportunity. An interrupted evaluation leaves its started record
-rather than silently replacing partial results.
-
-## Data preparation and information flow
-
-`dataset/matches.csv` contains 7,979 rows. Excluding two abandoned fixtures and
-ten duplicates leaves 7,967 unique completed fixtures. Histories use only the
-previous ten completed fixtures from earlier UTC dates, oldest to newest.
-All targets on a date are built before any result from that date enters a history.
-The calendar year is resolved from the season and recorded weekday, including
-the delayed 2020 matches. Invalid or conflicting completed fixtures raise errors.
-
-Target seasons define the chronological split: 6,912 training examples
-(2001-2002 to 2019-2020), 380 validation examples (2020-2021), and 357 test
-examples (available 2021-2022 fixtures). Insufficient histories are skipped.
-Histories may cross season and split boundaries. At final evaluation, a later
-test fixture can use an earlier completed test fixture's result, consistent
-with sequential pre-match forecasting. Weights stay frozen. This is not a
-forecast of every fixture made simultaneously before the season starts.
-
-Each item is `(home_history, away_history, label)`, tensors `[10,3]`, `[10,3]`
-and a scalar integer; labels 0/1/2 mean home win/draw/away win. Team names and
-fixture IDs are audit metadata, not features. No scaling, padding, team IDs or
-elapsed-time inputs are used. The final season is incomplete.
-
-## Model and evaluation
-
-`model.py` applies a shared `Linear(3,32)` and `TransformerEncoderLayer` to each
-team, averages each sequence, concatenates the summaries and applies
-`Linear(64,3)`. No causal mask is needed: all input matches precede the target.
-Without positional encoding the encoder is permutation equivariant; averaging
-makes the summary invariant to history order in evaluation mode. Position lets
-order affect predictions, but does not guarantee useful recency learning.
-
-`train.py` uses cross-entropy directly on logits. Validation disables dropout
-and gradients and weights loss by examples, including the final partial batch.
-Prediction uses softmax. Primary evaluation is multiclass log loss (natural
-logarithm); accuracy is secondary. Brier score and confusion matrices describe
-probability and class behaviour. Standard deviation across three seeds measures
-training variation on the same fixtures, not uncertainty across future seasons.
-
-```powershell
-python train.py train --positional-encoding none --seed 42 --epochs 10 --device cpu
-python dataset.py --report tmp/data_report.json
-python train.py overfit --positional-encoding none --seed 42 --steps 300 --device cpu
-```
-
-Dataset provenance and publisher-declared terms: `dataset/README.md`.
-AI assistance, corrections and remaining team confirmations are recorded in
-the final analysis and submission checklist. Both members must understand the
-full experiment. The original Week 5/6 instructions remain archived in
-`research/week7_notes/README_before_week7.md`.
+Codex assisted with implementation, review, tests, analysis and writing. Earlier stale histories and excessive generated material required correction. Checks include regression tests, a data audit, checkpoint reloads and independent probability metrics. Historical commit authorship is preserved, but is not proof of unaided contribution. Actual individual contributions and lecturer gate decisions require the team's records. Both students remain responsible for understanding the project. The project specification permits AI assistance and requires reflection on its use.

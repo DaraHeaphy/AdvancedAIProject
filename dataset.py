@@ -161,7 +161,8 @@ def read_fixtures(csv_path):
 def load_datasets(csv_path=DEFAULT_CSV):
     """Return train/val/test datasets, splitting by target season.
 
-    Histories cross season/split boundaries and use earlier UTC dates only.
+    Histories cross consecutive seasons/splits and use earlier UTC dates only.
+    A team's history resets after it misses a Premier League season.
     No scaling, random split, padding or positional features are applied.
     """
     csv_path = Path(csv_path)
@@ -175,6 +176,8 @@ def load_datasets(csv_path=DEFAULT_CSV):
     eligible = Counter()
     skipped = Counter()
     histories = defaultdict(lambda: deque(maxlen=HISTORY_LENGTH))
+    last_season = {}
+    history_resets = Counter()
 
     # Construct every target on a date before adding any results from that date.
     # Kickoff is not completion time: this conservative rule prevents same-day leakage.
@@ -183,6 +186,13 @@ def load_datasets(csv_path=DEFAULT_CSV):
         for fixture in day_fixtures:
             split = season_to_split[fixture.season]
             eligible[split] += 1
+            season_start = int(fixture.season[:4])
+            for team in (fixture.home, fixture.away):
+                previous = last_season.get(team)
+                if previous is not None and season_start > previous + 1:
+                    histories[team].clear()
+                    history_resets[split] += 1
+                last_season[team] = season_start
             home, away = histories[fixture.home], histories[fixture.away]
             if len(home) < HISTORY_LENGTH or len(away) < HISTORY_LENGTH:
                 skipped[split] += 1
@@ -200,7 +210,7 @@ def load_datasets(csv_path=DEFAULT_CSV):
         "history_length": HISTORY_LENGTH,
         "features": FEATURES,
         "labels": LABELS,
-        "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses seasons",
+        "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses consecutive seasons; resets after a missing season",
         "scaling": "none",
         "splits": {},
     }
@@ -210,6 +220,7 @@ def load_datasets(csv_path=DEFAULT_CSV):
             "seasons": split_seasons[split],
             "completed_fixtures": eligible[split],
             "skipped_insufficient_history": skipped[split],
+            "team_history_resets": history_resets[split],
             "examples": len(items),
             "class_counts": {label: class_counts[i] for i, label in enumerate(LABELS)},
             "first_target": items[0].target.kickoff.isoformat() if items else None,

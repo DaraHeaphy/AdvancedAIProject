@@ -1,0 +1,208 @@
+{
+  "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
+  "validation": {
+    "conditions": {
+      "none": {
+        "log_loss": {
+          "mean": 1.041468034379575,
+          "sample_sd": 0.004953173725585452,
+          "min": 1.036402574028107,
+          "max": 1.0463007131474757
+        },
+        "accuracy": {
+          "mean": 0.4952651515151515,
+          "sample_sd": 0.0032803992567592343,
+          "min": 0.4914772727272727,
+          "max": 0.4971590909090909
+        }
+      },
+      "sinusoidal": {
+        "log_loss": {
+          "mean": 1.041848297361837,
+          "sample_sd": 0.006792587111048181,
+          "min": 1.0348003673149346,
+          "max": 1.0483529084900205
+        },
+        "accuracy": {
+          "mean": 0.4933712121212121,
+          "sample_sd": 0.0032803992567592343,
+          "min": 0.4914772727272727,
+          "max": 0.4971590909090909
+        }
+      }
+    },
+    "paired_differences": [
+      {
+        "seed": 42,
+        "log_loss_difference": -0.0016022067131724604,
+        "accuracy_difference_pp": 0.5681818181818177
+      },
+      {
+        "seed": 43,
+        "log_loss_difference": 0.0006908003174137534,
+        "accuracy_difference_pp": -0.5681818181818177
+      },
+      {
+        "seed": 44,
+        "log_loss_difference": 0.0020521953425447492,
+        "accuracy_difference_pp": -0.5681818181818177
+      }
+    ],
+    "paired_log_loss": {
+      "mean": 0.00038026298226201405,
+      "sample_sd": 0.0018468862102468304,
+      "min": -0.0016022067131724604,
+      "max": 0.0020521953425447492
+    },
+    "baseline": {
+      "training_class_counts": {
+        "home_win": 3055,
+        "draw": 1657,
+        "away_win": 1892
+      },
+      "probabilities": {
+        "home_win": 0.4625984251968504,
+        "draw": 0.25090854027861903,
+        "away_win": 0.28649303452453057
+      },
+      "validation_log_loss": 1.0966510981301445,
+      "validation_accuracy": 0.3806818181818182
+    }
+  },
+  "test": {
+    "examples": 338,
+    "conditions": {
+      "none": {
+        "log_loss": {
+          "mean": 0.9974108236606735,
+          "sample_sd": 0.00284774693372457
+        },
+        "accuracy": {
+          "mean": 0.534516765285996,
+          "sample_sd": 0.010390191077764037
+        },
+        "brier_score": {
+          "mean": 0.5946844578626228,
+          "sample_sd": 0.001889477842140089
+        }
+      },
+      "sinusoidal": {
+        "log_loss": {
+          "mean": 0.9964369708508832,
+          "sample_sd": 0.0029137458566503103
+        },
+        "accuracy": {
+          "mean": 0.5453648915187377,
+          "sample_sd": 0.009038610838177245
+        },
+        "brier_score": {
+          "mean": 0.5939473733068248,
+          "sample_sd": 0.001956350500793185
+        }
+      }
+    },
+    "paired_differences": [
+      {
+        "seed": 42,
+        "log_loss_difference": -0.0022771003701543835,
+        "accuracy_difference_pp": 0.295857988165682
+      },
+      {
+        "seed": 43,
+        "log_loss_difference": 0.002064091122272682,
+        "accuracy_difference_pp": 1.1834319526627168
+      },
+      {
+        "seed": 44,
+        "log_loss_difference": -0.002708549181488884,
+        "accuracy_difference_pp": 1.775147928994092
+      }
+    ],
+    "paired_log_loss": {
+      "mean": -0.0009738528097901952,
+      "sample_sd": 0.0026397659971991324
+    },
+    "training_frequency_baseline": {
+      "split": "test",
+      "examples": 338,
+      "log_loss": 1.0758813391137259,
+      "accuracy": 0.4289940828402367,
+      "brier_score": 0.651792978255961,
+      "class_order": [
+        "home_win",
+        "draw",
+        "away_win"
+      ],
+      "confusion_matrix": [
+        [
+          145,
+          0,
+          0
+        ],
+        [
+          80,
+          0,
+          0
+        ],
+        [
+          113,
+          0,
+          0
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "brier_definition": "mean sum of squared errors across the three classes",
+      "calculation": "Python math from exported probabilities; natural logarithm"
+    }
+  },
+  "compute": {
+    "total_training_seconds": 314.21327289997134,
+    "runner_wall_seconds": 397.52751440007705,
+    "training_environment": {
+      "python": "3.11.9",
+      "dependencies": {
+        "filelock": "3.13.1",
+        "fsspec": "2025.3.0",
+        "jinja2": "3.1.3",
+        "markupsafe": "2.1.5",
+        "mpmath": "1.3.0",
+        "networkx": "3.4.2",
+        "packaging": "23.2",
+        "sympy": "1.13.1",
+        "torch": "2.6.0",
+        "typing-extensions": "4.16.0"
+      },
+      "torch_build": "2.6.0+cpu",
+      "platform": "Windows-10-10.0.26200-SP0",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "logical_cpu_count": 32,
+      "torch_threads": 1,
+      "device": "cpu",
+      "cuda_build": null,
+      "device_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "deterministic_algorithms": true
+    }
+  },
+  "verification": {
+    "verified_at_utc": "2026-10-21T10:46:08.247611+00:00",
+    "passed": true,
+    "test_evaluated": true,
+    "checks": [
+      "frozen source/data/checkpoints",
+      "protocol preceded evaluation",
+      "all six test predictions reproduced",
+      "independent probability metrics",
+      "paired summaries",
+      "training-only baseline"
+    ]
+  },
+  "checkpoint_sha256": {
+    "none_seed42": "0ef03c44723fdf69aa3ca6a77790e58a8c704487762d5ba0f83058b8d96a4c8d",
+    "sinusoidal_seed42": "698d2d176e5b60f851d3e3d5bd4133cb98cc7bf20929038cb9632b9f7d67d36b",
+    "none_seed43": "8a5660bca21bf417aa96790b1cc99ee5b647482a0b1a74c2bf7bf9823ca8e0b6",
+    "sinusoidal_seed43": "3fdae02b67e7cbc2364f35bf8fd692621a10abd166f00d399e948f60073fcdf0",
+    "none_seed44": "319f82eeeed0652d89e12d7c994f628227da20c2faadad149c84b4e034cb26f3",
+    "sinusoidal_seed44": "e574f9469c46f3ffb03b256361fbc4ffe432f58afa9d8854f64ec9ec2c7c0695"
+  }
+}

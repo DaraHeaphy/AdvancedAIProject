@@ -124,7 +124,14 @@ class DatasetTests(unittest.TestCase):
                     (target.home, metadata.home_history, split.home_histories[i]),
                     (target.away, metadata.away_history, split.away_histories[i]),
                 ]:
-                    expected = [f for f in by_team[team] if f.kickoff.date() < target.kickoff.date()][-10:]
+                    # Independently find this team's uninterrupted run of seasons.
+                    participating = {int(f.season[:4]) for f in by_team[team]}
+                    first_contiguous = int(target.season[:4])
+                    while first_contiguous - 1 in participating:
+                        first_contiguous -= 1
+                    expected = [f for f in by_team[team]
+                                if f.kickoff.date() < target.kickoff.date()
+                                and int(f.season[:4]) >= first_contiguous][-10:]
                     self.assertEqual(list(history), expected)
                     self.assertEqual(tensor.tolist(), [f.features_for(team) for f in expected])
                 self.assertEqual(split.labels[i].item(), target.label)
@@ -132,6 +139,26 @@ class DatasetTests(unittest.TestCase):
         self.assertEqual(sum(s["completed_fixtures"] for s in report["splits"].values()), report["unique_completed_fixtures"])
         for summary in report["splits"].values():
             self.assertEqual(summary["examples"] + summary["skipped_insufficient_history"], summary["completed_fixtures"])
+
+    def test_returning_team_rebuilds_history_after_missing_season(self):
+        rows = [r for r in self.synthetic_rows()
+                if not (r["year"] == "2019" and "A" in (r["home"], r["away"]))]
+        self.write_rows(rows)
+        test = load_datasets(self.csv_path)["test"]
+        target = next(m for m in test.metadata if m.target.fixture_id == "2020-target")
+        self.assertEqual(len(target.home_history), 10)
+        self.assertTrue(all(f.season == "2020-2021" for f in target.home_history))
+        self.assertGreater(test.report["splits"]["test"]["team_history_resets"], 0)
+
+    def test_leeds_2020_does_not_use_2004_results(self):
+        val = load_datasets()["val"]
+        self.assertNotIn("578655", {m.target.fixture_id for m in val.metadata})
+        leeds = [m for m in val.metadata if "Leeds United" in (m.target.home, m.target.away)]
+        self.assertTrue(leeds)
+        for metadata in leeds:
+            side = "home" if metadata.target.home == "Leeds United" else "away"
+            self.assertTrue(all(f.season == "2020-2021"
+                                for f in getattr(metadata, side + "_history")))
 
 
 if __name__ == "__main__":
