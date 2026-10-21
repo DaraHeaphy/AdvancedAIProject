@@ -3,7 +3,9 @@
   "checks": [
     "disjoint chronological target splits",
     "ten earlier-date results per history",
-    "no history crosses a missing season"
+    "no history crosses a missing season",
+    "all included source seasons have complete fixture pairings",
+    "excluded season absent from targets and histories"
   ],
   "preparation": {
     "source": "dataset/matches.csv",
@@ -12,6 +14,12 @@
     "excluded_non_completed": 2,
     "excluded_duplicate_rows": 10,
     "unique_completed_fixtures": 7967,
+    "excluded_seasons": [
+      "2021-2022"
+    ],
+    "excluded_season_fixtures": 367,
+    "included_completed_fixtures": 7600,
+    "split_policy": "Latest included season for test, preceding season for validation, earlier seasons for training",
     "history_length": 10,
     "features": [
       "goals_scored",
@@ -45,22 +53,37 @@
           "2015-2016",
           "2016-2017",
           "2017-2018",
-          "2018-2019",
-          "2019-2020"
+          "2018-2019"
         ],
-        "completed_fixtures": 7220,
-        "skipped_insufficient_history": 616,
-        "team_history_resets": 33,
-        "examples": 6604,
+        "completed_fixtures": 6840,
+        "skipped_insufficient_history": 587,
+        "team_history_resets": 30,
+        "examples": 6253,
         "class_counts": {
-          "home_win": 3055,
-          "draw": 1657,
-          "away_win": 1892
+          "home_win": 2897,
+          "draw": 1572,
+          "away_win": 1784
         },
         "first_target": "2001-10-27T14:00:00+00:00",
-        "last_target": "2020-07-26T15:00:00+00:00"
+        "last_target": "2019-05-12T14:00:00+00:00"
       },
       "val": {
+        "seasons": [
+          "2019-2020"
+        ],
+        "completed_fixtures": 380,
+        "skipped_insufficient_history": 29,
+        "team_history_resets": 3,
+        "examples": 351,
+        "class_counts": {
+          "home_win": 158,
+          "draw": 85,
+          "away_win": 108
+        },
+        "first_target": "2019-08-10T11:30:00+00:00",
+        "last_target": "2020-07-26T15:00:00+00:00"
+      },
+      "test": {
         "seasons": [
           "2020-2021"
         ],
@@ -75,28 +98,13 @@
         },
         "first_target": "2020-09-12T14:00:00+00:00",
         "last_target": "2021-05-23T15:00:00+00:00"
-      },
-      "test": {
-        "seasons": [
-          "2021-2022"
-        ],
-        "completed_fixtures": 367,
-        "skipped_insufficient_history": 29,
-        "team_history_resets": 2,
-        "examples": 338,
-        "class_counts": {
-          "home_win": 145,
-          "draw": 80,
-          "away_win": 113
-        },
-        "first_target": "2021-08-14T11:30:00+00:00",
-        "last_target": "2022-05-17T18:45:00+00:00"
       }
     }
   },
   "season_coverage": [
     {
       "season": "2001-2002",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -104,6 +112,7 @@
     },
     {
       "season": "2002-2003",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -111,6 +120,7 @@
     },
     {
       "season": "2003-2004",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -118,6 +128,7 @@
     },
     {
       "season": "2004-2005",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -125,6 +136,7 @@
     },
     {
       "season": "2005-2006",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -132,6 +144,7 @@
     },
     {
       "season": "2006-2007",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -139,6 +152,7 @@
     },
     {
       "season": "2007-2008",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -146,6 +160,7 @@
     },
     {
       "season": "2008-2009",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -153,6 +168,7 @@
     },
     {
       "season": "2009-2010",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -160,6 +176,7 @@
     },
     {
       "season": "2010-2011",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -167,6 +184,7 @@
     },
     {
       "season": "2011-2012",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -174,6 +192,7 @@
     },
     {
       "season": "2012-2013",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -181,6 +200,7 @@
     },
     {
       "season": "2013-2014",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -188,6 +208,7 @@
     },
     {
       "season": "2014-2015",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -195,6 +216,7 @@
     },
     {
       "season": "2015-2016",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -202,6 +224,7 @@
     },
     {
       "season": "2016-2017",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -209,6 +232,7 @@
     },
     {
       "season": "2017-2018",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -216,6 +240,7 @@
     },
     {
       "season": "2018-2019",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -223,6 +248,7 @@
     },
     {
       "season": "2019-2020",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -230,6 +256,7 @@
     },
     {
       "season": "2020-2021",
+      "included_in_experiment": true,
       "teams": 20,
       "fixtures": 380,
       "missing_pairs": [],
@@ -237,6 +264,7 @@
     },
     {
       "season": "2021-2022",
+      "included_in_experiment": false,
       "teams": 20,
       "fixtures": 367,
       "missing_pairs": [
@@ -298,54 +326,80 @@
   ],
   "history_ages": {
     "train": {
-      "targets": 6604,
+      "targets": 6253,
       "targets_with_history_over_365_days": 0,
       "maximum_history_age_days": 183,
       "skipped_fixture_participations_by_team": {
-        "AFC Bournemouth": 18,
-        "Arsenal": 41,
-        "Aston Villa": 42,
+        "AFC Bournemouth": 15,
+        "Arsenal": 39,
+        "Aston Villa": 32,
         "Birmingham City": 33,
         "Blackburn Rovers": 26,
         "Blackpool": 10,
         "Bolton Wanderers": 27,
-        "Brighton & Hove Albion": 13,
-        "Burnley": 37,
+        "Brighton & Hove Albion": 12,
+        "Burnley": 35,
         "Cardiff City": 20,
         "Charlton Athletic": 15,
-        "Chelsea": 38,
-        "Crystal Palace": 32,
+        "Chelsea": 36,
+        "Crystal Palace": 29,
         "Derby County": 20,
-        "Everton": 38,
+        "Everton": 36,
         "Fulham": 41,
         "Huddersfield Town": 11,
         "Hull City": 33,
         "Ipswich Town": 11,
         "Leeds United": 14,
-        "Leicester City": 38,
-        "Liverpool": 40,
-        "Manchester City": 36,
-        "Manchester United": 36,
+        "Leicester City": 37,
+        "Liverpool": 38,
+        "Manchester City": 34,
+        "Manchester United": 35,
         "Middlesbrough": 32,
-        "Newcastle United": 51,
-        "Norwich City": 44,
+        "Newcastle United": 50,
+        "Norwich City": 34,
         "Portsmouth": 17,
         "Queens Park Rangers": 22,
         "Reading": 22,
-        "Sheffield United": 20,
-        "Southampton": 34,
+        "Sheffield United": 10,
+        "Southampton": 33,
         "Stoke City": 25,
         "Sunderland": 47,
         "Swansea City": 21,
-        "Tottenham Hotspur": 36,
-        "Watford": 27,
+        "Tottenham Hotspur": 35,
+        "Watford": 26,
         "West Bromwich Albion": 53,
-        "West Ham United": 55,
+        "West Ham United": 52,
         "Wigan Athletic": 23,
         "Wolverhampton Wanderers": 33
       }
     },
     "val": {
+      "targets": 351,
+      "targets_with_history_over_365_days": 0,
+      "maximum_history_age_days": 176,
+      "skipped_fixture_participations_by_team": {
+        "AFC Bournemouth": 3,
+        "Arsenal": 2,
+        "Aston Villa": 10,
+        "Brighton & Hove Albion": 1,
+        "Burnley": 2,
+        "Chelsea": 2,
+        "Crystal Palace": 3,
+        "Everton": 2,
+        "Leicester City": 1,
+        "Liverpool": 2,
+        "Manchester City": 2,
+        "Manchester United": 1,
+        "Newcastle United": 1,
+        "Norwich City": 10,
+        "Sheffield United": 10,
+        "Southampton": 1,
+        "Tottenham Hotspur": 1,
+        "Watford": 1,
+        "West Ham United": 3
+      }
+    },
+    "test": {
       "targets": 352,
       "targets_with_history_over_365_days": 0,
       "maximum_history_age_days": 197,
@@ -370,33 +424,7 @@
         "West Ham United": 1,
         "Wolverhampton Wanderers": 2
       }
-    },
-    "test": {
-      "targets": 338,
-      "targets_with_history_over_365_days": 0,
-      "maximum_history_age_days": 162,
-      "skipped_fixture_participations_by_team": {
-        "Arsenal": 2,
-        "Aston Villa": 2,
-        "Brentford": 10,
-        "Brighton & Hove Albion": 3,
-        "Burnley": 2,
-        "Chelsea": 2,
-        "Crystal Palace": 1,
-        "Everton": 2,
-        "Leeds United": 2,
-        "Leicester City": 2,
-        "Liverpool": 3,
-        "Manchester City": 1,
-        "Newcastle United": 1,
-        "Norwich City": 10,
-        "Southampton": 1,
-        "Tottenham Hotspur": 1,
-        "Watford": 10,
-        "West Ham United": 1,
-        "Wolverhampton Wanderers": 2
-      }
     }
   },
-  "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout"
+  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout"
 }

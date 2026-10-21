@@ -10,7 +10,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from comparison import collect_runs, check_grid, safe_run, write_csv
-from dataset import DEFAULT_CSV, LABELS, load_datasets
+from dataset import DEFAULT_CSV, LABELS, EVALUATION_STATUS, load_datasets
 from evidence import metrics_from_predictions, read_json, sha256, write_json
 from train import load_checkpoint, prepare_device, evaluate
 
@@ -89,9 +89,9 @@ def freeze(study, output):
         "checkpoint_selection": "minimum validation log loss within each fixed ten-epoch run",
         "comparison": "sinusoidal minus none, paired by training seed; retain all three pairs",
         "uncertainty": "sample SD across training seeds; no significance claim or independent-fixture assumption",
-        "test_policy": "available 2021-2022 season; frozen models; earlier completed test fixtures may enter later histories",
+        "test_policy": "2020-2021 source season; exclude incomplete 2021-2022 entirely; frozen models; earlier completed test fixtures may enter later histories",
         "no_test_feedback": "No architecture, training, checkpoint, seed, threshold or ensemble selection after evaluation",
-        "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
+        "evaluation_status": EVALUATION_STATUS,
         "baseline": "constant class probabilities fitted to training labels only",
         "runs": [{**entry, "checkpoint_sha256": sha256(safe_run(entry["run_dir"]) / "best.pt")}
                  for entry in manifest["runs"]],
@@ -232,8 +232,8 @@ def verify(output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("freeze", "evaluate", "verify"))
-    parser.add_argument("--study", type=Path, default=Path("research/revised_validation"))
-    parser.add_argument("--output", type=Path, default=Path("research/revised_evaluation"))
+    parser.add_argument("--study", type=Path, default=Path("research/complete_seasons_validation"))
+    parser.add_argument("--output", type=Path, default=Path("research/complete_seasons_evaluation"))
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(ROOT / "research") or output == ROOT / "research":

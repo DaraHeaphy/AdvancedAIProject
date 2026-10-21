@@ -30,16 +30,47 @@
   ],
   "research_question": "Does fixed sinusoidal positional encoding improve next-fixture prediction compared with no positional encoding?",
   "primary_evaluation_metric": "multiclass log loss, natural logarithm",
-  "paired_difference": "sinusoidal minus none; lower favours sinusoidal",
+  "paired_difference": "sinusoidal minus none; negative favours sinusoidal",
   "history_policy": "Previous ten completed fixtures from earlier UTC dates; crosses consecutive seasons; resets after a missing season",
-  "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
+  "excluded_seasons": [
+    "2021-2022"
+  ],
+  "target_seasons": {
+    "train": [
+      "2001-2002",
+      "2002-2003",
+      "2003-2004",
+      "2004-2005",
+      "2005-2006",
+      "2006-2007",
+      "2007-2008",
+      "2008-2009",
+      "2009-2010",
+      "2010-2011",
+      "2011-2012",
+      "2012-2013",
+      "2013-2014",
+      "2014-2015",
+      "2015-2016",
+      "2016-2017",
+      "2017-2018",
+      "2018-2019"
+    ],
+    "val": [
+      "2019-2020"
+    ],
+    "test": [
+      "2020-2021"
+    ]
+  },
+  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout",
   "source_sha256": {
-    "dataset.py": "9e64ee44d85dd7f547441dd2c3bb02f1262027418839915c74714997b538fa5b",
+    "dataset.py": "21be9fa90da5577b7345c5a7d26a21fb545f22f8ab66b997525cc8924cb7dbe3",
     "model.py": "634914bed498c4cf6b4379ed70c6ae5206838ef7578bad2e52278b1b2210c98d",
     "train.py": "90870edd73ed63b65c9afdfcbcf02db73fe8e76c25e1c3c078aa1d3723e1c11e",
     "evidence.py": "20cb44842932fe8358382ae1dd30cef7f6d6642bcb122a16886998e09661fa71",
-    "comparison.py": "08f843e2c3381e1c01b0d3cc6207b5ff90b3139ad66d9e80223aa1ff2b14dda7",
-    "final_evaluation.py": "956d59ee0dbd609d6cc66a064fe54dde4d19f5e39d669189e17d07681f7e616a"
+    "comparison.py": "a2d48fded1ba899c288dd5032d02a4d8dcfa927461e4360c12534e142e70a25d",
+    "final_evaluation.py": "0260c2dc0a263a51d3459195b617fa1389eeed042d50958f95a21f74cf8a0d97"
   },
   "data_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1"
 }

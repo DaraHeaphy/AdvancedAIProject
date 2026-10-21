@@ -136,7 +136,8 @@ class DatasetTests(unittest.TestCase):
                     self.assertEqual(tensor.tolist(), [f.features_for(team) for f in expected])
                 self.assertEqual(split.labels[i].item(), target.label)
         report = splits["train"].report
-        self.assertEqual(sum(s["completed_fixtures"] for s in report["splits"].values()), report["unique_completed_fixtures"])
+        self.assertEqual(sum(s["completed_fixtures"] for s in report["splits"].values()), report["included_completed_fixtures"])
+        self.assertEqual(report["included_completed_fixtures"] + report["excluded_season_fixtures"], report["unique_completed_fixtures"])
         for summary in report["splits"].values():
             self.assertEqual(summary["examples"] + summary["skipped_insufficient_history"], summary["completed_fixtures"])
 
@@ -151,7 +152,7 @@ class DatasetTests(unittest.TestCase):
         self.assertGreater(test.report["splits"]["test"]["team_history_resets"], 0)
 
     def test_leeds_2020_does_not_use_2004_results(self):
-        val = load_datasets()["val"]
+        val = load_datasets()["test"]
         self.assertNotIn("578655", {m.target.fixture_id for m in val.metadata})
         leeds = [m for m in val.metadata if "Leeds United" in (m.target.home, m.target.away)]
         self.assertTrue(leeds)
@@ -159,6 +160,18 @@ class DatasetTests(unittest.TestCase):
             side = "home" if metadata.target.home == "Leeds United" else "away"
             self.assertTrue(all(f.season == "2020-2021"
                                 for f in getattr(metadata, side + "_history")))
+
+    def test_complete_season_split_excludes_2021_from_all_inputs(self):
+        splits = load_datasets()
+        report = splits["train"].report
+        self.assertEqual(report["splits"]["train"]["seasons"][-1], "2018-2019")
+        self.assertEqual(report["splits"]["val"]["seasons"], ["2019-2020"])
+        self.assertEqual(report["splits"]["test"]["seasons"], ["2020-2021"])
+        self.assertEqual(report["excluded_season_fixtures"], 367)
+        for dataset in splits.values():
+            for m in dataset.metadata:
+                self.assertNotEqual(m.target.season, "2021-2022")
+                self.assertTrue(all(f.season != "2021-2022" for f in m.home_history + m.away_history))
 
 
 if __name__ == "__main__":

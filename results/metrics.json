@@ -1,133 +1,133 @@
 {
-  "evaluation_status": "Revised analysis of a previously inspected test season; not a new untouched holdout",
+  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout",
   "validation": {
     "conditions": {
       "none": {
         "log_loss": {
-          "mean": 1.041468034379575,
-          "sample_sd": 0.004953173725585452,
-          "min": 1.036402574028107,
-          "max": 1.0463007131474757
+          "mean": 0.9867943389975539,
+          "sample_sd": 0.001957488693326381,
+          "min": 0.9846356746687799,
+          "max": 0.9884540918897406
         },
         "accuracy": {
-          "mean": 0.4952651515151515,
-          "sample_sd": 0.0032803992567592343,
-          "min": 0.4914772727272727,
-          "max": 0.4971590909090909
+          "mean": 0.51661918328585,
+          "sample_sd": 0.0016448725617937783,
+          "min": 0.5156695156695157,
+          "max": 0.5185185185185185
         }
       },
       "sinusoidal": {
         "log_loss": {
-          "mean": 1.041848297361837,
-          "sample_sd": 0.006792587111048181,
-          "min": 1.0348003673149346,
-          "max": 1.0483529084900205
+          "mean": 0.9885566336310406,
+          "sample_sd": 0.003775058532790452,
+          "min": 0.984257202318297,
+          "max": 0.9913286311497901
         },
         "accuracy": {
-          "mean": 0.4933712121212121,
-          "sample_sd": 0.0032803992567592343,
-          "min": 0.4914772727272727,
-          "max": 0.4971590909090909
+          "mean": 0.5090218423551757,
+          "sample_sd": 0.004351923736900121,
+          "min": 0.5042735042735043,
+          "max": 0.5128205128205128
         }
       }
     },
     "paired_differences": [
       {
         "seed": 42,
-        "log_loss_difference": -0.0016022067131724604,
-        "accuracy_difference_pp": 0.5681818181818177
+        "log_loss_difference": -0.000378472350482828,
+        "accuracy_difference_pp": -1.139601139601143
       },
       {
         "seed": 43,
-        "log_loss_difference": 0.0006908003174137534,
-        "accuracy_difference_pp": -0.5681818181818177
+        "log_loss_difference": 0.0028745392600494357,
+        "accuracy_difference_pp": -0.5698005698005715
       },
       {
         "seed": 44,
-        "log_loss_difference": 0.0020521953425447492,
-        "accuracy_difference_pp": -0.5681818181818177
+        "log_loss_difference": 0.002790816990893452,
+        "accuracy_difference_pp": -0.5698005698005715
       }
     ],
     "paired_log_loss": {
-      "mean": 0.00038026298226201405,
-      "sample_sd": 0.0018468862102468304,
-      "min": -0.0016022067131724604,
-      "max": 0.0020521953425447492
+      "mean": 0.0017622946334866867,
+      "sample_sd": 0.0018544311295727877,
+      "min": -0.000378472350482828,
+      "max": 0.0028745392600494357
     },
     "baseline": {
       "training_class_counts": {
-        "home_win": 3055,
-        "draw": 1657,
-        "away_win": 1892
+        "home_win": 2897,
+        "draw": 1572,
+        "away_win": 1784
       },
       "probabilities": {
-        "home_win": 0.4625984251968504,
-        "draw": 0.25090854027861903,
-        "away_win": 0.28649303452453057
+        "home_win": 0.463297617143771,
+        "draw": 0.25139932832240525,
+        "away_win": 0.28530305453382376
       },
-      "validation_log_loss": 1.0966510981301445,
-      "validation_accuracy": 0.3806818181818182
+      "validation_log_loss": 1.0666024589896614,
+      "validation_accuracy": 0.45014245014245013
     }
   },
   "test": {
-    "examples": 338,
+    "examples": 352,
     "conditions": {
       "none": {
         "log_loss": {
-          "mean": 0.9974108236606735,
-          "sample_sd": 0.00284774693372457
+          "mean": 1.0672701794907118,
+          "sample_sd": 0.0006354801569151391
         },
         "accuracy": {
-          "mean": 0.534516765285996,
-          "sample_sd": 0.010390191077764037
+          "mean": 0.46212121212121215,
+          "sample_sd": 0.01891570488204372
         },
         "brier_score": {
-          "mean": 0.5946844578626228,
-          "sample_sd": 0.001889477842140089
+          "mean": 0.6377039450548855,
+          "sample_sd": 0.001848770856129082
         }
       },
       "sinusoidal": {
         "log_loss": {
-          "mean": 0.9964369708508832,
-          "sample_sd": 0.0029137458566503103
+          "mean": 1.0703417127082449,
+          "sample_sd": 0.0035514304896320454
         },
         "accuracy": {
-          "mean": 0.5453648915187377,
-          "sample_sd": 0.009038610838177245
+          "mean": 0.45549242424242425,
+          "sample_sd": 0.007149464427339733
         },
         "brier_score": {
-          "mean": 0.5939473733068248,
-          "sample_sd": 0.001956350500793185
+          "mean": 0.6399450314903425,
+          "sample_sd": 0.0029813309715842297
         }
       }
     },
     "paired_differences": [
       {
         "seed": 42,
-        "log_loss_difference": -0.0022771003701543835,
-        "accuracy_difference_pp": 0.295857988165682
+        "log_loss_difference": 0.005232403571387989,
+        "accuracy_difference_pp": -1.1363636363636354
       },
       {
         "seed": 43,
-        "log_loss_difference": 0.002064091122272682,
-        "accuracy_difference_pp": 1.1834319526627168
+        "log_loss_difference": -0.0017542490367694619,
+        "accuracy_difference_pp": -1.7045454545454586
       },
       {
         "seed": 44,
-        "log_loss_difference": -0.002708549181488884,
-        "accuracy_difference_pp": 1.775147928994092
+        "log_loss_difference": 0.005736445117980438,
+        "accuracy_difference_pp": 0.8522727272727237
       }
     ],
     "paired_log_loss": {
-      "mean": -0.0009738528097901952,
-      "sample_sd": 0.0026397659971991324
+      "mean": 0.003071533217532988,
+      "sample_sd": 0.004186841917797728
     },
     "training_frequency_baseline": {
       "split": "test",
-      "examples": 338,
-      "log_loss": 1.0758813391137259,
-      "accuracy": 0.4289940828402367,
-      "brier_score": 0.651792978255961,
+      "examples": 352,
+      "log_loss": 1.0973159549139135,
+      "accuracy": 0.3806818181818182,
+      "brier_score": 0.6679523209665664,
       "class_order": [
         "home_win",
         "draw",
@@ -135,17 +135,17 @@
       ],
       "confusion_matrix": [
         [
-          145,
+          134,
           0,
           0
         ],
         [
-          80,
+          77,
           0,
           0
         ],
         [
-          113,
+          141,
           0,
           0
         ]
@@ -156,8 +156,8 @@
     }
   },
   "compute": {
-    "total_training_seconds": 314.21327289997134,
-    "runner_wall_seconds": 397.52751440007705,
+    "total_training_seconds": 323.5578537998954,
+    "runner_wall_seconds": 401.75137759989593,
     "training_environment": {
       "python": "3.11.9",
       "dependencies": {
@@ -185,7 +185,7 @@
     }
   },
   "verification": {
-    "verified_at_utc": "2026-10-21T10:46:08.247611+00:00",
+    "verified_at_utc": "2026-10-21T11:35:42.137537+00:00",
     "passed": true,
     "test_evaluated": true,
     "checks": [
@@ -198,11 +198,11 @@
     ]
   },
   "checkpoint_sha256": {
-    "none_seed42": "0ef03c44723fdf69aa3ca6a77790e58a8c704487762d5ba0f83058b8d96a4c8d",
-    "sinusoidal_seed42": "698d2d176e5b60f851d3e3d5bd4133cb98cc7bf20929038cb9632b9f7d67d36b",
-    "none_seed43": "8a5660bca21bf417aa96790b1cc99ee5b647482a0b1a74c2bf7bf9823ca8e0b6",
-    "sinusoidal_seed43": "3fdae02b67e7cbc2364f35bf8fd692621a10abd166f00d399e948f60073fcdf0",
-    "none_seed44": "319f82eeeed0652d89e12d7c994f628227da20c2faadad149c84b4e034cb26f3",
-    "sinusoidal_seed44": "e574f9469c46f3ffb03b256361fbc4ffe432f58afa9d8854f64ec9ec2c7c0695"
+    "none_seed42": "93717b6739f4bf6a7ea5fcb5597e878fecc65f63633937e8e72399e53f2636d1",
+    "sinusoidal_seed42": "aef9219ccd3969a6d795d991c869f8b740bc9992928a75185a47d9d126792f0e",
+    "none_seed43": "2d791dfe21e12176917c450f10fea9ae4d263b5b1343b3af7e3d4da49cdf38d2",
+    "sinusoidal_seed43": "968a22566ef9e26b61085546faca20d605c502bf4329c221e77ca84789a08e08",
+    "none_seed44": "8bc5b1d8defabac9b84ffba537a6a804e44fcaa0f5bd677cc172b16b5ec1b2c0",
+    "sinusoidal_seed44": "79e5d5d5258e6862b4a080fc0e3156b0468cc6b0ab82441bfd4678fba5383f69"
   }
 }

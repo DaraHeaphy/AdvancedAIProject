@@ -19,6 +19,8 @@ HISTORY_LENGTH = 10
 FEATURES = ["goals_scored", "goals_conceded", "played_at_home"]
 LABELS = ["home_win", "draw", "away_win"]
 DEFAULT_CSV = Path(__file__).resolve().parent / "dataset" / "matches.csv"
+EXCLUDED_SEASONS = ("2021-2022",)
+EVALUATION_STATUS = "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout"
 
 
 @dataclass(frozen=True)
@@ -164,9 +166,11 @@ def load_datasets(csv_path=DEFAULT_CSV):
     Histories cross consecutive seasons/splits and use earlier UTC dates only.
     A team's history resets after it misses a Premier League season.
     No scaling, random split, padding or positional features are applied.
+    The incomplete 2021-2022 season is excluded before histories or splits.
     """
     csv_path = Path(csv_path)
-    fixtures, counts = read_fixtures(csv_path)
+    source_fixtures, counts = read_fixtures(csv_path)
+    fixtures = [f for f in source_fixtures if f.season not in EXCLUDED_SEASONS]
     seasons = sorted({f.season for f in fixtures})
     if len(seasons) < 3:
         raise ValueError("Need at least three seasons for train/validation/test splits")
@@ -206,7 +210,11 @@ def load_datasets(csv_path=DEFAULT_CSV):
         "source": str(csv_path.resolve()),
         "source_sha256": hashlib.sha256(csv_path.read_bytes()).hexdigest(),
         **counts,
-        "unique_completed_fixtures": len(fixtures),
+        "unique_completed_fixtures": len(source_fixtures),
+        "excluded_seasons": list(EXCLUDED_SEASONS),
+        "excluded_season_fixtures": len(source_fixtures) - len(fixtures),
+        "included_completed_fixtures": len(fixtures),
+        "split_policy": "Latest included season for test, preceding season for validation, earlier seasons for training",
         "history_length": HISTORY_LENGTH,
         "features": FEATURES,
         "labels": LABELS,
@@ -251,6 +259,8 @@ def main():
     args.report.write_text(json.dumps(report, indent=2, default=lambda value: value.isoformat()) + "\n", encoding="utf-8")
     print(f"Read {report['raw_rows']} rows; kept {report['unique_completed_fixtures']} unique completed fixtures.")
     print(f"Excluded {report['excluded_non_completed']} non-completed rows and {report['excluded_duplicate_rows']} duplicates.")
+    print(f"Excluded {report['excluded_season_fixtures']} fixtures from {report['excluded_seasons']}; "
+          f"using {report['included_completed_fixtures']} completed fixtures.")
     for split, summary in report["splits"].items():
         print(f"{split}: {summary['examples']} examples; {summary['skipped_insufficient_history']} skipped; {summary['class_counts']}")
     print(f"Saved preparation report and traced validation example to {args.report}")

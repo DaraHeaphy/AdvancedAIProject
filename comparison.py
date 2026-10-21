@@ -12,7 +12,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from dataset import LABELS
+from dataset import LABELS, EVALUATION_STATUS, EXCLUDED_SEASONS
 from evidence import metrics_from_predictions, read_json, sha256, verify_run, write_json
 from train import prepare_device
 
@@ -30,7 +30,8 @@ PROTOCOL = {
     "variation": "sample standard deviation across training seeds (ddof=1)",
     "test_evaluated": False,
     "history_policy": "Reset team history after a missing Premier League season",
-    "evaluation_status": "Revised analysis; the final test season was previously inspected",
+    "excluded_seasons": list(EXCLUDED_SEASONS),
+    "evaluation_status": EVALUATION_STATUS,
 }
 
 
@@ -290,8 +291,8 @@ def interpretation(pairs):
 def report_text(rows, pairs, summaries, errors, cases, result):
     text = ["# Revised validation comparison", "", PROTOCOL["question"], "",
             "Team histories reset after a missing Premier League season. Architecture, optimiser, "
-            "seeds and ten-epoch budget are unchanged. The test season was previously inspected; "
-            "subsequent test results are a revised analysis, not a new untouched holdout.", "",
+            "seeds and ten-epoch budget are unchanged. The 2020-2021 test season previously served as validation. "
+            "These are revised chronological results, not an untouched holdout.", "",
             "| Condition | Seed | Selected epoch | Validation log loss | Accuracy |",
             "| --- | ---: | ---: | ---: | ---: |"]
     for row in rows:
@@ -303,7 +304,7 @@ def report_text(rows, pairs, summaries, errors, cases, result):
              "Negative favours sinusoidal encoding.", "",
              "The same validation fixtures select checkpoints and provide these scores. "
              "Three seeds measure training variation on one season, not uncertainty across seasons. "
-             "Fixtures share teams and overlapping histories. The incomplete final season and "
+             "Fixtures share teams and overlapping histories. The single evaluation season and "
              "exclusion of fixtures with insufficient history limit generalisation.", "",
              f"Six training runs; total training/validation-loop time "
              f"{result['total_training_seconds']:.2f} seconds. One CPU thread per run. "
@@ -352,7 +353,7 @@ def report_study(output):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("run", "report"))
-    parser.add_argument("--output", type=Path, default=ROOT / "research" / "revised_validation")
+    parser.add_argument("--output", type=Path, default=ROOT / "research" / "complete_seasons_validation")
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(ROOT / "research") or output == ROOT / "research":
