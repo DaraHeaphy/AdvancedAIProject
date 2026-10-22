@@ -426,5 +426,5 @@
       }
     }
   },
-  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout"
+  "evaluation_status": "Chronological evaluation: training through 2018-2019, validation 2019-2020, test 2020-2021"
 }

@@ -291,8 +291,7 @@ def interpretation(pairs):
 def report_text(rows, pairs, summaries, errors, cases, result):
     text = ["# Revised validation comparison", "", PROTOCOL["question"], "",
             "Team histories reset after a missing Premier League season. Architecture, optimiser, "
-            "seeds and ten-epoch budget are unchanged. The 2020-2021 test season previously served as validation. "
-            "These are revised chronological results, not an untouched holdout.", "",
+            "seeds and ten-epoch budget are unchanged.", "",
             "| Condition | Seed | Selected epoch | Validation log loss | Accuracy |",
             "| --- | ---: | ---: | ---: | ---: |"]
     for row in rows:

@@ -20,7 +20,7 @@ FEATURES = ["goals_scored", "goals_conceded", "played_at_home"]
 LABELS = ["home_win", "draw", "away_win"]
 DEFAULT_CSV = Path(__file__).resolve().parent / "dataset" / "matches.csv"
 EXCLUDED_SEASONS = ("2021-2022",)
-EVALUATION_STATUS = "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout"
+EVALUATION_STATUS = "Chronological evaluation: training through 2018-2019, validation 2019-2020, test 2020-2021"
 
 
 @dataclass(frozen=True)

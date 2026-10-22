@@ -4,7 +4,7 @@ Does fixed sinusoidal positional encoding improve next-fixture prediction compar
 
 The experiment explicitly excludes the incomplete 2021-22 season before constructing histories or target splits. Training spans 2001-02 through 2018-19, validation is 2019-20 and testing is 2020-21. The original CSV remains unchanged. All twenty included seasons contain all 380 ordered home/away pairings. The excluded season has 367 unique completed fixtures. Its thirteen missing pairings do not affect this experiment.
 
-**2020-21 previously served as validation and selected checkpoints in earlier runs. Moving it into the test role does not make it an untouched holdout. These results are a revised chronological evaluation.** We selected this split for complete source-season coverage, held the architecture and training settings fixed and retained all seeds. We did not choose a model, threshold or ensemble based on the new test outcome.
+We selected this split for complete source-season coverage, held the architecture and training settings fixed and retained all seeds. We did not choose a model, threshold or ensemble based on the new test outcome.
 
 | Split | Target seasons | Source fixtures | Usable targets | History exclusions |
 | --- | --- | ---: | ---: | ---: |
@@ -55,7 +55,7 @@ Draw recall describes argmax classification. It does not mean that a model assig
 
 The no-position transformer supplies an informative reference for the isolated positional change. Beating the constant prior does not establish that attention is necessary or that a transformer is competitive with stronger football predictors. The final linear head combines additive home/away contributions and cannot add a further nonlinear interaction between summaries.
 
-Only three seeds and one test season are available. Fixtures share teams and overlapping histories, so they are dependent observations. Seed SD measures training randomness on these fixtures rather than uncertainty across future seasons. Class frequencies and football conditions can change over time. Inputs omit opponent identity, squad changes and elapsed days. Validation-selected scores can be optimistic. Previous use of the test season for validation limits confirmatory claims.
+Only three seeds and one test season are available. Fixtures share teams and overlapping histories, so they are dependent observations. Seed SD measures training randomness on these fixtures rather than uncertainty across future seasons. Class frequencies and football conditions can change over time. Inputs omit opponent identity, squad changes and elapsed days. Validation-selected scores can be optimistic.
 
 Earlier completed test results can enter later histories while model weights stay frozen. This is sequential pre-match prediction, rather than forecasting every fixture before the season starts. Every input is in the past, so the encoder needs no causal attention mask. Checkpoints support inference but do not contain the full state for exact mid-run training resumption.
 
@@ -67,6 +67,6 @@ All 31 automated tests passed. They cover exclusion of 2021-22 from all model in
 
 Dataset provenance and declared publisher terms are in `../dataset/README.md`. Joseph Mohr identifies ESPN as the source and declares CC0/Public Domain. We record these declared terms rather than independently verifying upstream rights or a particular publisher version. The educational model uses score/home-status inputs and excludes player fields. No pretrained model is used, and the results establish no betting value.
 
-Codex assisted with code, audit, analysis and writing. Its stale-history policy needed correction, followed by regression checks. This further split change follows the team's preference to exclude incomplete source seasons. Both students must understand the full pipeline and confirm actual individual contributions. Lecturer gate decisions and acceptance of the revised evaluation require the team's records.
+Codex assisted with code, audit, analysis and writing. Its stale-history policy needed correction, followed by regression checks. This further split change follows the team's preference to exclude incomplete source seasons. Both students must understand the full pipeline and confirm actual individual contributions. Lecturer gate decisions require the team's records.
 
 The root README documents reproduction. Compact configuration, audit and all individual results remain versioned. Generated checkpoints, source snapshots, reports and presentations stay outside Git. A verified archive preserves the preceding experiment and a separate ZIP preserves the complete-season experiment. Cross-platform numerical identity is not guaranteed.

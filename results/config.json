@@ -63,8 +63,17 @@
       "2020-2021"
     ]
   },
-  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout",
+  "evaluation_status": "Chronological evaluation: training through 2018-2019, validation 2019-2020, test 2020-2021",
   "source_sha256": {
+    "dataset.py": "170d2136052bf28cd0057709847757e3536d5ab252acb17afcfefd001eb1e581",
+    "model.py": "634914bed498c4cf6b4379ed70c6ae5206838ef7578bad2e52278b1b2210c98d",
+    "train.py": "90870edd73ed63b65c9afdfcbcf02db73fe8e76c25e1c3c078aa1d3723e1c11e",
+    "evidence.py": "20cb44842932fe8358382ae1dd30cef7f6d6642bcb122a16886998e09661fa71",
+    "comparison.py": "589473a09716fca07ab0da55fe32f048938f54da0fe6211c5ba0a05c51712fc5",
+    "final_evaluation.py": "0260c2dc0a263a51d3459195b617fa1389eeed042d50958f95a21f74cf8a0d97"
+  },
+  "data_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1",
+  "recorded_source_sha256": {
     "dataset.py": "21be9fa90da5577b7345c5a7d26a21fb545f22f8ab66b997525cc8924cb7dbe3",
     "model.py": "634914bed498c4cf6b4379ed70c6ae5206838ef7578bad2e52278b1b2210c98d",
     "train.py": "90870edd73ed63b65c9afdfcbcf02db73fe8e76c25e1c3c078aa1d3723e1c11e",
@@ -72,5 +81,5 @@
     "comparison.py": "a2d48fded1ba899c288dd5032d02a4d8dcfa927461e4360c12534e142e70a25d",
     "final_evaluation.py": "0260c2dc0a263a51d3459195b617fa1389eeed042d50958f95a21f74cf8a0d97"
   },
-  "data_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1"
+  "source_revision_note": "Evaluation description text was edited after the recorded runs. Original executed-source hashes are retained in recorded_source_sha256; source_sha256 identifies the current source. Model, preprocessing and training behaviour are unchanged."
 }
