@@ -1,0 +1,7 @@
+# Optional walkthrough tools. The experiment dependencies remain unchanged.
+-r requirements-lock.txt
+notebook==7.3.2
+ipykernel==6.29.5
+nbformat==5.10.4
+nbclient==0.10.2
+nbconvert==7.16.6

@@ -1,0 +1,659 @@
+{
+  "description": "Compact presentation evidence extracted from the six existing complete-season runs; no new training or model selection.",
+  "study_manifest": "research/complete_seasons_validation/experiment.json",
+  "study_manifest_sha256": "968bbfe385304ce140995fb29e8cc83340896174f9f0310cfea51ae240823105",
+  "data_sha256": "b60a46d09867d8cb74e4eb48fe1ec3cbd1dd846a7eec87f6b1057133356abad1",
+  "source_sha256": {
+    "dataset.py": "21be9fa90da5577b7345c5a7d26a21fb545f22f8ab66b997525cc8924cb7dbe3",
+    "model.py": "634914bed498c4cf6b4379ed70c6ae5206838ef7578bad2e52278b1b2210c98d",
+    "train.py": "90870edd73ed63b65c9afdfcbcf02db73fe8e76c25e1c3c078aa1d3723e1c11e",
+    "evidence.py": "20cb44842932fe8358382ae1dd30cef7f6d6642bcb122a16886998e09661fa71",
+    "comparison.py": "a2d48fded1ba899c288dd5032d02a4d8dcfa927461e4360c12534e142e70a25d",
+    "final_evaluation.py": "0260c2dc0a263a51d3459195b617fa1389eeed042d50958f95a21f74cf8a0d97"
+  },
+  "evaluation_status": "Revised chronological evaluation: 2020-2021 was previously used for validation; not an untouched holdout",
+  "runs": [
+    {
+      "condition": "none",
+      "seed": 42,
+      "run_dir": "runs/20261021T112745Z_none_seed42_cec1661f",
+      "selected_epoch": 9,
+      "checkpoint_sha256": "93717b6739f4bf6a7ea5fcb5597e878fecc65f63633937e8e72399e53f2636d1",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.0205472216841776,
+          "validation_log_loss": 1.0039036416599894,
+          "validation_accuracy": 0.5014245014245015
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.00597242346844,
+          "validation_log_loss": 0.9970979065636963,
+          "validation_accuracy": 0.5213675213675214
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0050063058221586,
+          "validation_log_loss": 0.999461426694169,
+          "validation_accuracy": 0.5242165242165242
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.0027979230873112,
+          "validation_log_loss": 0.9946177827666628,
+          "validation_accuracy": 0.5242165242165242
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0026770595663093,
+          "validation_log_loss": 0.9946445508560224,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0027290952314325,
+          "validation_log_loss": 1.0006663330599792,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 7,
+          "training_loss": 1.0011514714769645,
+          "validation_log_loss": 0.9930321022316262,
+          "validation_accuracy": 0.5042735042735043
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.0028151314143807,
+          "validation_log_loss": 0.9878813751742371,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 9,
+          "training_loss": 1.0003924866533271,
+          "validation_log_loss": 0.9846356709798177,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 10,
+          "training_loss": 1.0015816345188917,
+          "validation_log_loss": 0.9894259689200637,
+          "validation_accuracy": 0.50997150997151
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          111,
+          0,
+          23
+        ],
+        [
+          51,
+          0,
+          26
+        ],
+        [
+          85,
+          0,
+          56
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.15365207195281982,
+          "draw": 0.17845988273620605,
+          "away_win": 0.6678879857063293
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T112745Z_none_seed42_cec1661f/metrics.json": "030071b89f7034687b8d6262bdc4751cc647d56320f916f90ef2ccc641e6d059",
+        "research/complete_seasons_evaluation/none_seed42_metrics.json": "aeab84bc9c799d27ddbc29520b34d9b0d0e6e169f8b08e8e12a7c15b7341125e",
+        "runs/20261021T112745Z_none_seed42_cec1661f/validation_prediction.json": "b87c2217188786bf6e26fc859c45c1c4e709237d592a313b8e531b210b84fe30"
+      }
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 42,
+      "run_dir": "runs/20261021T112853Z_sinusoidal_seed42_b78d897c",
+      "selected_epoch": 9,
+      "checkpoint_sha256": "aef9219ccd3969a6d795d991c869f8b740bc9992928a75185a47d9d126792f0e",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.020648523500285,
+          "validation_log_loss": 1.002621474089446,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.00587820444377,
+          "validation_log_loss": 0.9957761954717826,
+          "validation_accuracy": 0.5213675213675214
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0042528394563817,
+          "validation_log_loss": 0.9986298987668464,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.0014389738280849,
+          "validation_log_loss": 0.9923418974265074,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0013217381166684,
+          "validation_log_loss": 0.9916088125984214,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0010854430757636,
+          "validation_log_loss": 0.9992704907713452,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 7,
+          "training_loss": 0.9992037743506347,
+          "validation_log_loss": 0.9945733540418141,
+          "validation_accuracy": 0.49572649572649574
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.0004690810525663,
+          "validation_log_loss": 0.9883147073946787,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 9,
+          "training_loss": 0.997612427934997,
+          "validation_log_loss": 0.9842572171463926,
+          "validation_accuracy": 0.5042735042735043
+        },
+        {
+          "epoch": 10,
+          "training_loss": 0.998721237299291,
+          "validation_log_loss": 0.9890390379816039,
+          "validation_accuracy": 0.4985754985754986
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          112,
+          0,
+          22
+        ],
+        [
+          51,
+          0,
+          26
+        ],
+        [
+          90,
+          0,
+          51
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.1282852292060852,
+          "draw": 0.17889642715454102,
+          "away_win": 0.6928183436393738
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T112853Z_sinusoidal_seed42_b78d897c/metrics.json": "b420b301623dc8b5ec51683f73c4ca66dc46edfa0a19dfce74a750d88c5dc65e",
+        "research/complete_seasons_evaluation/sinusoidal_seed42_metrics.json": "bc1e40a14b4b596b06f927a4dbef0b5bbf049e203f512dad45f227beef4bacf1",
+        "runs/20261021T112853Z_sinusoidal_seed42_b78d897c/validation_prediction.json": "6e7d34b2ed5435aa7ad8046aae95b1c2c4d37495b8f2e78d4b0ce7cadc02abe9"
+      }
+    },
+    {
+      "condition": "none",
+      "seed": 43,
+      "run_dir": "runs/20261021T113003Z_none_seed43_d9b86bfc",
+      "selected_epoch": 8,
+      "checkpoint_sha256": "2d791dfe21e12176917c450f10fea9ae4d263b5b1343b3af7e3d4da49cdf38d2",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.021177458778374,
+          "validation_log_loss": 0.9983925398258742,
+          "validation_accuracy": 0.5014245014245015
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.0059247291814455,
+          "validation_log_loss": 0.9909526738006504,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0042163447420178,
+          "validation_log_loss": 1.0057112538916433,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.0037956977107898,
+          "validation_log_loss": 0.9973620988025285,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0038093798030534,
+          "validation_log_loss": 0.9977286303484881,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0030513034807897,
+          "validation_log_loss": 0.9898261915244947,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 7,
+          "training_loss": 1.0026881038122666,
+          "validation_log_loss": 0.9896742231146223,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.0012214163408535,
+          "validation_log_loss": 0.988454101432083,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 9,
+          "training_loss": 1.000057887767918,
+          "validation_log_loss": 0.9885853498409956,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 10,
+          "training_loss": 0.9993194416963671,
+          "validation_log_loss": 1.004295359989177,
+          "validation_accuracy": 0.5327635327635327
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          117,
+          0,
+          17
+        ],
+        [
+          52,
+          0,
+          25
+        ],
+        [
+          92,
+          0,
+          49
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.1427537351846695,
+          "draw": 0.18085704743862152,
+          "away_win": 0.676389217376709
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T113003Z_none_seed43_d9b86bfc/metrics.json": "508f24e5eb766209e6eee018125ca33d2737796da04611811c9de15a4b8a5a02",
+        "research/complete_seasons_evaluation/none_seed43_metrics.json": "d9fc7b278181d4ae82746894aca660fd13e1aa00dca998ec7d5aa41cd497357c",
+        "runs/20261021T113003Z_none_seed43_d9b86bfc/validation_prediction.json": "2db4cdf45d4a767aef4903f025a9f1718471cc02cc4c4695b051842e39a3ff5e"
+      }
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 43,
+      "run_dir": "runs/20261021T113106Z_sinusoidal_seed43_005139d5",
+      "selected_epoch": 8,
+      "checkpoint_sha256": "968a22566ef9e26b61085546faca20d605c502bf4329c221e77ca84789a08e08",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.0190699322784535,
+          "validation_log_loss": 0.999443624773596,
+          "validation_accuracy": 0.4928774928774929
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.0061621114614008,
+          "validation_log_loss": 0.9925380826336027,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0042721041865907,
+          "validation_log_loss": 1.0066385024633162,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.003449328190114,
+          "validation_log_loss": 1.0007056483515986,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0031965291921414,
+          "validation_log_loss": 0.999280837186721,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0024311951059695,
+          "validation_log_loss": 0.9932460676231275,
+          "validation_accuracy": 0.5071225071225072
+        },
+        {
+          "epoch": 7,
+          "training_loss": 1.002148818716171,
+          "validation_log_loss": 0.9922664457576567,
+          "validation_accuracy": 0.5042735042735043
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.000504352885133,
+          "validation_log_loss": 0.9913286388429821,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 9,
+          "training_loss": 0.9988574426917292,
+          "validation_log_loss": 0.9915260847477492,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 10,
+          "training_loss": 0.9988512047649135,
+          "validation_log_loss": 1.0055246162957956,
+          "validation_accuracy": 0.5270655270655271
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          117,
+          0,
+          17
+        ],
+        [
+          52,
+          0,
+          25
+        ],
+        [
+          98,
+          0,
+          43
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.16683347523212433,
+          "draw": 0.19629806280136108,
+          "away_win": 0.6368684768676758
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T113106Z_sinusoidal_seed43_005139d5/metrics.json": "e972247ffe940cfbfa14eef8b70fd16d56d13c63b3dff2f0b9bd2fb22c0324d6",
+        "research/complete_seasons_evaluation/sinusoidal_seed43_metrics.json": "e7ebaf6a331f1ec21a2247dcf4debddcb93b447d89edb2a384d291e109c83f64",
+        "runs/20261021T113106Z_sinusoidal_seed43_005139d5/validation_prediction.json": "f881e1d33a73ff2ed0a93e24c93235f0979608a43c69773eb8bcd739712230a7"
+      }
+    },
+    {
+      "condition": "none",
+      "seed": 44,
+      "run_dir": "runs/20261021T113214Z_none_seed44_90b68f41",
+      "selected_epoch": 10,
+      "checkpoint_sha256": "8bc5b1d8defabac9b84ffba537a6a804e44fcaa0f5bd677cc172b16b5ec1b2c0",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.0245197237195653,
+          "validation_log_loss": 0.9969482856598335,
+          "validation_accuracy": 0.49572649572649574
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.0061326268270991,
+          "validation_log_loss": 0.9943665018108835,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0052536501420053,
+          "validation_log_loss": 0.9902246208951684,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.0040551565674503,
+          "validation_log_loss": 0.9937007284571981,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0034079456661065,
+          "validation_log_loss": 0.9946807741779208,
+          "validation_accuracy": 0.5042735042735043
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0023789261505736,
+          "validation_log_loss": 0.9895297917205723,
+          "validation_accuracy": 0.5014245014245015
+        },
+        {
+          "epoch": 7,
+          "training_loss": 1.0009320242184172,
+          "validation_log_loss": 0.9982650626418937,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.0020902353859742,
+          "validation_log_loss": 0.9927220358128561,
+          "validation_accuracy": 0.5156695156695157
+        },
+        {
+          "epoch": 9,
+          "training_loss": 1.0000621969177879,
+          "validation_log_loss": 0.9938697869281823,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 10,
+          "training_loss": 1.0007314277842925,
+          "validation_log_loss": 0.9872932325401197,
+          "validation_accuracy": 0.5156695156695157
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          116,
+          0,
+          18
+        ],
+        [
+          55,
+          0,
+          22
+        ],
+        [
+          102,
+          0,
+          39
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.17790614068508148,
+          "draw": 0.22293782234191895,
+          "away_win": 0.5991560220718384
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T113214Z_none_seed44_90b68f41/metrics.json": "91bb0b8c56da10d4b819355364fe0ef818275d24f4a22ca8623c8aa2cb60721d",
+        "research/complete_seasons_evaluation/none_seed44_metrics.json": "bc6bfd41b1eb8a7d521224dd3c3707538e190f61d758d5ebf8557a3ccb933e0b",
+        "runs/20261021T113214Z_none_seed44_90b68f41/validation_prediction.json": "471682a4db63e44d1a8fdf773f9cd7c133ac6836ca31b6c18f53683ce0f11a02"
+      }
+    },
+    {
+      "condition": "sinusoidal",
+      "seed": 44,
+      "run_dir": "runs/20261021T113322Z_sinusoidal_seed44_f25c57a9",
+      "selected_epoch": 10,
+      "checkpoint_sha256": "79e5d5d5258e6862b4a080fc0e3156b0468cc6b0ab82441bfd4678fba5383f69",
+      "learning_curve": [
+        {
+          "epoch": 1,
+          "training_loss": 1.0302186255338344,
+          "validation_log_loss": 0.9970170751935736,
+          "validation_accuracy": 0.5014245014245015
+        },
+        {
+          "epoch": 2,
+          "training_loss": 1.0055081385069993,
+          "validation_log_loss": 0.9958631021005137,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 3,
+          "training_loss": 1.0046018997840875,
+          "validation_log_loss": 0.9907459139484286,
+          "validation_accuracy": 0.5185185185185185
+        },
+        {
+          "epoch": 4,
+          "training_loss": 1.0034092377037807,
+          "validation_log_loss": 0.9953591925466162,
+          "validation_accuracy": 0.50997150997151
+        },
+        {
+          "epoch": 5,
+          "training_loss": 1.0031067550935384,
+          "validation_log_loss": 0.9957441074556095,
+          "validation_accuracy": 0.5071225071225072
+        },
+        {
+          "epoch": 6,
+          "training_loss": 1.0019558671758821,
+          "validation_log_loss": 0.9906528940227975,
+          "validation_accuracy": 0.4985754985754986
+        },
+        {
+          "epoch": 7,
+          "training_loss": 1.000262652704778,
+          "validation_log_loss": 0.9988283771395343,
+          "validation_accuracy": 0.5213675213675214
+        },
+        {
+          "epoch": 8,
+          "training_loss": 1.00102056060317,
+          "validation_log_loss": 0.9933490155429242,
+          "validation_accuracy": 0.5128205128205128
+        },
+        {
+          "epoch": 9,
+          "training_loss": 0.9990002204566197,
+          "validation_log_loss": 0.9940331505234764,
+          "validation_accuracy": 0.5213675213675214
+        },
+        {
+          "epoch": 10,
+          "training_loss": 0.9991057786715807,
+          "validation_log_loss": 0.9900840857090094,
+          "validation_accuracy": 0.50997150997151
+        }
+      ],
+      "test_confusion_matrix": [
+        [
+          117,
+          0,
+          17
+        ],
+        [
+          53,
+          0,
+          24
+        ],
+        [
+          99,
+          1,
+          41
+        ]
+      ],
+      "confusion_matrix_axes": "rows=true, columns=predicted",
+      "validation_example": {
+        "split": "val",
+        "index": 0,
+        "fixture_id": "541843",
+        "home": "West Ham United",
+        "away": "Manchester City",
+        "kickoff": "2019-08-10T11:30:00+00:00",
+        "label": 2,
+        "label_name": "away_win",
+        "probabilities": {
+          "home_win": 0.18672697246074677,
+          "draw": 0.22668437659740448,
+          "away_win": 0.5865886211395264
+        }
+      },
+      "artifact_sha256": {
+        "runs/20261021T113322Z_sinusoidal_seed44_f25c57a9/metrics.json": "b98a4b912a424718206b3dc055f7b23894b7777e7da3fd53466cea96124e9363",
+        "research/complete_seasons_evaluation/sinusoidal_seed44_metrics.json": "7fe02b711d53ea42cfd303e20fce04fd95c8727ff3eb3889507b637d8dfc2538",
+        "runs/20261021T113322Z_sinusoidal_seed44_f25c57a9/validation_prediction.json": "b2157716e9f79c7036ec22c64b12ef7c0ebfce85b0b1254d554670eaccb00c55"
+      }
+    }
+  ]
+}

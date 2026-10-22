@@ -17,6 +17,18 @@ The earlier experiment retained histories through relegation gaps, including Lee
 
 ## Run
 
+For an executed visual walkthrough, open [`notebooks/Project_Walkthrough.ipynb`](notebooks/Project_Walkthrough.ipynb). It explains the data audit, an actual input example, chronological splits, the shared model and parameter count, all six learning curves, paired results and confusion matrices. It imports the existing implementation and reads recorded evidence; **Run All does not retrain models or select new checkpoints**. Outputs are included for viewing without starting a kernel.
+
+To run it interactively, install the optional notebook tools into the project environment and launch Jupyter from the repository root:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-notebook.txt
+.\.venv\Scripts\python.exe -m notebook notebooks/Project_Walkthrough.ipynb
+```
+
+In VS Code, select `.venv\Scripts\python.exe` as the notebook kernel. `results/notebook_evidence.json` contains the compact recorded curves, confusion matrices and validation example, with hashes identifying their original local artifacts. It lets the walkthrough run without ignored training folders. If the original checkpoint is available, the final example also checks its hash and reproduces its prediction. The existing scripts below remain the route for reproducing the complete training experiment.
+
 Use Python 3.11 from the repository root. In PowerShell:
 
 ```powershell
@@ -38,8 +50,10 @@ Training creates ignored `runs/` weights, configurations, source snapshots, envi
 
 ## Evidence and limits
 
-`results/` retains the compact audit, configuration, individual run tables and analysis. Regenerate full local artifacts with the commands above. Old documents, unused CSVs, duplicated snapshots and run histories are excluded from Git. A verified local archive preserves the original project and original Git history.
+`results/` retains the compact audit, configuration, individual run tables and analysis. Individual contribution statements belong in the separate project write-up.
+
+Regenerate full local experiment artifacts with the commands above. Existing ignored `runs/` and `research/` folders retain the six trained checkpoints and detailed evidence for verification. Historical archives, study guides, the HTML walkthrough export, the stale Word report and the specification reference were moved outside the repository to the sibling folder `AdvancedAIProject_support_archive_20261021`. Its cleanup manifest records SHA-256 hashes for all 22 moved files. The notebook remains the walkthrough format. The local virtual environment and generated caches can be recreated and are excluded from Git.
 
 Three seeds on one evaluation season provide limited evidence. The 2020-21 season also differs from earlier training seasons, and its previous use for validation limits confirmatory claims. Shared teams and overlapping histories make fixtures dependent; seed variation does not measure future-season uncertainty. Excluding early promoted-team fixtures narrows the evaluated population. Inputs omit opponent strength, squad changes and elapsed time. This comparison does not establish the best football predictor or betting value.
 
-Codex assisted with implementation, review, tests, analysis and writing. Earlier stale histories and excessive generated material required correction. Checks include regression tests, a data audit, checkpoint reloads and independent probability metrics. Historical commit authorship is preserved, but is not proof of unaided contribution. Actual individual contributions and lecturer gate decisions require the team's records. Both students remain responsible for understanding the project. The project specification permits AI assistance and requires reflection on its use.
+Codex assisted with implementation, review, tests, analysis and writing. Earlier stale histories and excessive generated material required correction. Checks include regression tests, a data audit, checkpoint reloads and independent probability metrics. Historical commit authorship is preserved, but is not proof of unaided contribution. Actual individual contributions belong in the separate project write-up; lecturer gate decisions require the team's records. Both students remain responsible for understanding the project. The project specification permits AI assistance and requires reflection on its use.

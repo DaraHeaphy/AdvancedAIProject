@@ -1,11 +1,15 @@
 __pycache__/
+.ipynb_checkpoints/
 *.py[cod]
 .venv*/
 /tmp/
 /local_archive/
 /runs/
 /research/
-/output/
+/output/*
+!/output/pptx/
+/output/pptx/*
+!/output/pptx/Football Transformer - Project Defence With Speaker Notes.pptx
 /evidence_bundles/
 /tools/
 /FIRST_ATTEMPT.md
